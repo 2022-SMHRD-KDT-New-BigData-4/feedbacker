@@ -21,7 +21,7 @@ public class HomeController {
 		
 		model.addAttribute("vo", testVO);
 		
-		return "fanfeed/template";
+		return "fanfeed/index";
 	}
 	
 }
