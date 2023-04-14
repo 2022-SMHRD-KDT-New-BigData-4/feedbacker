@@ -85,9 +85,16 @@
               <nav class="nav navbar-nav">
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
+                	<c:if test="${empty vo }">
                   <a class="user-profile" id="navbarDropdown">
-                    <img src="images/img.jpg" alt="">userName
+                    <img src="images/img.jpg" alt="">로그인해주셈
                   </a>
+                  </c:if>
+                  <c:if test="${!empty vo }">
+                  <a class="user-profile" id="navbarDropdown">
+                    <img src="images/img.jpg" alt="">${vo.nick }
+                  </a>
+                  </c:if>
                 </li>
 
 
@@ -99,7 +106,10 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-          <!-- top tiles -->
+          <div class="right-wapper col-md-4"><!-- text div -->
+          	테스트
+          </div>
+          <div class="right-wapper col-md-8"> <!-- text div -->
           <div class="row" style="display: inline-block;" >
           <div class="tile_count">
             <div class="col-md-2 col-sm-4  tile_stats_count">
@@ -135,7 +145,7 @@
           </div>
         </div>
           <!-- /top tiles -->
-
+		
           <div class="row">
             <div class="col-md-8 col-sm-18">
               <div class="dashboard_graph">
@@ -240,8 +250,8 @@
               </div>
             </div>
 
-
-
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/etzDSCEx56M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
           </div>
         </div>
         <!-- /page content -->
