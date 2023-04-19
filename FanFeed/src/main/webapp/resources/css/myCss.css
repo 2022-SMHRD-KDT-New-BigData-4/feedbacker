@@ -1,0 +1,28 @@
+#logo {
+    width: 200px !important;
+}
+
+#login {
+    margin-left: 240px;
+}
+
+#navbar-collapse {
+    text-align: center;
+}
+
+.best {
+    text-align: center;
+    padding : 100px 0;
+    margin-bottom: -60px;
+}
+
+.steady {
+    text-align: center;
+    padding : 100px 0;
+    margin-top: 200px;
+    margin-bottom: -60px;
+}
+
+#container-fluid {
+    justify-items: center;
+}

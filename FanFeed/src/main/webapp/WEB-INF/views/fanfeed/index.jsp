@@ -6,303 +6,448 @@
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
 <% pageContext.setAttribute("newLineChar", "\n"); %>
 
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>Gentelella Alela!</title>
+<head>
+	<meta charset="utf-8">
+	<title>BookBox</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link href="${cpath }/resources/css/font-awesome.min.css" rel="stylesheet">
+	<!-- theme meta -->
+	<meta name="theme-name" content="revolve" />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- THEME CSS
+	================================================== -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="${cpath }/resources/css/bootstrap.min.css">
+	<!-- Themify -->
+	<link rel="stylesheet" href="${cpath }/resources/css/themify-icons.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/slick-theme.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/slick.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="${cpath }/resources/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/magnific-popup.css">
+	<!-- manin stylesheet -->
+	<link rel="stylesheet" href="${cpath }/resources/css/style.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/myCss.css">
+
 	
-    <!-- Custom Theme Style -->
-    <link href="${cpath }/resources/css/custom.css" rel="stylesheet">
-    <link href="${cpath }/resources/css/myCustom.css" rel="stylesheet">
-   <%--  <link href="${cpath }/resources/css/custom.css" rel="stylesheet"> --%>
-  </head>
+</head>
 
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><img src="${cpath }/resources/images/3-1.png" class="FanFeedLogo"></a>
-            </div>
+<body>
 
-            <div class="clearfix"></div>
-
-            <!-- menu profile quick info -->
-            <div class="profile clearfix">
-              <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-              </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
-              </div>
-            </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home <span class="fa"></span></a>
-                  </li>
-                  <li><a><i class="fa fa-edit"></i> My Page <span class="fa"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="form.html">My Channel</a></li>
-                      <li><a href="form_advanced.html">My Page</a></li>
-
-                    </ul>
-                  </li>
- 
-              </div>
-
-
-            </div>
-            <!-- /sidebar menu -->
-
-            <!-- /menu footer buttons -->
-            <!-- /menu footer buttons -->
-          </div>
-        </div>
-
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars" style="color: white;"></i></a>
-              </div>
-              <nav class="nav navbar-nav">
-              <ul class=" navbar-right">
-                <li class="nav-item dropdown open" style="padding-left: 15px;">
-                	<c:if test="${empty vo }">
-                  <a class="user-profile" id="navbarDropdown">
-                    <img src="images/img.jpg" alt="">로그인해주셈
-                  </a>
-                  </c:if>
-                  <c:if test="${!empty vo }">
-                  <a class="user-profile" id="navbarDropdown">
-                    <img src="images/img.jpg" alt="">${vo.nick }
-                  </a>
-                  </c:if>
-                </li>
-
-
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <!-- /top navigation -->
-
-        <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="right-wapper col-md-4"><!-- text div -->
-          	테스트
-          </div>
-          <div class="right-wapper col-md-8"> <!-- text div -->
-          <div class="row" style="display: inline-block;" >
-          <div class="tile_count">
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
-              <div class="count">2500</div>
-              <span class="count_bottom"><i class="green">4% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              <span class="count_top"><i class="fa fa-clock-o"></i> Average Time</span>
-              <div class="count">123.50</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
-              <div class="count green" style="color: #CF0A0A;">2,500</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
-              <div class="count">4,567</div>
-              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Collections</span>
-              <div class="count">2,315</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
-              <div class="count">7,325</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
-          </div>
-        </div>
-          <!-- /top tiles -->
-		
-          <div class="row">
-            <div class="col-md-8 col-sm-18">
-              <div class="dashboard_graph">
-
-                <div class="row x_title">
-                  <div class="col-md-6">
-                    <h3>Network Activities <small>Graph title sub-title</small></h3>
-                  </div>
-                </div>
-
-                <div class="col-md-12 col-sm-12 ">
-                  <div id="chart_plot_01" class="demo-placeholder"></div>
-                </div>
-                <div class="col-md-3 col-sm-3  bg-white">
-
-                </div>
-
-                <div class="clearfix"></div>
-              </div>
-            </div>
-
-          </div>
-          <br />
-
-          <div class="row">
-
-            <div class="col-md-3 col-sm-3 ">
-              <div class="x_panel tile fixed_height_320 overflow_hidden">
-                <div class="x_title">
-                  <h2>Device Usage</h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Settings 1</a>
-                          <a class="dropdown-item" href="#">Settings 2</a>
-                        </div>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <table class="" style="width:100%">
-                    <tr>
-                      <th style="width:37%;">
-                        <p>Top 5</p>
-                      </th>
-                      <th>
-                        <div class="col-lg-7 col-md-7 col-sm-7 ">
-                          <p class="">Device</p>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-sm-5 ">
-                          <p class="">Progress</p>
-                        </div>
-                      </th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
-                      </td>
-                      <td>
-                        <table class="tile_info">
-                          <tr>
-                            <td>
-                              <p><i class="fa fa-square blue"></i>IOS </p>
-                            </td>
-                            <td>30%</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><i class="fa fa-square green"></i>Android </p>
-                            </td>
-                            <td>10%</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><i class="fa fa-square purple"></i>Blackberry </p>
-                            </td>
-                            <td>20%</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><i class="fa fa-square aero"></i>Symbian </p>
-                            </td>
-                            <td>15%</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><i class="fa fa-square red"></i>Others </p>
-                            </td>
-                            <td>30%</td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/etzDSCEx56M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<div class="header-logo py-5 d-none d-lg-block">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
+					<a class="navbar-brand" href="index.html"><img src="${cpath }/resources/images/BookBox.png" alt="" class="img-fluid w-100" id="logo"></a>
+				</div>
+			</div>
+		</div>
 	</div>
-          </div>
-        </div>
-        <!-- /page content -->
 
-        <!-- footer content -->
-        <!-- /footer content -->
-      </div>
-    </div>
+	<header class="header-top bg-grey justify-content-center">
+		<nav class="navbar navbar-expand-lg navigation">
+			<div class="container">
+				<a class="navbar-brand d-lg-none" href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Bootstrap -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-    <!-- gauge.js -->
-    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- Skycons -->
-    <script src="../vendors/skycons/skycons.js"></script>
-    <!-- Flot -->
-    <script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="../vendors/DateJS/build/date.js"></script>
-    <!-- JQVMap -->
-    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+					aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="ti-menu"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul id="menu" class="menu navbar-nav ">
+						<li class="nav-item dropdown  pl-0">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Home
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="index.html">Home 1</a>
+								<a class="dropdown-item" href="index-2.html">Home 2</a>
+								<a class="dropdown-item" href="index-3.html">Home 3</a>
+								<a class="dropdown-item" href="index-4.html">Home 4</a>
+								<a class="dropdown-item" href="index-5.html">Home 5</a>
+								<a class="dropdown-item" href="index-6.html">Home 6</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Blog Posts
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+								<a class="dropdown-item" href="standard-fullwidth.html">Standard Fullwidth</a>
+								<a class="dropdown-item" href="standard-left-sidebar.html">Standard Left Sidebar</a>
+								<a class="dropdown-item" href="standard-right-sidebar.html">Standard Right Sidebar</a>
+							</div>
+						</li>
 
-    <!-- Custom Theme Scripts -->
-    <script src="${cpath }/resources/js/custom.min.js"></script>
-	
-  </body>
+						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="fashion.html" class="nav-link">Category</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Post Formats
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+								<a class="dropdown-item" href="post-video.html">Video Formats</a>
+								<a class="dropdown-item" href="post-audio.html">Audio Format</a>
+								<a class="dropdown-item" href="post-link.html">Quote Format</a>
+								<a class="dropdown-item" href="post-gallery.html">Gallery Format</a>
+								<a class="dropdown-item" href="post-image.html">Image Format</a>
+							</div>
+						</li>
+						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+						<li class="nav-item d-lg-none">
+							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="text-right search d-none d-lg-block">
+					<div class="search_toggle"><i class="ti-search"></i></div>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="best">
+		<h2>베스트셀러</h2>
+	</div>
+
+	<section class="slider mt-4">
+		<div class="container-fluid" id="container-fluid">
+			<div class="row no-gutters" id="no-gutters">
+				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
+					<div class="slider-item">
+						<div class="slider-item-content">
+							<div class="post-thumb mb-4">
+								<a href="blog-single.html">
+									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
+								</a>
+							</div>
+
+							<div class="slider-post-content">
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">스즈메의 문단속</a></h3>
+								<span class=" text-muted  text-capitalize">신카이 마코토 저 | 민경욱 역</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-item">
+						<div class="slider-item-content">
+							<div class="post-thumb mb-4">
+								<a href="blog-single.html">
+									<img src="https://via.placeholder.com/500x530.png?text=temp2" alt="" class="img-fluid">
+								</a>
+							</div>
+							<div class="slider-post-content">
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">경영/경제</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">장하준의 경제학 레시피 : 마늘에서 초콜릿까지 18가지 재료로 요리한 경제 이야기</a></h3>
+								<span class=" text-muted  text-capitalize">장하준 저 | 김희정 역</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-item">
+						<div class="slider-item-content">
+							<div class="post-thumb mb-4">
+								<a href="blog-single.html">
+									<img src="https://via.placeholder.com/500x530.png?text=temp3" alt="" class="img-fluid">
+								</a>
+							</div>
+							<div class="slider-post-content">
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">weekends</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">Our Favorite Weekend Getaways</a></h3>
+								<span class=" text-muted  text-capitalize">June 12, 2019</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-item">
+						<div class="slider-item-content">
+							<div class="post-thumb mb-4">
+								<a href="blog-single.html">
+									<img src="https://via.placeholder.com/500x530.png?text=temp4" alt="" class="img-fluid">
+								</a>
+							</div>
+
+							<div class="slider-post-content">
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
+								<span class=" text-muted  text-capitalize">September 15, 2019</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider-item">
+						<div class="slider-item-content">
+							<div class="post-thumb mb-4">
+								<a href="blog-single.html">
+									<img src="https://via.placeholder.com/500x530.png?text=temp5" alt="" class="img-fluid">
+								</a>
+							</div>
+
+							<div class="slider-post-content">
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
+								<span class=" text-muted  text-capitalize">September 15, 2019</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="steady">
+		<h2>스테디셀러</h2>
+	</div>
+
+	<section class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">June 15, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">How to Make list for travelling alone</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Food</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">5 ingredient cilantro vinaigrette</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Explore</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">A Simple Way to Feel Like Home When You
+										Travel</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">March 20, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">What Type of Traveller Are You?</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">A Road Trip Review of the 2018</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">July 10, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">music</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">Portugal’s Sunset summer vission</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">beauty</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">The best soft Tropical Getaway</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">March 12, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">Memoriable Paris Girls Trip </a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">April 19, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">How to Plan your Trip the Right Way</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">February 15, 2019</span>
+
+							</article>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">8 Powerful Ways to Add Vibrant Colour to Your
+										Life</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">August 15, 2019</span>
+
+							</article>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<article class="post-grid mb-5">
+								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+								</a>
+								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">The best to-do list to help boost your
+										productivity</a></h3>
+
+								<span class="text-muted letter-spacing text-uppercase font-sm">October 2, 2019</span>
+
+							</article>
+						</div>
+					</div>
+				</div>
+
+				<div class="m-auto">
+					<div class="pagination mt-5 pt-4">
+						<ul class="list-inline ">
+							<li class="list-inline-item"><a href="#" class="active">1</a></li>
+							<li class="list-inline-item"><a href="#">2</a></li>
+							<li class="list-inline-item"><a href="#">3</a></li>
+							<li class="list-inline-item"><a href="#" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="footer-2 section-padding gray-bg pb-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="subscribe-footer text-center">
+						<div class="form-group mb-0">
+							<h2 class="mb-3">Subscribe Newsletter</h2>
+							<p class="mb-4">Subscribe my Newsletter for new blog posts , tips and info.
+							<p>
+							<div class="form-group form-row align-items-center mb-0">
+								<div class="col-sm-9">
+									<input type="email" class="form-control" placeholder="Email Address">
+								</div>
+								<div class="col-sm-3">
+									<a href="#" class="btn btn-dark ">Subscribe</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-btm mt-5 pt-4 border-top">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-inline footer-socials-2 text-center">
+							<li class="list-inline-item"><a href="#">Privacy policy</a></li>
+							<li class="list-inline-item"><a href="#">Support</a></li>
+							<li class="list-inline-item"><a href="#">About</a></li>
+							<li class="list-inline-item"><a href="#">Contact</a></li>
+							<li class="list-inline-item"><a href="#">Terms</a></li>
+							<li class="list-inline-item"><a href="#">Category</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="copyright text-center ">
+							@ copyright all reserved to <a href="https://themefisher.com/">themefisher.com</a>-2019 Distribution <a
+								href="https://themewagon.com">ThemeWagon.</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- THEME JAVASCRIPT FILES
+================================================== -->
+	<!-- initialize jQuery Library -->
+	<script src="${cpath }/resources/js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script src="${cpath }/resources/js/bootstrap.min.js"></script>
+	<script src="${cpath }/resources/js/popper.min.js"></script>
+	<!-- Owl caeousel -->
+	<script src="${cpath }/resources/js/owl.carousel.min.js"></script>
+	<script src="${cpath }/resources/js/slick.min.js"></script>
+	<script src="${cpath }/resources/js/magnific-popup.js"></script>
+	<!-- Instagram Feed Js -->
+	<script src="${cpath }/resources/js/instafeed.min.js"></script>
+	<!-- main js -->
+	<script src="${cpath }/resources/js/custom.js"></script>
+
+
+</body>
+
 </html>
