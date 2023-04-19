@@ -113,7 +113,10 @@
 				</div>
 
 				<div class="text-right search d-none d-lg-block">
-					<div class="search_toggle"><i class="ti-search"></i></div>
+					<div class="search_toggle">
+						<input id="search">
+						<button type="submit" id="submit"><i class="ti-search"></i></button>
+					</div>
 				</div>
 			</div>
 		</nav>
