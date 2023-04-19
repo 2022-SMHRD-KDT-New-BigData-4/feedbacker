@@ -22,7 +22,7 @@ public class schedulerTest {
 	
 //	스케줄러는 매게변수를 받지 않는 메소드에 한해 사용가능하다
 //	@Scheduled(fixedRateString = "60000", initialDelay = 3000) 1분마다 3초 대기
-    @Scheduled(cron = " 0 0/1 * * * * ")	// 1분 마다
+    @Scheduled(cron = " 0 0/5 * * * * ")	// 5분 마다
     public void timeScheduled() {
         SimpleDateFormat currentDateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");		
 		String latestDate = currentDateTime.format(new Date()).toString();
@@ -32,7 +32,7 @@ public class schedulerTest {
 		
 		FlaskController fc = new FlaskController();
 		
-		fc.flask();
+		// fc.flask();
 		
 }
     
