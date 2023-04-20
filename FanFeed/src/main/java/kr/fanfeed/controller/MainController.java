@@ -22,7 +22,7 @@ public class MainController {
 	@RequestMapping("/bookdetail.do")
 	public String goBookDetail(Model model) {
 		
-		return "fanfeed/standard-left-sidebar";
+		return "fanfeed/bookdetail";
 	}
 	
 	

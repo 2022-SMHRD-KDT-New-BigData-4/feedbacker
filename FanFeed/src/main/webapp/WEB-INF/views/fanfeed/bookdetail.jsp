@@ -51,7 +51,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6 text-center">
-        <a class="navbar-brand" href="index.html"><img src="images/BookBox.png" alt="" class="img-fluid w-100" id="logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
       </div>
     </div>
   </div>
@@ -166,22 +166,12 @@
         <div class="sidebar-widget category mb-5">
             <h4 class="text-center widget-title">감성어 TOP 10</h4>
              <ul class="list-unstyled">
+             <c:forEach var="i" begin="1" end="10">
               <li class="align-items-center d-flex justify-content-between">
-                <span>1</span>
+                <span>${i }</span>
                 <a href="#" >Innovation</a>
               </li>
-              <li class="align-items-center d-flex justify-content-between">
-                <span>2</span>
-                <a href="#">Software</a>
-              </li>
-              <li class="align-items-center d-flex justify-content-between">
-                <span>3</span>
-                <a href="#">Social</a>
-              </li>
-              <li class="align-items-center d-flex justify-content-between">
-                <span>4</span>
-                <a href="#">Trends</a>
-              </li>
+              </c:forEach>
             </ul>
         </div>
         <!-- <div class="media border-bottom py-3 sidebar-post-item">
@@ -306,11 +296,11 @@
 						</div>
 					</div>
 
-					<!-- <div class="slider-item">
+					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="images/slider/slider2.jpg" alt="" class="img-fluid">
+									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
 								</a>
 							</div>
 							<div class="slider-post-content">
@@ -319,7 +309,7 @@
 								<span class=" text-muted  text-capitalize">장하준 저 | 김희정 역</span>
 							</div>
 						</div>
-					</div> -->
+					</div>
 
 
 				</div>
@@ -657,8 +647,6 @@
 <!-- Instagram Feed Js -->
 <script src="${cpath }/resources/js/instafeed.min.js"></script>
 <!-- main js -->
-<script src="${cpath }/resources/js/custom.js"></script>
-<!-- left js -->
 <script src="${cpath }/resources/js/left-custom.js"></script>
 <!-- anychart js -->
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>

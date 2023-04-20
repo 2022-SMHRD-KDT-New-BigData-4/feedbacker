@@ -89,7 +89,7 @@ p {
   line-height: 26px;
   font-size: 16px;
   text-rendering: optimizeLegibility;
-  color: #666;
+  color: black;
   font-weight: 400;
 }
 
@@ -111,7 +111,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #1c1c1c;
+  color: #372415;
   font-weight: 600;
   font-family: "Myungjo";
 }
@@ -161,7 +161,7 @@ h6,
 ================================================== */
 body {
   background: #fff;
-  color: #575769;
+  color: black;
 }
 
 html,
