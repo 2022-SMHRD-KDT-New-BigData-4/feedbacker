@@ -131,6 +131,8 @@
 		<div class="container-fluid" id="container-fluid">
 			<div class="row no-gutters" id="no-gutters">
 				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
+				
+				<c:forEach var="i" begin="1" end="9">
 					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
@@ -140,14 +142,15 @@
 							</div>
 
 							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설</span>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설${i }</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">스즈메의 문단속</a></h3>
 								<span class=" text-muted  text-capitalize">신카이 마코토 저 | 민경욱 역</span>
 							</div>
 						</div>
 					</div>
+				</c:forEach>
 
-					<div class="slider-item">
+<!-- 					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
@@ -207,7 +210,7 @@
 								<span class=" text-muted  text-capitalize">September 15, 2019</span>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
