@@ -47,7 +47,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
-					<a class="navbar-brand" href="index.html"><img src="${cpath }/resources/images/BookBox.png" alt="" class="img-fluid w-100" id="logo"></a>
+					<a class="navbar-brand" href="index.html"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
 				</div>
 			</div>
 		</div>
@@ -137,14 +137,14 @@
 					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
+								<a onclick="move()">
 									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
 								</a>
 							</div>
 
 							<div class="slider-post-content">
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설${i }</span>
-								<h4 class="post-title mt-1"><a href="blog-single.html">스즈메의 문단속</a></h4>
+								<h4 class="post-title mt-1"><a onclick="move()">스즈메의 문단속</a></h4>
 								<span class=" text-muted  text-capitalize">신카이 마코토 저 | 민경욱 역</span>
 							</div>
 						</div>
@@ -478,7 +478,12 @@
 	<script src="${cpath }/resources/js/instafeed.min.js"></script>
 	<!-- main js -->
 	<script src="${cpath }/resources/js/custom.js"></script>
+$(function move(){
+	$('.slider-item').click(function(){
+		location.href="standard-left-sidebar.jsp";
+	});
 
+});
 
 </body>
 

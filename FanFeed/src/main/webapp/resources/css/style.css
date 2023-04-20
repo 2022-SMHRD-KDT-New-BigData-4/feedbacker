@@ -180,7 +180,7 @@ a:visited {
 }
 
 a:hover {
-  color: #ce8460;
+  color: #594f42;
 }
 
 a.read-more {
@@ -291,15 +291,15 @@ blockquote {
 }
 
 .font-sm {
-  font-size: 12px !important;
+  font-size: 13px !important;
 }
 
 .text-color {
-  color: #ce8460;
+  color: #603f24;
 }
 
 .bg-grey {
-    background-color: #E6DDC6;
+    background-color: #8D7B68;
 }
 
 .gray-bg {
@@ -324,7 +324,7 @@ blockquote {
 }
 
 .navigation .menu li a {
-  color: #000;
+  color: white;
   display: inline-block;
   line-height: 26px;
   letter-spacing: 1px;
@@ -1309,14 +1309,14 @@ overlay search
 }
 
 .pagination ul li a:hover {
-  background: #ce8460;
+  background: #8D7B68;
   color: #fff;
 }
 
 .pagination ul li a.active {
-  background: #ce8460;
+  background: #8D7B68;
   color: #fff;
-  border-color: #ce8460;
+  border-color: #8D7B68;
 }
 
 .post-title {

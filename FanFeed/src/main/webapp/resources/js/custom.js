@@ -141,3 +141,10 @@
 	});
 
 })(jQuery);
+
+$(function(){
+	$('.slider-item').click(function(){
+		location.href="standard-left-sidebar.jsp";
+	});
+
+});
