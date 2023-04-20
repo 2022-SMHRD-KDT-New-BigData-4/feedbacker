@@ -298,7 +298,7 @@
 						</div>
 					</div>
 
-					<div class="slider-item">
+					<!-- <div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
@@ -311,7 +311,7 @@
 								<span class=" text-muted  text-capitalize">장하준 저 | 김희정 역</span>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 
 				</div>
@@ -319,12 +319,47 @@
 		</div>
 	</section>
 
+    <div class="comment-area my-5">
+		<h3 class="mb-4 text-center">2 Comments</h3>
+		<div class="comment-area-box media">
+			<!-- <img alt="" src="images/blog-user-2.jpg" class="img-fluid float-left mr-3 mt-2"> -->
 
+			<div class="media-body ml-4">
+				<h4 class="mb-0">Micle harison </h4>
+				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
+
+				<div class="comment-content mt-3">
+					<p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
+				</div>
+				<!-- <div class="comment-meta mt-4 mt-lg-0 mt-md-0">
+					<a href="#" class="text-underline ">Reply</a>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="comment-area-box media mt-5">
+			<!-- <img alt="" src="images/blog-user-3.jpg" class="mt-2 img-fluid float-left mr-3"> -->
+
+			<div class="media-body ml-4">
+				<h4 class="mb-0 ">John Doe </h4>
+				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
+
+				<div class="comment-content mt-3">
+					<p>Some consultants are employed indirectly by the client via a consultancy staffing company. </p>
+				</div>
+				<!-- <div class="comment-meta mt-4 mt-lg-0 mt-md-0">
+					<a href="#" class="text-underline">Reply</a>
+				</div> -->
+			</div>
+		</div>
+	</div>
 
 
 
     </div>
 </div>
+
+
 
 
 
@@ -351,7 +386,7 @@
                   </li>
                 </ul>
             </div> -->
-          <h2 class="mt-4 mb-3">Perfect design & code delivered to you</h2>
+          <!-- <h2 class="mt-4 mb-3">Perfect design & code delivered to you</h2>
           <p> The Sagoths had begun to take notice of his habit of declaiming throughout entire marches. One of them asked him what he was saying—to whom he was talking. The question gave me an idea, so I answered quickly before Perry could say anything.</p>
             <blockquote>
                 <i class="ti-quote-left mr-2"></i>A wise girls knows her limit to touch the sky.Repellat sapiente neque iusto praesentium adipisci.The question gave me an idea, so I answered quickly before Perry could say anything.<i class="ti-quote-right ml-2"></i>
@@ -379,9 +414,9 @@
             <a href="#">#Health</a>
             <a href="#">#Game</a>
             <a href="#">#Tour</a>
-        </div>
+        </div> -->
             
-
+<!-- 
         <div class="tags-share-box center-box d-flex text-center justify-content-between border-top border-bottom py-3">
 
             <span class="single-comment-o"><i class="fa fa-comment-o"></i>0 comment</span>
@@ -397,11 +432,11 @@
                 <a target="_blank" rel="nofollow" href="#"><i class="ti-pinterest"></i></a>
                 <a target="_blank" rel="nofollow" href="#"><i class="ti-linkedin"></i></a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 				
-				<div class="post-author d-flex my-5">
+<!-- <div class="post-author d-flex my-5">
 	<div class="author-img">
 		<img alt="" src="https://img.ridicdn.net/cover/3306000090/xxlarge?dpi=xxhdpi#1"  width="100" height="100">	
 	</div>
@@ -417,8 +452,8 @@
 		<a target="_blank" class="author-social" href="#"><i class="ti-pinterest"></i></a>
 		<a target="_blank" class="author-social" href="#"><i class="ti-tumblr"></i></a>
 	</div>
-</div>
-				<nav class="post-pagination clearfix border-top border-bottom py-4">
+</div> -->
+<nav class="post-pagination clearfix border-top border-bottom py-4 col-lg-12">
     <div class="prev-post">
         <a href="blog-single.html">
             <span class="text-uppercase font-sm letter-spacing">Next</span>
@@ -432,12 +467,14 @@
         </a>
     </div>
 </nav>
-				<div class="related-posts-block mt-5">
+
+<div class="related-posts-block mt-5">
     <h3 class="news-title mb-4 text-center">
-       You May Also Like
+       연관 도서
     </h3>
+    <br>
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
                 <a href="blog-single.html">
                     <img class="img-fluid" src="images/fashion/img-1.jpg" alt="post-thumbnail"/>
@@ -449,7 +486,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
                 <a href="blog-single.html">
                     <img class="img-fluid" src="images/fashion/img-2.jpg" alt="post-thumbnail"/>
@@ -461,7 +498,19 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper">
+                <a href="blog-single.html">
+                    <img class="img-fluid" src="images/fashion/img-3.jpg" alt="post-thumbnail"/>
+                </a>
+                <div class="post-content mt-3">
+                    <h5 >
+                        <a href="blog-single.html">Snow and Freezing Rain in Paris Forces the</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper">
                 <a href="blog-single.html">
                     <img class="img-fluid" src="images/fashion/img-3.jpg" alt="post-thumbnail"/>
@@ -476,42 +525,65 @@
     </div>
 </div>
 
-					<div class="comment-area my-5">
-		<h3 class="mb-4 text-center">2 Comments</h3>
-		<div class="comment-area-box media">
-			<img alt="" src="images/blog-user-2.jpg" class="img-fluid float-left mr-3 mt-2">
+<br>
+<br>
 
-			<div class="media-body ml-4">
-				<h4 class="mb-0">Micle harison </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
-
-				<div class="comment-content mt-3">
-					<p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
-				</div>
-				<div class="comment-meta mt-4 mt-lg-0 mt-md-0">
-					<a href="#" class="text-underline ">Reply</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="comment-area-box media mt-5">
-			<img alt="" src="images/blog-user-3.jpg" class="mt-2 img-fluid float-left mr-3">
-
-			<div class="media-body ml-4">
-				<h4 class="mb-0 ">John Doe </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
-
-				<div class="comment-content mt-3">
-					<p>Some consultants are employed indirectly by the client via a consultancy staffing company. </p>
-				</div>
-				<div class="comment-meta mt-4 mt-lg-0 mt-md-0">
-					<a href="#" class="text-underline">Reply</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
+<div class="related-posts-block mt-5">
+    <h3 class="news-title mb-4 text-center">
+       대표 저서
+    </h3>
+    <br>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <a href="blog-single.html">
+                    <img class="img-fluid" src="images/fashion/img-1.jpg" alt="post-thumbnail"/>
+                </a>
+                <div class="post-content mt-3">
+                    <h5 >
+                        <a href="blog-single.html">Intel’s new smart glasses actually look good</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <a href="blog-single.html">
+                    <img class="img-fluid" src="images/fashion/img-2.jpg" alt="post-thumbnail"/>
+                </a>
+                <div class="post-content mt-3">
+                    <h5 >
+                        <a href="blog-single.html">Free Two-Hour Delivery From Whole Foods</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper">
+                <a href="blog-single.html">
+                    <img class="img-fluid" src="images/fashion/img-3.jpg" alt="post-thumbnail"/>
+                </a>
+                <div class="post-content mt-3">
+                    <h5 >
+                        <a href="blog-single.html">Snow and Freezing Rain in Paris Forces the</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper">
+                <a href="blog-single.html">
+                    <img class="img-fluid" src="images/fashion/img-3.jpg" alt="post-thumbnail"/>
+                </a>
+                <div class="post-content mt-3">
+                    <h5 >
+                        <a href="blog-single.html">Snow and Freezing Rain in Paris Forces the</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 			</div>
 		</div>
@@ -525,7 +597,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h4 class="text-center">Follow in Instagram</h4>
+                <!-- <h4 class="text-center">Follow in Instagram</h4> -->
             </div>
         </div>
 
@@ -542,7 +614,7 @@
                 <div class="mb-4">
                     <h2 class="footer-logo">Revolve.</h2>
                 </div>
-                <ul class="list-inline footer-socials">
+                <!-- <ul class="list-inline footer-socials">
                     <li class="list-inline-item"><a href="#"><i class="ti-facebook mr-2"></i>Facebook</a></li>
                     <li class="list-inline-item"><a href="#"><i class="ti-twitter mr-2"></i>Twitter</a></li>
                     <li class="list-inline-item"><a href="#"><i class="ti-linkedin mr-2"></i>Linkedin</a></li>
@@ -550,7 +622,7 @@
                     <li class="list-inline-item"><a href="#"><i class="ti-github mr-2"></i>Github</a></li>
                     <li class="list-inline-item"><a href="#"><i class="ti-instagram mr-2"></i>Instrgram</a></li>
                     <li class="list-inline-item"><a href="#"><i class="ti-rss mr-2"></i>rss</a></li>
-                </ul>
+                </ul> -->
             </div>
        
             <div class="col-md-12 text-center">
