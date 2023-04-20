@@ -48,7 +48,7 @@
 
   $('.slider-wrap').slick({
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     autoplaySpeed: 4000,
     items:3,
     loop:true,

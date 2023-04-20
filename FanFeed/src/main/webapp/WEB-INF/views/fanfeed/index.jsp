@@ -133,6 +133,7 @@
 				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
 				
 				<c:forEach var="i" begin="1" end="9">
+					<!-- slider-item 시작 jstl이든 jquery든 반복을 이용해서 동적으로 만들어지게 바꾸기 -->
 					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
@@ -211,6 +212,26 @@
 							</div>
 						</div>
 					</div> -->
+
+					</div>
+					
+					<div class="slider-item">
+						<div class="slider-item-content">
+							<div class="post-thumb mb-4">
+								<a href="blog-single.html">
+									<img src="https://via.placeholder.com/500x530.png?text=temp6" alt="" class="img-fluid">
+								</a>
+							</div>
+
+							<div class="slider-post-content">
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
+								<span class=" text-muted  text-capitalize">September 15, 2019</span>
+							</div>
+						</div>
+					</div>
+					<!-- slider-item 끝 -->
+					
 				</div>
 			</div>
 		</div>
