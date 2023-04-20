@@ -211,7 +211,7 @@
 								<span class=" text-muted  text-capitalize">September 15, 2019</span>
 							</div>
 						</div>
-					</div> -->
+					</div>
 
 					</div>
 					
@@ -229,7 +229,7 @@
 								<span class=" text-muted  text-capitalize">September 15, 2019</span>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!-- slider-item 끝 -->
 					
 				</div>
@@ -246,19 +246,23 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="row">
+					<c:forEach var="k" begin="1" end="4">
+						<c:forEach var="i" begin="1" end="4">
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
 									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
 								</a>
-								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore</span>
+								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore ${k}-${i}</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
 
 								<span class="text-muted letter-spacing text-uppercase font-sm">June 15, 2019</span>
 
 							</article>
 						</div>
-						<div class="col-lg-3 col-md-6">
+						</c:forEach>
+					</c:forEach>
+						<!-- <div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
 									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
@@ -294,8 +298,9 @@
 								<span class="text-muted letter-spacing text-uppercase font-sm">March 20, 2019</span>
 
 							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
+						</div> -->
+
+						<!-- <div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
 									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
@@ -393,7 +398,7 @@
 								<span class="text-muted letter-spacing text-uppercase font-sm">October 2, 2019</span>
 
 							</article>
-						</div>
+						</div> -->
 					</div>
 				</div>
 
