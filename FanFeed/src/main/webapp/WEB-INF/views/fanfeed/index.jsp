@@ -132,7 +132,7 @@
 			<div class="row no-gutters" id="no-gutters">
 				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
 				
-				<c:forEach var="i" begin="1" end="9">
+				<c:forEach var="i" begin="1" end="10">
 					<!-- slider-item 시작 jstl이든 jquery든 반복을 이용해서 동적으로 만들어지게 바꾸기 -->
 					<div class="slider-item">
 						<div class="slider-item-content">
@@ -144,7 +144,7 @@
 
 							<div class="slider-post-content">
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설${i }</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">스즈메의 문단속</a></h3>
+								<h4 class="post-title mt-1"><a href="blog-single.html">스즈메의 문단속</a></h4>
 								<span class=" text-muted  text-capitalize">신카이 마코토 저 | 민경욱 역</span>
 							</div>
 						</div>
@@ -245,7 +245,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="row">
+					<div class="row" id="row">
 					<c:forEach var="k" begin="1" end="4">
 						<c:forEach var="i" begin="1" end="4">
 						<div class="col-lg-3 col-md-6">

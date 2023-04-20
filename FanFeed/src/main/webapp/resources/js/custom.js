@@ -47,8 +47,8 @@
   /* ----------------------------------------------------------- */
 
   $('.slider-wrap').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     autoplaySpeed: 4000,
     items:3,
     loop:true,

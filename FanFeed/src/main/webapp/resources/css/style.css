@@ -299,7 +299,7 @@ blockquote {
 }
 
 .bg-grey {
-  background: linear-gradient(90deg, #f5db86, #cface0);
+    background-color: #E6DDC6;
 }
 
 .gray-bg {
@@ -945,11 +945,10 @@ overlay search
 
 .slider-post-content {
   position: absolute;
-  bottom: 38px;
-  padding: 20px;
+  bottom: 0px;  
   background: #fff;
   width: 90%;
-  height: 25%;
+  height: 30%;
   text-align: center;
   margin: 0 auto;
   left: 0px;
@@ -957,7 +956,7 @@ overlay search
   display: inline-block; 
 }
 
-.slider-post-content h3{
+.slider-post-content h4{
   overflow: hidden;  		
   text-overflow: ellipsis; 
   white-space: nowrap; 		

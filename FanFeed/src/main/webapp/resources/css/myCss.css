@@ -15,7 +15,7 @@
     height: 30px;
     border: none;
     background-image: linear-gradient(#fff, #fff), 
-    linear-gradient(to right, #f5db86, #cface0);
+    linear-gradient(#E6DDC6);
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-radius: 5px;
@@ -28,7 +28,7 @@
 
 #submit {
     border: none;
-    background-image: linear-gradient(to right, #D8B7CC, #D7B6CD);
+    background-color: #E6DDC6;
 }
 
 #submit:focus{ 	
@@ -42,10 +42,14 @@
     margin-bottom: -60px;
 }
 
+#row {
+	text-align: center;
+}
+
 .steady {
     text-align: center;
     padding : 100px 0;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: -60px;
 }
 
