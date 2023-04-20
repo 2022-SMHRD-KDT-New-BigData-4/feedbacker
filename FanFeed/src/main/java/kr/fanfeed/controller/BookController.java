@@ -18,7 +18,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 @RestController
-public class BookcController {
+public class BookController {
 
 	@RequestMapping("/booksearch.do")
 	public String booksearch(String query) {

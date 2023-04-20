@@ -478,13 +478,15 @@
 	<script src="${cpath }/resources/js/instafeed.min.js"></script>
 	<!-- main js -->
 	<script src="${cpath }/resources/js/custom.js"></script>
-$(function move(){
-	$('.slider-item').click(function(){
-		location.href="standard-left-sidebar.jsp";
-	});
-
-});
-
+	
+	<script type="text/javascript">
+		$(function move(){
+			$('.slider-item').click(function(){
+				location.href="bookdetail.do";
+			});
+		
+		});
+	</script>
 </body>
 
 </html>

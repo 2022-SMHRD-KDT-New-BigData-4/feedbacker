@@ -14,10 +14,16 @@ public class MainController {
 	FanFeedMapper mapper;
 	
 	@RequestMapping("/main.do")
-	public String temp(Model model) {
-		
+	public String goMain(Model model) {
 		
 		return "fanfeed/index";
 	}
+	
+	@RequestMapping("/bookdetail.do")
+	public String goBookDetail(Model model) {
+		
+		return "fanfeed/standard-left-sidebar";
+	}
+	
 	
 }

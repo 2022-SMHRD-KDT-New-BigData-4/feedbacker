@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<c:set var="cpath" value="${pageContext.request.contextPath}" />
+<% pageContext.setAttribute("newLineChar", "\n"); %>
+
 <!DOCTYPE html>
 
 <!--
@@ -22,20 +28,22 @@
     
     <!-- THEME CSS
 	================================================== -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Themify -->
-    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
-    <link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
-    <link rel="stylesheet" href="plugins/slick-carousel/slick.css">
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-    <!-- manin stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/myCss.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="${cpath }/resources/css/bootstrap.min.css">
+	<!-- Themify -->
+	<link rel="stylesheet" href="${cpath }/resources/css/themify-icons.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/slick-theme.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/slick.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="${cpath }/resources/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/magnific-popup.css">
+	<!-- manin stylesheet -->
+	<link rel="stylesheet" href="${cpath }/resources/css/style.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/myCss.css">
+	
 </head>
+
 <body>
 
 
@@ -636,22 +644,23 @@
 
 <!-- THEME JAVASCRIPT FILES
 ================================================== -->
+
 <!-- initialize jQuery Library -->
-<script src="plugins/jquery/jquery.js"></script>
+<script src="${cpath }/resources/js/jquery.js"></script>
 <!-- Bootstrap jQuery -->
-<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="plugins/bootstrap/js/popper.min.js"></script>
+<script src="${cpath }/resources/js/bootstrap.min.js"></script>
+<script src="${cpath }/resources/js/popper.min.js"></script>
 <!-- Owl caeousel -->
-<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-<script src="plugins/slick-carousel/slick.min.js"></script>
-<script src="plugins/magnific-popup/magnific-popup.js"></script>
+<script src="${cpath }/resources/js/owl.carousel.min.js"></script>
+<script src="${cpath }/resources/js/slick.min.js"></script>
+<script src="${cpath }/resources/js/magnific-popup.js"></script>
 <!-- Instagram Feed Js -->
-<script src="plugins/instafeed-js/instafeed.min.js"></script>
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-<script src="plugins/google-map/gmap.js"></script>
+<script src="${cpath }/resources/js/instafeed.min.js"></script>
 <!-- main js -->
-<script src="js/left-custom.js"></script>
+<script src="${cpath }/resources/js/custom.js"></script>
+<!-- left js -->
+<script src="${cpath }/resources/js/left-custom.js"></script>
+<!-- anychart js -->
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
