@@ -25,5 +25,10 @@ public class MainController {
 		return "fanfeed/bookdetail";
 	}
 	
+	@RequestMapping("/category.do")
+	public String goCategory(Model model) {
+		
+		return "fanfeed/category";
+	}
 	
 }

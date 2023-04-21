@@ -141,6 +141,13 @@
 	});
 
 })(jQuery);
+		
+		$(function move(){
+			$('.slider-item').click(function(){
+				location.href="bookdetail.do";
+			});
+		
+		});		
 
 		$(function mainmove(){
 			$('#logo').click(function(){
@@ -148,3 +155,10 @@
 			});
 		
 		});
+
+		$(function categorymove(){
+			$('#navbarDropdown3').click(function(){
+				location.href="category.do";
+			});
+		
+		});		

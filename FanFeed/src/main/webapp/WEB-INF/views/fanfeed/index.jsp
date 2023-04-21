@@ -91,9 +91,21 @@
 						</li>
 
 						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="fashion.html" class="nav-link">Category</a></li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Category
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+								<a class="dropdown-item" href="post-video.html">Video Formats</a>
+								<a class="dropdown-item" href="post-audio.html">Audio Format</a>
+								<a class="dropdown-item" href="post-link.html">Quote Format</a>
+								<a class="dropdown-item" href="post-gallery.html">Gallery Format</a>
+								<a class="dropdown-item" href="post-image.html">Image Format</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
 								Post Formats
 							</a>
@@ -480,15 +492,7 @@
 	<script src="${cpath }/resources/js/instafeed.min.js"></script>
 	<!-- main js -->
 	<script src="${cpath }/resources/js/custom.js"></script>
-	
-	<script type="text/javascript">
-		$(function move(){
-			$('.slider-item').click(function(){
-				location.href="bookdetail.do";
-			});
-		
-		});
-	</script>
+
 </body>
 
 </html>
