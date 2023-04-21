@@ -142,9 +142,9 @@
 
 })(jQuery);
 
-$(function(){
-	$('.slider-item').click(function(){
-		location.href="standard-left-sidebar.jsp";
-	});
-
-});
+		$(function mainmove(){
+			$('#logo').click(function(){
+				location.href="main.do";
+			});
+		
+		});

@@ -141,3 +141,20 @@
 	});
 
 })(jQuery);
+
+
+		$(function mainmove(){
+			$('#navbarDropdown').click(function(){
+				location.href="main.do";
+			});
+		
+		});
+		
+		$(function mainmove(){
+			$('#logo').click(function(){
+				location.href="main.do";
+			});
+		
+		});
+		
+		

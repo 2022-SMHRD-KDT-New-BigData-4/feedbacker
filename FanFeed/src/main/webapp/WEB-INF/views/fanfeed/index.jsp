@@ -47,7 +47,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
-					<a class="navbar-brand" href="index.html"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
+					<a class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
 				</div>
 			</div>
 		</div>
@@ -114,8 +114,10 @@
 
 				<div class="text-right search d-none d-lg-block">
 					<div class="search_toggle">
-						<input id="search">
-						<button type="submit" id="submit"><i class="ti-search"></i></button>
+						<div id="empty">
+							<input id="search" placeholder=" Search...">
+							<button type="submit" id="submit"><i class="ti-search"></i></button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -124,7 +126,7 @@
 	</header>
 
 	<div class="best">
-		<h2>베스트셀러</h2>
+		<h1>베스트셀러</h1>
 	</div>
 
 	<section class="slider mt-4">
@@ -238,7 +240,7 @@
 	</section>
 
 	<div class="steady">
-		<h2>스테디셀러</h2>
+		<h1>스테디셀러</h1>
 	</div>
 
 	<section class="section-padding">

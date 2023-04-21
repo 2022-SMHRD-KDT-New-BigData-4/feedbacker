@@ -1,5 +1,6 @@
 #logo {
     width: 320px !important;
+    text-align: center;
 }
 
 #login {
@@ -56,4 +57,12 @@
 
 #container-fluid {
     justify-items: center;
+}
+
+#similer {
+	text-align: center;
+}
+
+#represent {
+	text-align: center;
 }
