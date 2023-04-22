@@ -158,9 +158,9 @@
 		<div class="sidebar-post-item-big">
 			<a href="blog-single.html"><img src="https://img.ridicdn.net/cover/3306000090/xxlarge?dpi=xxhdpi#1" alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
-            	<span class="text-muted letter-spacing text-uppercase font-sm">2020.03.25. 전자책 출간</span>
-				<div><h4 ><a href="#">개정 번역판 | 해리 포터와 마법사의 돌</a></h4></div>
-                <h5> 줄거리</h5>
+            	<h5 class="text-muted letter-spacing text-uppercase font-sm">2020.03.25. 전자책 출간</h5>
+				<div><h4 ><a onclick="move()">개정 번역판 | 해리 포터와 마법사의 돌</a></h4></div>
+                <h5>작가 이름</h5>
 			</div>
 		</div>
         <br>
@@ -216,7 +216,7 @@
 
         <div class="post-meta">
             
-            <span class="text-uppercase font-sm letter-spacing-1">2020.03.25. 전자책 출간</span>
+            <h4 class="text-uppercase font-sm letter-spacing-1">2020.03.25. 전자책 출간</h4>
         </div>
         <div class="chart-area">
             <div id="container" style="width:100%; height:100%;"></div>
@@ -232,7 +232,7 @@
 					<div class="slider-item">
 						<div class="slider-item-content">
                             <div class="reputation-bubble-box" style="text-align: center;">
-                                <h4 class="text-center widget-title">감성 연관어</h4>
+                                <h3 class="text-center widget-title">감성 연관어</h3>
                                 <input type="hidden" id="selectedSentiment" value="all">
                                 <div id="factorDetail" class="chart-wrap chart-reputation-bubble">
                                     <svg width="100%" height="100%" viewBox="0 0 350 330" preserveAspectRatio="xMinYMin meet" class="bubble">
@@ -347,7 +347,7 @@
 		</div>
 		</c:forEach>
 	</div>
-	
+
     <div class="comment-area my-5" id="reviewarea-r">
 		<h2 class="mb-4 text-center"><a>부정 리뷰</a></h2>
 		<br>

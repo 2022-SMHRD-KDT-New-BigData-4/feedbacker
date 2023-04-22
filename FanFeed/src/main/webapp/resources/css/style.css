@@ -1238,7 +1238,7 @@ overlay search
 .sidebar-widget.category li {
   width: 300px;
   padding: 10px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: 10px;
 }
 
