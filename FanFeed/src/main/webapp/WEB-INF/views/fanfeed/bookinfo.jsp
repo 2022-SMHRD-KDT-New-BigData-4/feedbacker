@@ -255,9 +255,12 @@
             <div id="container" style="width:100%; height:100%;"></div>
         </div>
     </div>
-
+	<hr>
 	<div class="comment-area my-5">
-		<h3 class="mb-4 text-center">리뷰</h3>
+		<br>
+		<br>
+		<br>
+		<h2 class="mb-4 text-center">리뷰</h2>
 		
 		<c:forEach var="i" begin="1" end="4">
 		<div class="comment-area-box media">

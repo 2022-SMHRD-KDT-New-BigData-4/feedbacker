@@ -195,20 +195,19 @@
 			
 			$(btn_more).css({
                     	"float": "right",
-                    	"margin-top": "10px",
-                    	"font-size": "17px"
+                    	"font-size": "20px"
                     });
 			
             function toggle_content(){
                 if($(this).hasClass('short')){
                     // 접기 상태
-                    $(this).html('더보기');
+                    $(this).html('∨');
                     content.html(content_txt_short);
                     $(this).removeClass('short');
                     
                 }else{
                     // 더보기 상태
-                    $(this).html('접기');
+                    $(this).html('∧');
                     content.html(content_txt);
                     $(this).addClass('short');
 
