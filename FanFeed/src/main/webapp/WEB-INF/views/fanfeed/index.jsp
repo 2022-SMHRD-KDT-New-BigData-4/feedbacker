@@ -138,7 +138,9 @@
 	</header>
 
 	<div class="best">
+		<h2 style="margin-left: -200px; margin-bottom: -5px;">&#8976;</h2>
 		<h1>베스트셀러</h1>
+		<h2 style="margin-right: -200px; margin-top: -15px;">&#x2319;</h2>
 	</div>
 
 	<section class="slider mt-4">
@@ -159,7 +161,9 @@
 
 							<div class="slider-post-content">
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">${book.category }</span>
-								<h4 class="post-title mt-1"><a onclick="bookinfomove()">${book.title }</a></h4>
+								<h4 class="post-title mt-1">
+									<a onclick="bookinfomove()">${book.title }</a>
+								</h4>
 								<span class=" text-muted  text-capitalize">${book.author }</span>
 							</div>
 						</div>
@@ -173,24 +177,28 @@
 <!-- 베스트셀러 slid 끝 -->
 
 	<div class="steady">
+		<h2 style="margin-left: -200px; margin-bottom: -5px;">&#8976;</h2>
 		<h1>스테디셀러</h1>
+		<h2 style="margin-right: -200px; margin-top: -15px;">&#x2319;</h2>
 	</div>
 
 	<section class="section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="row" id="row">
+					<div class="row slider-item" id="row">
 					<!-- 스테디셀러 반복문 -->
 					<c:forEach var="i" begin="10" end="25">
 						<div class="col-lg-3 col-md-6" id="sbookList">
 						<span class="isbn" style="display: none">${bookList[i].isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
 							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
+								<a class="post-thumb mb-4 d-block" onclick="bookinfomove()">
 									<img src=${bookList[i].img } alt="" class="img-fluid w-100">
 								</a>
 								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${bookList[i].category }</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">${bookList[i].title }</a></h3>
+								<h3 class="post-title mt-1">
+									<a onclick="bookinfomove()">${bookList[i].title }</a>
+								</h3>
 
 								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author }</span>
 

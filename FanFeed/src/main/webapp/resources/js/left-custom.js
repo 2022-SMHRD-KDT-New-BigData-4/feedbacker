@@ -177,7 +177,7 @@
             var content = $(this).children('#textcontent');
             var content_txt = content.text();
             var content_txt_short = content_txt.substring(0,500)+"...";
-            var btn_more = $('<a href="javascript:void(0)" class="more">더보기</a>');
+            var btn_more = $('<a href="javascript:void(0)" class="more">∨</a>');
 
             
             $(this).append(btn_more);
