@@ -82,3 +82,12 @@
 #category {
 	width: 234px;
 }
+
+#none {
+	width: 300px; 
+	margin-top: 30px;
+}
+
+#noneBox {
+	text-align: center;
+}

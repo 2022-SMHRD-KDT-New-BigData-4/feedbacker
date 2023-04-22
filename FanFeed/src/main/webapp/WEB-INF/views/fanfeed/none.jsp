@@ -142,9 +142,9 @@
 				<div class="col-lg-10 col-sm-10 col-md-10">
 
 						<div class="slider-item-content">
-							<div class="post-thumb mb-4" style="text-align: center;">
+							<div class="post-thumb mb-4" id="noneBox">
 								<a href="blog-single.html">
-									<img src="images/none.gif" alt="" class="img-fluid" style="width: 300px; margin-top: 30px;">
+									<img src="${cpath }/resources/images/none.gif" alt="" id="none" class="img-fluid">
 								</a>
 								<h2>"검색한 책이름"에 대한 분석 정보가 없습니다.</h2>
 								<h3>업데이트를 기다려주세요.</h3>
