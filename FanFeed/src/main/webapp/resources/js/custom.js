@@ -162,3 +162,12 @@
 			});
 		
 		});		
+		
+		$(function bookinfomove(){
+			$('.slider-item').click(function(){
+				location.href="bookinfo.do";
+			});
+		
+		});
+		
+		

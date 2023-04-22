@@ -37,6 +37,27 @@
     outline: none;
     }
 
+#detailbtn {
+	border-radius: 5px;
+}
+
+#post-meta {
+	margin: 30px;
+}
+
+#textbox {
+	margin: 30px;
+}
+
+#textcontent{
+      width: 100%;
+
+}
+
+.more {
+	margin-left: 400px;
+}
+
 .best {
     text-align: center;
     padding : 100px 0;
@@ -90,4 +111,26 @@
 
 #noneBox {
 	text-align: center;
+}
+
+
+#reviewarea-l {
+	width: 365px;
+	height: 700px;
+	justify-content: center;
+	margin: 0px;
+	float: left;
+}
+
+#reviewarea-r {
+	width: 365px;
+	height: 700px;
+	justify-content: center;
+	margin: 0px;
+	float: right;
+}
+
+#m-auto {
+	margin-left: 270px;
+	float: left;
 }

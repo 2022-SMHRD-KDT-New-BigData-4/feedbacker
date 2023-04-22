@@ -181,7 +181,7 @@ a:visited {
 }
 
 a:hover {
-  color: #594f42;
+  color: #ce8460;
 }
 
 a.read-more {
@@ -247,7 +247,7 @@ blockquote {
   color: #fff;
   transition: 350ms;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 16px;
   border: 1px solid transparent;
 }
 
@@ -256,9 +256,9 @@ blockquote {
 }
 
 .btn-primary:hover {
-  background: #000;
+  background: #8D7B68;
   color: #fff;
-  border-color: #000;
+  border-color: #8D7B68;
 }
 
 .btn-dark {

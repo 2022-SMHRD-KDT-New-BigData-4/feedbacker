@@ -158,16 +158,16 @@
 		<div class="sidebar-post-item-big">
 			<a href="blog-single.html"><img src="https://img.ridicdn.net/cover/3306000090/xxlarge?dpi=xxhdpi#1" alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
-            	<span class="text-muted letter-spacing text-uppercase font-sm">2020.03.25. 전자책 출간</span>
-				<div><h4 ><a href="#">개정 번역판 | 해리 포터와 마법사의 돌</a></h4></div>
-                <h5> 줄거리</h5>
+<!--             	<span class="text-muted letter-spacing text-uppercase font-sm">2020.03.25. 전자책 출간</span>
+				<div><h4 ><a href="#">개정 번역판 | 해리 포터와 마법사의 돌</a></h4></div> -->
+                <button class="btn btn-primary" id="detailbtn">분석하기</button>
 			</div>
 		</div>
         <br>
         <br>
         <br>
 
-        <div class="sidebar-widget category mb-5" id="top10">
+<%--         <div class="sidebar-widget category mb-5" id="top10">
             <h4 class="text-center widget-title">감성어 TOP 10</h4>
              <ul class="list-unstyled">
              <c:forEach var="i" begin="1" end="10">
@@ -177,7 +177,7 @@
               </li>
               </c:forEach>
             </ul>
-        </div>
+        </div> --%>
         <!-- <div class="media border-bottom py-3 sidebar-post-item">
             <a href="#"><img class="mr-4" src="images/news/thumb-1.jpg" alt=""></a>
             <div class="media-body">
@@ -203,137 +203,66 @@
 				</div>
 			</div>
 			
-			<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-				<div class="single-post">
-    <div class="post-header mb-5 text-center">
+			
+<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+  <div class="single-post">
+    <div class="post-header mb-5">
         <!-- <div class="meta-cat">
             <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1" href="#">Health ,</a>
             <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1"  href="#">lifestyle</a>
         </div>comment -->
-        <h2 class="post-title mt-2">
-            개정 번역판 | 해리 포터와 마법사의 돌
-        </h2>
+        <br>
+        <br>
 
-        <div class="post-meta">
-            
-            <span class="text-uppercase font-sm letter-spacing-1">2020.03.25. 전자책 출간</span>
+        <div class="post-meta" id="post-meta">
+	        <h5 class="post-title mt-2">
+	            소설(카테고리)
+	        </h5>
+            <h2>개정 번역판 | 해리포터와 마법사의 돌</h2>
+            <h5>조앤.K.롤링 저</h5>
+            <h5>출판사 이름</h5>
+            <br>
+            <hr>
         </div>
+        <div id="textbox">
+        	<br>
+        	<h2>작품 소개</h2>
+        	<br>
+        	<br>
+        	<div id="textcontent">
+        		해리 포터 세대의, 해리 포터 세대를 위한, 해리 포터 세대에 의한 새 번역!
+‘21세기 대표 아이콘’에 걸맞은 완성도 높은 작품으로 재탄생하다!
+
+1997년 영국에서 출간된 이래 『해리 포터』 시리즈는 지금까지 200개국 이상 80개의 언어로 번역되고 출간되어 5억 부 이상을 판매했다. 국내에서도 1999년 『해리 포터와 마법사의 돌』의 출간을 필두로 지금까지 약 1,500만 부가 판매되었으며, 현재에도 독자들에게 변함없는 사랑을 받고 있다. 이 시리즈는 여덟 편의 영화로도 제작되어 전 세계 곳곳에서 흥행을 거두었고, 영화와 관련된 새로운 도서가 출간되고 테마 파크가 조성되는 등 놀라운 기현상을 빚어냈다.
+
+뿐만 아니라 『해리 포터』 시리즈에서 또 다른 작품들이 문화상품으로 파생되어 지금도 꾸준히 독자들을 만나고 있다. ‘해리 포터’의 다음 세대인 자녀들의 이야기를 다룬 『해리 포터와 저주 받은 아이』는 시나리오로 출간된 이후 연극으로 만들어져 영국을 시작으로 미국, 호주, 독일, 캐나다 등 세계 곳곳에서 열띤 호응을 얻으며 공연 중이고, 『해리 포터』의 세계관이 확장된 『신비한 동물 사전』 시리즈는 계속해서 영화로 제작되고 있다. 이제 『해리 포터』는 소설이라는 단순한 문학 장르에 머무르지 않고 ‘21세기를 대표하는 시대의 아이콘’으로 불리며 일종의 사회문화 현상으로 받아들여지고 있다.
+
+20주년을 맞아 새롭게 출간한 『해리 포터』 시리즈는 ‘21세기 고전’이라 불릴 만한 품격에 맞춰 작품의 완성도를 높였다. 7권 『해리 포터와 죽음의 성물』로 완간된 기존의 『해리 포터』 시리즈는 빈틈없는 소설적 구성과 생생한 캐릭터 그리고 마법 세계를 정교하게 묘사하며 풍부한 상상력이 돋보이면서도 정밀한 세계관을 구축해 나갔다. 하지만 지금까지 출간된 책들은 J.K. 롤링이 펼쳐 나가는 판타지 세계의 규모가 어느 정도이며 그 속에 어떠한 소설적 장치를 심어 놓았는지 알 수 없는 상태에서 번역 작업이 이루어졌다. 또한 1~7편 모두 완결성을 갖추었지만, 시리즈의 특성상 편과 편을 이어 주며 작품 전체를 관통하는 서사의 개연성과 완결성은 마지막 편이 출간된 이후에나 파악할 수밖에 없었다. 그러다 보니 작가가 어느 장면에 복선을 깔아 두었고, 어느 장면이 작가가 창조한 세계관을 이해하는 중요한 역할을 하는지 의미를 파악하며 번역하기에는 한계가 있었다.
+
+이번에 선보이는 『해리 포터』 시리즈에는 J.K. 롤링이 작품 속에 이룩해놓은 문학적 성취가 완벽하게 구현되어 있다. 복선과 반전을 선사하는 문학적 장치들을 보다 정교하고 세련되게 다듬었으며, 인물들 사이의 관계나 그들의 숨겨진 비밀 그리고 성격이 도드라지는 말투의 미세한 뉘앙스까지 점검했다. 『해리 포터』의 세계에 처음 발을 들여놓는 독자는 물론, 그동안 『해리 포터』의 세계를 즐겨 찾아왔던 독자 모두에게 완성도 높은 만족과 감동을 선사할 것이다.
+
+1탄 《해리포터와 마법사의 돌》
+어둠의 마왕 볼드모트에게 부모를 잃고 홀로 살아남은 아이, 해리는 안전을 위해 마법사가 아닌 사람인 ‘머글’ 페투니아 이모와 버논 이모부 손에 길러지며 불우한 어린 시절을 보낸다. 열한 번째 생일날, 해그리드를 통해 자신이 마법사라는 사실을 알게 된 해리는 호그와트 마법학교에 입학해 헤르미온느 그레인저, 론 위즐리라는 친구들과 함께 영생을 주는 마법사의 돌을 찾는 엄청난 모험을 시작하게 된다.
+			</div>
+        </div>
+        
+        <br>
+		<br>
+		<br>
+		<br>
+			
         <div class="chart-area">
             <div id="container" style="width:100%; height:100%;"></div>
         </div>
     </div>
 
-
-    <section class="slider mt-4">
-		<div class="container-fluid" id="container-fluid">
-			<div class="row no-gutters" id="no-gutters">
-				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
-					
-					<div class="slider-item">
-						<div class="slider-item-content">
-                            <div class="reputation-bubble-box" style="text-align: center;">
-                                <h4 class="text-center widget-title">감성 연관어</h4>
-                                <input type="hidden" id="selectedSentiment" value="all">
-                                <div id="factorDetail" class="chart-wrap chart-reputation-bubble">
-                                    <svg width="100%" height="100%" viewBox="0 0 350 330" preserveAspectRatio="xMinYMin meet" class="bubble">
-                                        <g class="node" transform="translate(126.22340445964113,166.79076499519638)">
-                                            <circle r="71.2206729731952" style="cursor: pointer; fill: #34231D; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 59.1394px;">
-                                                좋다</text>
-                                        </g>
-                                        <g class="node" transform="translate(247.69049525056934,166.79076499519638)">
-                                            <circle r="48.7793983353067" style="cursor: pointer; fill: #75554A; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 39.2956px;">
-                                                멋진</text>
-                                        </g>
-                                        <g class="node" transform="translate(206.38165803073275,251.13718943322522)">
-                                            <circle r="43.6723734220134" style="cursor: pointer; fill: #AF7C53; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 22.3827px;">
-                                                멋지다</text>
-                                        </g>
-                                        <g class="node" transform="translate(206.33017716347626,82.78004907453935)">
-                                            <circle r="43.39372475887171" style="cursor: pointer; fill: #34231D; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 21.2031px;">
-                                                잘하다</text>
-                                        </g>
-                                        <g class="node" transform="translate(125.85255310031408,53.234786022071916)">
-                                            <circle r="40.868892079470065" style="cursor: pointer; fill: #75554A; fill-opacity: 0.85;"></circle>
-                                                <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 14.7708px;">
-                                                    감사하다</text>
-                                            </g>
-                                            <g class="node" transform="translate(130.50667317967418,273.2979857809192)">
-                                                <circle r="33.90562098582621" style="cursor: pointer; fill: #AF7C53; fill-opacity: 0.85;"></circle>
-                                                    <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 15.9419px;">
-                                                        잘들다</text>
-                                                </g>
-                                                <g class="node" transform="translate(283.41493598228254,91.86766242433403)">
-                                                    <circle r="32.75784089492373" style="cursor: pointer; fill: #CD9A6E; fill-opacity: 0.85;"></circle>
-                                                        <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 15.9419px;">
-                                                            잘들다</text>
-                                                    </g>
-                                                    <g class="node" transform="translate(281.74880352377085,240.52264098998072)">
-                                                        <circle r="30.971547560271137" style="cursor: pointer; fill: #34231D; fill-opacity: 0.85;"></circle>
-                                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 22.4027px;">
-                                                                좋은</text>
-                                                        </g>
-                                                        <g class="node" transform="translate(70.79608070504756,251.20237459101804)">
-                                                            <circle r="28.295019199165935" style="cursor: pointer; fill: #CD9A6E; fill-opacity: 0.85;"></circle>
-                                                                <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 9.49243px;">
-                                                                    아름다운</text>
-                                                            </g>
-                                                            <g class="node" transform="translate(64.13886665666614,87.31541193412322)">
-                                                                <circle r="28.16279875979731" style="cursor: pointer; fill: #F45050; fill-opacity: 0.85;"></circle>
-                                                                    <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 9.62999px;">
-                                                                        좋은노래</text>
-                                                            </g>
-                                            <g class="node" transform="translate(64.13886665666614,87.31541193412322)">
-                                                <circle r="28.16279875979731" style="cursor: pointer; fill: #AF7C53;fill-opacity: 0.85;"></circle>
-                                                    <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 9.62999px;">
-                                                        이거이거</text>
-                                            </g>
-                                	<g style="display: none;" transform="translate(204.41493598228254,91.86766242433403)"><rect class="tooltip-rect" rx="5" ry="5" height="17" style="fill: rgb(255, 255, 255); stroke-width: 2; stroke: rgb(88, 69, 234);" width="79"></rect>
-                                        <text class="tooltip-text" style="stroke: rgb(51, 51, 51); font-size: 12px; text-anchor: middle;" x="39.5" y="12.592592592592592">
-                                            사랑 : 575건</text>
-                                    </g>
-                                </svg></div>
-                            </div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">경영/경제</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">장하준의 경제학 레시피 : 마늘에서 초콜릿까지 18가지 재료로 요리한 경제 이야기</a></h3>
-								<span class=" text-muted  text-capitalize">장하준 저 | 김희정 역</span>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<br>
-	<div>
-    <div class="comment-area my-5" id="reviewarea-l">
-		<h2 class="mb-4 text-center"><a>긍정 리뷰</a></h2>
-		<br>
-		<br>
-		
-		<c:forEach var="i" begin="1" end="3">
-		<div class="comment-area-box media" id="comment-area-box-l">
+	<div class="comment-area my-5">
+		<h3 class="mb-4 text-center">리뷰</h3>
+		<div class="comment-area-box media">
 			<!-- <img alt="" src="images/blog-user-2.jpg" class="img-fluid float-left mr-3 mt-2"> -->
 
 			<div class="media-body ml-4">
-				<h4 class="mb-0">Micle harison ${i } </h4>
+				<h4 class="mb-0">Micle harison </h4>
 				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
 
 				<div class="comment-content mt-3">
@@ -342,36 +271,24 @@
 				<!-- <div class="comment-meta mt-4 mt-lg-0 mt-md-0">
 					<a href="#" class="text-underline ">Reply</a>
 				</div> -->
-			<br>
 			</div>
 		</div>
-		</c:forEach>
-	</div>
-	
-    <div class="comment-area my-5" id="reviewarea-r">
-		<h2 class="mb-4 text-center"><a>부정 리뷰</a></h2>
-		<br>
-		<br>
-		
-		<c:forEach var="i" begin="1" end="3">
-		<div class="comment-area-box media" id="comment-area-box-r">
-			<!-- <img alt="" src="images/blog-user-2.jpg" class="img-fluid float-left mr-3 mt-2"> -->
+
+		<div class="comment-area-box media mt-5">
+			<!-- <img alt="" src="images/blog-user-3.jpg" class="mt-2 img-fluid float-left mr-3"> -->
 
 			<div class="media-body ml-4">
-				<h4 class="mb-0">Micle harison ${i } </h4>
+				<h4 class="mb-0 ">John Doe </h4>
 				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
 
 				<div class="comment-content mt-3">
-					<p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
+					<p>Some consultants are employed indirectly by the client via a consultancy staffing company. </p>
 				</div>
 				<!-- <div class="comment-meta mt-4 mt-lg-0 mt-md-0">
-					<a href="#" class="text-underline ">Reply</a>
+					<a href="#" class="text-underline">Reply</a>
 				</div> -->
-			<br>
 			</div>
 		</div>
-		</c:forEach>
-	</div>
 	</div>
 
  	<div class="m-auto" id="m-auto">
@@ -482,7 +399,7 @@
 		<a target="_blank" class="author-social" href="#"><i class="ti-tumblr"></i></a>
 	</div>
 </div> -->
-<nav class="post-pagination clearfix border-top border-bottom py-4 col-lg-12">
+<!-- <nav class="post-pagination clearfix border-top border-bottom py-4 col-lg-12">
     <div class="prev-post">
         <a href="blog-single.html">
         	<span class="text-uppercase font-sm letter-spacing">Previous</span>
@@ -496,7 +413,7 @@
         </a>
     </div>
 </nav>
-
+ -->
 <div class="related-posts-block mt-5" id="similer">
 	<br>
 	<br>

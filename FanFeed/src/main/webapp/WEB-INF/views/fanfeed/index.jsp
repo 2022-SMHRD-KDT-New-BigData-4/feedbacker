@@ -151,14 +151,14 @@
 					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
-								<a onclick="move()">
+								<a onclick="bookinfomove()">
 									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
 								</a>
 							</div>
 
 							<div class="slider-post-content">
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설${i }</span>
-								<h4 class="post-title mt-1"><a onclick="move()">스즈메의 문단속</a></h4>
+								<h4 class="post-title mt-1"><a onclick="bookinfomove()">스즈메의 문단속</a></h4>
 								<span class=" text-muted  text-capitalize">신카이 마코토 저 | 민경욱 역</span>
 							</div>
 						</div>
