@@ -141,13 +141,7 @@
 	});
 
 })(jQuery);
-		
-		$(function move(){
-			$('.slider-item').click(function(){
-				location.href="bookdetail.do";
-			});
-		
-		});		
+	
 
 		$(function mainmove(){
 			$('#logo').click(function(){
@@ -163,11 +157,33 @@
 		
 		});		
 		
-		$(function bookinfomove(){
+		function bookinfomove(){
 			$('.slider-item').click(function(){
-				location.href="bookinfo.do";
+				var isbn = $(this).find('.isbn').text();
+				console.log(isbn);
+				formMove("bookinfo.do" ,"isbn" , isbn)
 			});
 		
-		});
+		}
+		
+		function formMove(url, key, value){
+		// 요청을 보낼 form 동적 생성
+		var form = $('<form></form>');
+		form.attr('method', 'post');
+		form.attr('action', url);
+		
+		// POST로 보낼 데이터 추가
+		var data1 = $('<input type="hidden" name="'+key+'" />');
+		data1.attr('value', value);
+		form.append(data1);
+		
+//		var data2 = $('<input type="hidden" name="key2" />');
+//		data2.attr('value', 'value2');
+//		form.append(data2);
+		
+		// form을 body에 추가하고 submit
+		form.appendTo($('body'));
+		form.submit();
+		}
 		
 		

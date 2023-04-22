@@ -25,5 +25,18 @@
 	   AND SEQ &lt;= 26
 </select>
 
+<!-- 책 단건 조회 -->
+<select id="getOneBook" resultType="kr.fanfeed.entity.Book">
+	SELECT *
+	  FROM BOOK
+	 WHERE ISBN = #{isbn}
+</select>
+
+
+
+
+
+
+
 </mapper>
 

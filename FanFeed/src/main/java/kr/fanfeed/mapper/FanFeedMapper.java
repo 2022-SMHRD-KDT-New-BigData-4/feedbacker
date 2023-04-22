@@ -13,5 +13,7 @@ public interface FanFeedMapper {
 	public Member login(Member vo);
 	
 	public List<Book> getListBook();
+	
+	public Book getOneBook(String isbn);
 
 }

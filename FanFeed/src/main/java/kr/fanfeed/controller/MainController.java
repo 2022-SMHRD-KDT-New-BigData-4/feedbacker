@@ -49,7 +49,13 @@ public class MainController {
 	}
 	
 	@RequestMapping("/bookinfo.do")
-	public String goBookinfo(Model model) {
+	public String goBookinfo(String isbn, Model model) {
+		
+		System.out.println(isbn);
+		
+		Book book = mapper.getOneBook(isbn);
+		
+		model.addAttribute("book", book);
 		
 		return "fanfeed/bookinfo";
 	}

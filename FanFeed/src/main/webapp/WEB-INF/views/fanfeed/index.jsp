@@ -149,16 +149,17 @@
 				<!-- 베스트 셀러 슬라이드 반복문 -->
 				<c:forEach var="book" items="${bookList }" begin="0" end="9">
 					<div class="slider-item">
+						<span class="isbn" style="display: none">${book.isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
 						<div class="slider-item-content" id="slider-item-content">
 							<div class="post-thumb mb-4">
-								<a onclick="move()">
+								<a onclick="bookinfomove()">
 									<img src=${book.img } alt="" class="img-fluid">
 								</a>
 							</div>
 
 							<div class="slider-post-content">
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">${book.category }</span>
-								<h4 class="post-title mt-1"><a onclick="move()">${book.title }</a></h4>
+								<h4 class="post-title mt-1"><a onclick="bookinfomove()">${book.title }</a></h4>
 								<span class=" text-muted  text-capitalize">${book.author }</span>
 							</div>
 						</div>
@@ -183,6 +184,7 @@
 					<!-- 스테디셀러 반복문 -->
 					<c:forEach var="i" begin="10" end="25">
 						<div class="col-lg-3 col-md-6" id="sbookList">
+						<span class="isbn" style="display: none">${bookList[i].isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
 									<img src=${bookList[i].img } alt="" class="img-fluid w-100">
