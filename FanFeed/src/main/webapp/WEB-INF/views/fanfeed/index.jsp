@@ -149,7 +149,7 @@
 				<!-- 베스트 셀러 슬라이드 반복문 -->
 				<c:forEach var="book" items="${bookList }" begin="0" end="9">
 					<div class="slider-item">
-						<div class="slider-item-content">
+						<div class="slider-item-content" id="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a onclick="move()">
 									<img src=${book.img } alt="" class="img-fluid">
@@ -182,7 +182,7 @@
 					<div class="row" id="row">
 					<!-- 스테디셀러 반복문 -->
 					<c:forEach var="i" begin="10" end="25">
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-3 col-md-6" id="sbookList">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
 									<img src=${bookList[i].img } alt="" class="img-fluid w-100">

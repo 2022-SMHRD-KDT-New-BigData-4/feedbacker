@@ -935,10 +935,13 @@ overlay search
 
 .slider-item {
   margin: 0px 10px;
+  width: 100%;
+
 }
 
 .slider-item img {
   width: 100%;
+  height: 400px;
 }
 
 .slider-item-content {
@@ -948,9 +951,9 @@ overlay search
 .slider-post-content {
   position: absolute;
   bottom: 0px;  
-  background: #fff;
+  background: #fffcf6;
   width: 90%;
-  height: 30%;
+  height: 25%;
   text-align: center;
   margin: 0 auto;
   left: 0px;
