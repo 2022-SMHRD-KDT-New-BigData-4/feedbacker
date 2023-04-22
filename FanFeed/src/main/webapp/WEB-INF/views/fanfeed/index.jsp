@@ -146,110 +146,30 @@
 			<div class="row no-gutters" id="no-gutters">
 				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
 				
-				<c:forEach var="i" begin="1" end="10">
-					<!-- slider-item 시작 jstl이든 jquery든 반복을 이용해서 동적으로 만들어지게 바꾸기 -->
+				<!-- 베스트 셀러 슬라이드 반복문 -->
+				<c:forEach var="book" items="${bookList }" begin="0" end="9">
 					<div class="slider-item">
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
-								<a onclick="bookinfomove()">
-									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
+								<a onclick="move()">
+									<img src=${book.img } alt="" class="img-fluid">
 								</a>
 							</div>
 
 							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">일본 소설${i }</span>
-								<h4 class="post-title mt-1"><a onclick="bookinfomove()">스즈메의 문단속</a></h4>
-								<span class=" text-muted  text-capitalize">신카이 마코토 저 | 민경욱 역</span>
+								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">${book.category }</span>
+								<h4 class="post-title mt-1"><a onclick="move()">${book.title }</a></h4>
+								<span class=" text-muted  text-capitalize">${book.author }</span>
 							</div>
 						</div>
 					</div>
 				</c:forEach>
-
-<!-- 					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp2" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">경영/경제</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">장하준의 경제학 레시피 : 마늘에서 초콜릿까지 18가지 재료로 요리한 경제 이야기</a></h3>
-								<span class=" text-muted  text-capitalize">장하준 저 | 김희정 역</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp3" alt="" class="img-fluid">
-								</a>
-							</div>
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">weekends</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Our Favorite Weekend Getaways</a></h3>
-								<span class=" text-muted  text-capitalize">June 12, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp4" alt="" class="img-fluid">
-								</a>
-							</div>
-
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-								<span class=" text-muted  text-capitalize">September 15, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp5" alt="" class="img-fluid">
-								</a>
-							</div>
-
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-								<span class=" text-muted  text-capitalize">September 15, 2019</span>
-							</div>
-						</div>
-					</div>
-
-					</div>
-					
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp6" alt="" class="img-fluid">
-								</a>
-							</div>
-
-							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Trip to California</a></h3>
-								<span class=" text-muted  text-capitalize">September 15, 2019</span>
-							</div>
-						</div>
-					</div> -->
-					<!-- slider-item 끝 -->
-					
+				<!-- 베스트 셀러 슬라이드 반복문 끝 -->
 				</div>
 			</div>
 		</div>
 	</section>
+<!-- 베스트셀러 slid 끝 -->
 
 	<div class="steady">
 		<h1>스테디셀러</h1>
@@ -260,159 +180,22 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="row" id="row">
-					<c:forEach var="k" begin="1" end="4">
-						<c:forEach var="i" begin="1" end="4">
+					<!-- 스테디셀러 반복문 -->
+					<c:forEach var="i" begin="10" end="25">
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
+									<img src=${bookList[i].img } alt="" class="img-fluid w-100">
 								</a>
-								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore ${k}-${i}</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
+								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${bookList[i].category }</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">${bookList[i].title }</a></h3>
 
-								<span class="text-muted letter-spacing text-uppercase font-sm">June 15, 2019</span>
+								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author }</span>
 
 							</article>
 						</div>
-						</c:forEach>
-					</c:forEach>
-						<!-- <div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">How to Make list for travelling alone</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Food</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">5 ingredient cilantro vinaigrette</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Explore</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">A Simple Way to Feel Like Home When You
-										Travel</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">March 20, 2019</span>
-
-							</article>
-						</div> -->
-
-						<!-- <div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">What Type of Traveller Are You?</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">A Road Trip Review of the 2018</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">July 10, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">music</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Portugal’s Sunset summer vission</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">September 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">beauty</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">The best soft Tropical Getaway</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">March 12, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">Memoriable Paris Girls Trip </a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">April 19, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">How to Plan your Trip the Right Way</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">February 15, 2019</span>
-
-							</article>
-						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">8 Powerful Ways to Add Vibrant Colour to Your
-										Life</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">August 15, 2019</span>
-
-							</article>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="https://via.placeholder.com/255x255.png?text=temp" alt="" class="img-fluid w-100">
-								</a>
-								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">The best to-do list to help boost your
-										productivity</a></h3>
-
-								<span class="text-muted letter-spacing text-uppercase font-sm">October 2, 2019</span>
-
-							</article>
-						</div> -->
+					</c:forEach> 
+					<!-- 스테디셀러 반복문 끝 -->	
 					</div>
 				</div>
 

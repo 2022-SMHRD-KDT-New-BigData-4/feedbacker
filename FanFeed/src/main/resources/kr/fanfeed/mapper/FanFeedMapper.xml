@@ -3,11 +3,13 @@
 
 <mapper namespace="kr.fanfeed.mapper.FanFeedMapper">
 
+<!-- 회원가입 -->
 <insert id="join" parameterType="kr.fanfeed.entity.Member">
 	INSERT INTO MEMBER(ID, PW, EMAIL, NICK, REG_DATE)
 	VALUES (#{id}, #{pw},#{email}, #{nick}, sysdate)
 </insert>
 
+<!-- 로그인 -->
 <select id="login" parameterType="kr.fanfeed.entity.Member" resultType="kr.fanfeed.entity.Member">
 	SELECT *
 	  FROM MEMBER
@@ -15,6 +17,13 @@
 	   AND PW = #{pw}
 </select>
 
+<!-- 메인페이지 책리스트 조회 -->
+<select id="getListBook" resultType="kr.fanfeed.entity.Book">
+	SELECT *
+	  FROM BOOK
+	 WHERE SEQ &gt;= 1
+	   AND SEQ &lt;= 26
+</select>
 
 </mapper>
 
