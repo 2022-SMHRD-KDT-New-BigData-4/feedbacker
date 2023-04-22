@@ -160,7 +160,7 @@
 			<div class="mt-3 media-body" id="media-body">
 <!--             	<span class="text-muted letter-spacing text-uppercase font-sm">2020.03.25. 전자책 출간</span>
 				<div><h4 ><a href="#">개정 번역판 | 해리 포터와 마법사의 돌</a></h4></div> -->
-                <button class="btn btn-primary" id="detailbtn">분석하기</button>
+                <button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
 			</div>
 		</div>
         <br>
@@ -258,6 +258,8 @@
 
 	<div class="comment-area my-5">
 		<h3 class="mb-4 text-center">리뷰</h3>
+		
+		<c:forEach var="i" begin="1" end="4">
 		<div class="comment-area-box media">
 			<!-- <img alt="" src="images/blog-user-2.jpg" class="img-fluid float-left mr-3 mt-2"> -->
 
@@ -273,22 +275,7 @@
 				</div> -->
 			</div>
 		</div>
-
-		<div class="comment-area-box media mt-5">
-			<!-- <img alt="" src="images/blog-user-3.jpg" class="mt-2 img-fluid float-left mr-3"> -->
-
-			<div class="media-body ml-4">
-				<h4 class="mb-0 ">John Doe </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
-
-				<div class="comment-content mt-3">
-					<p>Some consultants are employed indirectly by the client via a consultancy staffing company. </p>
-				</div>
-				<!-- <div class="comment-meta mt-4 mt-lg-0 mt-md-0">
-					<a href="#" class="text-underline">Reply</a>
-				</div> -->
-			</div>
-		</div>
+		</c:forEach>
 	</div>
 
  	<div class="m-auto" id="m-auto">

@@ -158,7 +158,7 @@
 		});
 		
 		$(function move(){
-			$('.ctBook').click(function(){
+			$('#detailbtn').click(function(){
 				location.href="bookdetail.do";
 			});
 		

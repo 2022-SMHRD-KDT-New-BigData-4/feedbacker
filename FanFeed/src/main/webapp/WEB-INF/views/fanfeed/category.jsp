@@ -156,16 +156,22 @@
 										<a href="#">소설</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">경제</a>
+										<a href="#">자기계발</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">인문</a>
+										<a href="#">경영/경제</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">계발</a>
+										<a href="#">인문/사회/역사</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">에세이</a>
+										<a href="#">에세이/시</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a href="#">과학/IT</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a href="#">가정/생활</a>
 									</li>
 								</ul>
 
