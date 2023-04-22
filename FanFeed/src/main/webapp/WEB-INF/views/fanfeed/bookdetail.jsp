@@ -210,14 +210,14 @@
             <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1" href="#">Health ,</a>
             <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1"  href="#">lifestyle</a>
         </div>comment -->
-        <h2 class="post-title mt-2">
+        <!-- <h2 class="post-title mt-2">
             개정 번역판 | 해리 포터와 마법사의 돌
-        </h2>
+        </h2> -->
 
-        <div class="post-meta">
+        <!-- <div class="post-meta">
             
             <h4 class="text-uppercase font-sm letter-spacing-1">2020.03.25. 전자책 출간</h4>
-        </div>
+        </div> -->
         <div class="chart-area">
             <div id="container" style="width:100%; height:100%;"></div>
         </div>
