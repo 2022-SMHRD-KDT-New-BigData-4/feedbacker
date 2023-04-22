@@ -89,12 +89,16 @@
                       </li>
 
                       <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                      <li class="nav-item"><a href="fashion.html" class="nav-link">Category</a></li>
+                      <li class="nav-item">
+                      	 <a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           category
+                          </a>
+                      </li>
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Post Formats
                           </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
                             <a class="dropdown-item" href="post-video.html">Video Formats</a>
                             <a class="dropdown-item" href="post-audio.html">Audio Format</a>
                             <a class="dropdown-item" href="post-link.html">Quote Format</a>

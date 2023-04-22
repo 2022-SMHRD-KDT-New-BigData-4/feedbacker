@@ -144,17 +144,29 @@
 
 
 		$(function mainmove(){
-			$('#navbarDropdown').click(function(){
-				location.href="main.do";
-			});
-		
-		});
-		
-		$(function mainmove(){
 			$('#logo').click(function(){
 				location.href="main.do";
 			});
 		
 		});
 		
+		$(function mainmove(){
+			$('#navbarDropdown').click(function(){
+				location.href="main.do";
+			});
 		
+		});
+		
+		$(function move(){
+			$('.ctBook').click(function(){
+				location.href="bookdetail.do";
+			});
+		
+		});
+		
+		$(function categorymove(){
+			$('#navbarDropdown3').click(function(){
+				location.href="category.do";
+			});
+		
+		});	

@@ -66,3 +66,19 @@
 #represent {
 	text-align: center;
 }
+
+#categoryList {
+    flex: 1;
+    height: auto;
+    min-width: 220px;
+}
+
+#categorySticky {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
+#category {
+	width: 234px;
+}
