@@ -78,14 +78,14 @@
 								Category
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-								<a class="dropdown-item" href="post-video.html">소설</a>
-								<a class="dropdown-item" href="post-audio.html">자기계발</a>
-								<a class="dropdown-item" href="post-link.html">경영/경제</a>
-								<a class="dropdown-item" href="post-gallery.html">인문/사회/역사</a>
-								<a class="dropdown-item" href="post-image.html">에세이/시</a>
-								<a class="dropdown-item" href="post-image.html">과학/IT</a>
-								<a class="dropdown-item" href="post-image.html">가정/생활</a>
-							</div>
+		                        <a class="dropdown-item" href="#">소설</a>
+		                        <a class="dropdown-item" href="#">자기계발</a>
+		                        <a class="dropdown-item" href="#">경영/경제</a>
+		                        <a class="dropdown-item" href="#">인문/사회/역사</a>
+		                        <a class="dropdown-item" href="#">에세이/시</a>
+		                        <a class="dropdown-item" href="#">과학/IT</a>
+		                        <a class="dropdown-item" href="#">가정/생활</a>
+		                     </div>
 						</li>
 						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 						<li class="nav-item d-lg-none">
@@ -95,7 +95,7 @@
 				</div>
 
 				<div class="text-right search d-none d-lg-block">
-					<div class="container-fluid">
+					<div class="container">
 						<!-- <button class="navbar-toggler" type="button"
 							data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 							aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -127,7 +127,7 @@
 		<h2 style="margin-right: -200px; margin-top: -15px;">&#x2319;</h2>
 	</div>
 
-	<section class="slider mt-4">
+	<section class="slider mt-4 single-block-wrapper section-padding">
 		<div class="container-fluid" id="container-fluid">
 			<div class="row no-gutters" id="no-gutters">
 				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">

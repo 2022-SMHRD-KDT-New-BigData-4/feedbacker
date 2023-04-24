@@ -205,3 +205,11 @@ $('#isbn-link').click(function() {
 			pageFrm.submit();
 		})
 		
+	     // 카테고리 클릭 로직
+      $(".dropdown-item").on("click",function(e){
+         console.log("클릭 들어옴");
+         e.preventDefault(); // a 태그의 기능을 막음
+         var category = $(this).text();
+         console.log(category);
+         formMove("category.do" ,"category" , category)
+      });

@@ -47,15 +47,15 @@
 <body>
 
 
-<div class="header-logo py-5 d-none d-lg-block">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6 text-center">
+	<div class="header-logo py-5 d-none d-lg-block">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
 					<a class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
-      </div>
-    </div>
-  </div>
-</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<header class="header-top bg-grey justify-content-center">
 		<nav class="navbar navbar-expand-lg navigation">
@@ -98,7 +98,7 @@
 				</div>
 
 				<div class="text-right search d-none d-lg-block">
-					<div class="container-fluid">
+					<div class="container">
 						<!-- <button class="navbar-toggler" type="button"
 							data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 							aria-controls="navbarNavDropdown" aria-expanded="false"
