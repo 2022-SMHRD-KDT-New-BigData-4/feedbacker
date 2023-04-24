@@ -26,6 +26,7 @@
 	================================================== -->
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="${cpath }/resources/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<!-- Themify -->
 	<link rel="stylesheet" href="${cpath }/resources/css/themify-icons.css">
 	<link rel="stylesheet" href="${cpath }/resources/css/slick-theme.css">
@@ -65,7 +66,7 @@
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul id="menu" class="menu navbar-nav ">
 						<li class="nav-item dropdown  pl-0">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
 								Home
 							</a>
@@ -95,12 +96,25 @@
 
 				<div class="text-right search d-none d-lg-block">
 					<div class="search_toggle">
-						<div id="empty">
+						<div class="collapse navbar-collapse search_toggle"
+							id="navbarDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" id="title-link" href="#" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">책 제목</a>
+									<ul class="dropdown-menu dropdown-menu">
+										<li><a class="dropdown-item" href="#" id="isbn-link">ISBN</a></li>
+									</ul></li>
+							</ul>
 							<input id="search" placeholder=" Search...">
-							<button type="submit" id="submit"><i class="ti-search"></i></button>
+							<button type="submit" id="submit">
+								<i class="ti-search"></i>
+							</button>
 						</div>
 					</div>
 				</div>
+
+			</div>
 			</div>
 		</nav>
 
@@ -242,6 +256,7 @@
 	<!-- initialize jQuery Library -->
 	<script src="${cpath }/resources/js/jquery.js"></script>
 	<!-- Bootstrap jQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 	<script src="${cpath }/resources/js/bootstrap.min.js"></script>
 	<script src="${cpath }/resources/js/popper.min.js"></script>
 	<!-- Owl caeousel -->
