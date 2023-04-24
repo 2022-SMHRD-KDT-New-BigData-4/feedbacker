@@ -56,7 +56,6 @@ public class MainController {
 		Book book = mapper.getOneBook(isbn);
 		
 		model.addAttribute("book", book);
-		
 		return "fanfeed/bookinfo";
 	}
 	

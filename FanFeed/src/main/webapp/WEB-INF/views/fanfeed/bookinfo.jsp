@@ -223,8 +223,8 @@
 	            ${book.category }
 	        </h5>
             <h2>${book.title }</h2>
-            <h5>${book.author }</h5>
-            <h5>${book.publisher }</h5>
+            <h5>${book.author } 저</h5>
+            <h5>출판사 | ${book.publisher }</h5>
             <br>
             <hr>
         </div>

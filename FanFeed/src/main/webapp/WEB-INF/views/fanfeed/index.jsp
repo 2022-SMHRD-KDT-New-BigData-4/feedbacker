@@ -164,7 +164,7 @@
 								<h4 class="post-title mt-1">
 									<a onclick="bookinfomove()">${book.title }</a>
 								</h4>
-								<span class=" text-muted  text-capitalize">${book.author }</span>
+								<span class=" text-muted  text-capitalize">${book.author } 저</span>
 							</div>
 						</div>
 					</div>
@@ -200,7 +200,7 @@
 									<a onclick="bookinfomove()">${bookList[i].title }</a>
 								</h3>
 
-								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author }</span>
+								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author } 저</span>
 
 							</article>
 						</div>
