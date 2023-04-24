@@ -69,27 +69,7 @@
 								aria-haspopup="true" aria-expanded="false">
 								Home
 							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="index.html">Home 1</a>
-								<a class="dropdown-item" href="index-2.html">Home 2</a>
-								<a class="dropdown-item" href="index-3.html">Home 3</a>
-								<a class="dropdown-item" href="index-4.html">Home 4</a>
-								<a class="dropdown-item" href="index-5.html">Home 5</a>
-								<a class="dropdown-item" href="index-6.html">Home 6</a>
-							</div>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">
-								Blog Posts
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-								<a class="dropdown-item" href="standard-fullwidth.html">Standard Fullwidth</a>
-								<a class="dropdown-item" href="standard-left-sidebar.html">Standard Left Sidebar</a>
-								<a class="dropdown-item" href="standard-right-sidebar.html">Standard Right Sidebar</a>
-							</div>
-						</li>
-
 						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown"
@@ -97,24 +77,13 @@
 								Category
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-								<a class="dropdown-item" href="post-video.html">Video Formats</a>
-								<a class="dropdown-item" href="post-audio.html">Audio Format</a>
-								<a class="dropdown-item" href="post-link.html">Quote Format</a>
-								<a class="dropdown-item" href="post-gallery.html">Gallery Format</a>
-								<a class="dropdown-item" href="post-image.html">Image Format</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">
-								Post Formats
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-								<a class="dropdown-item" href="post-video.html">Video Formats</a>
-								<a class="dropdown-item" href="post-audio.html">Audio Format</a>
-								<a class="dropdown-item" href="post-link.html">Quote Format</a>
-								<a class="dropdown-item" href="post-gallery.html">Gallery Format</a>
-								<a class="dropdown-item" href="post-image.html">Image Format</a>
+								<a class="dropdown-item" href="post-video.html">소설</a>
+								<a class="dropdown-item" href="post-audio.html">자기계발</a>
+								<a class="dropdown-item" href="post-link.html">경영/경제</a>
+								<a class="dropdown-item" href="post-gallery.html">인문/사회/역사</a>
+								<a class="dropdown-item" href="post-image.html">에세이/시</a>
+								<a class="dropdown-item" href="post-image.html">과학/IT</a>
+								<a class="dropdown-item" href="post-image.html">가정/생활</a>
 							</div>
 						</li>
 						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
