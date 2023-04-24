@@ -66,7 +66,7 @@
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul id="menu" class="menu navbar-nav ">
 						<li class="nav-item dropdown  pl-0">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
 								Home
 							</a>
@@ -95,15 +95,18 @@
 				</div>
 
 				<div class="text-right search d-none d-lg-block">
-					<div class="search_toggle">
-						<div class="collapse navbar-collapse search_toggle"
-							id="navbarDropdown">
+					<div class="container-fluid">
+						<!-- <button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+							aria-controls="navbarNavDropdown" aria-expanded="false"
+							aria-label="Toggle navigation"></button> -->
+						<div class="collapse navbar-collapse" id="search_toggle">
 							<ul class="navbar-nav">
 								<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" id="title-link" href="#" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false">책 제목</a>
 									<ul class="dropdown-menu dropdown-menu">
-										<li><a class="dropdown-item" href="#" id="isbn-link">ISBN</a></li>
+										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
 									</ul></li>
 							</ul>
 							<input id="search" placeholder=" Search...">
@@ -113,8 +116,6 @@
 						</div>
 					</div>
 				</div>
-
-			</div>
 			</div>
 		</nav>
 
