@@ -132,7 +132,7 @@
 				<div class="col-lg-10 col-sm-10 col-md-10 slider-wrap">
 				
 				<!-- 베스트 셀러 슬라이드 반복문 -->
-				<c:forEach var="book" items="${bookList }" begin="0" end="9">
+				<c:forEach var="book" items="${bookBestList}" >
 					<div class="slider-item book-main">
 						<span class="isbn" style="display: none">${book.isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
 						<div class="slider-item-content" id="slider-item-content">
@@ -171,17 +171,17 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="row slider-item" id="row">
 					<!-- 스테디셀러 반복문 -->
-					<c:forEach var="i" begin="10" end="25">
+					<c:forEach var="book" items="${bookList }" >
 						<div class="col-lg-3 col-md-6 book-main" id="sbookList">
-							<span class="isbn" style="display: none">${bookList[i].isbn }</span>
+							<span class="isbn" style="display: none">${book.isbn }</span>
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" onclick="bookinfomove()">
-									<img src=${bookList[i].img } alt="" class="img-fluid w-100">
+									<img src=${book.img } alt="" class="img-fluid w-100">
 								</a>
-								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${bookList[i].category }</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">${bookList[i].title }</a></h3>
+								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${book.category }</span>
+								<h3 class="post-title mt-1"><a href="blog-single.html">${book.title }</a></h3>
 
-								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author }</span>
+								<span class="text-muted letter-spacing text-uppercase font-sm">${book.author }</span>
 
 							</article>
 						</div>
@@ -189,21 +189,30 @@
 					<!-- 스테디셀러 반복문 끝 -->	
 					</div>
 				</div>
-
+				
+				<!-- 페이징처리 -->	
 				<div class="m-auto">
 					<div class="pagination mt-5 pt-4">
 						<ul class="list-inline ">
-							<li class="list-inline-item"><a href="#" class="active">1</a></li>
-							<li class="list-inline-item"><a href="#">2</a></li>
-							<li class="list-inline-item"><a href="#">3</a></li>
-							<li class="list-inline-item"><a href="#" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
+							<c:if test="${pm.prev }">
+								<li class="list-inline-item page-item"><a href="${pm.startPage - 1 }" class="prev-posts"><i class="ti-arrow-left"></i></a></li>
+							</c:if>
+							<c:forEach var="pageNum" begin="${pm.startPage}" end="${pm.endPage}">
+								<li class="list-inline-item page-item"><a href="${pageNum}" class=" ${pm.cri.page==pageNum ? 'active' : ''}">${pageNum}</a></li>
+							</c:forEach>
+							<c:if test="${pm.next }">
+								<li class="list-inline-item page-item"><a href="${pm.endPage + 1 }" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
+							</c:if>
 						</ul>
 					</div>
 				</div>
 			</div>
+			<form id="pageFrm" action="${cpath }/main.do" method="post">
+                 <input type="hidden" id="page" name="page" value="${pm.cri.page }">
+            </form> 
 		</div>
 	</section>
-
+	<!-- 페이징처리 끝 -->	
 	<!-- <section class="footer-2 section-padding gray-bg pb-5">
 		<div class="container">
 			<div class="row justify-content-center">

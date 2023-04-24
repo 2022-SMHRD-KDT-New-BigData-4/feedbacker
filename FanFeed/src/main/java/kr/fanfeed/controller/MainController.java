@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.fanfeed.entity.Book;
+import kr.fanfeed.entity.MainCriteria;
+import kr.fanfeed.entity.MainPageMaker;
 import kr.fanfeed.mapper.FanFeedMapper;
 
 @Controller
@@ -24,17 +26,28 @@ public class MainController {
 	}
 	
 	// 메인페이지
-	@RequestMapping("/main.do")
-	public String goMain(Model model) {
-		
-		// 메인페이지에 뿌려질 책리스트 조회
-		List<Book> bookList = mapper.getListBook();
-		
-		// 모델에 추가
-		model.addAttribute("bookList", bookList);
-		
-		return "fanfeed/index";
-	}
+		@RequestMapping("/main.do")
+		public String goMain(Model model, MainCriteria cri) {
+			
+			// 베스트셀러 책리스트 조회
+			List<Book> bookBestList = mapper.getBestListBook();
+			
+			// 스테디셀러 책리스트 조회
+			List<Book> bookList = mapper.getListBook(cri);
+			
+			// 페이징 처리에 필요한 객체를 생성 객체 생성
+			MainPageMaker pageMaker = new MainPageMaker();
+			pageMaker.setCri(cri);
+			// 전체 글 카운트
+			pageMaker.setTotalCount(mapper.totalCount());
+			
+			// 모델에 추가
+			model.addAttribute("bookBestList", bookBestList);
+			model.addAttribute("bookList", bookList);
+			model.addAttribute("pm", pageMaker);
+			
+			return "fanfeed/index";
+		}
 	
 	@RequestMapping("/bookdetail.do")
 	public String goBookDetail(Model model) {

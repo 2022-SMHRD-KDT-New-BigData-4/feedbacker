@@ -195,6 +195,13 @@ $('#isbn-link').click(function() {
     $('#isbn-link').text('ISBN');
   }
 });
-
 	
+	// 페이징 처리
+	var pageFrm = $("#pageFrm");
+		$(".page-item a").on("click", function(e) {
+			e.preventDefault(); // a 태그의 기능을 막음
+			var page = $(this).attr("href");
+			$("#page").val(page);
+			pageFrm.submit();
+		})
 		

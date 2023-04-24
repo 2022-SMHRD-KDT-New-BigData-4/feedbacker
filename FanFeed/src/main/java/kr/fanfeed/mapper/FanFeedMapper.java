@@ -4,6 +4,7 @@ import java.util.List;
 
 import kr.fanfeed.entity.Book;
 import kr.fanfeed.entity.Criteria;
+import kr.fanfeed.entity.MainCriteria;
 import kr.fanfeed.entity.Member;
 
 public interface FanFeedMapper {
@@ -12,8 +13,16 @@ public interface FanFeedMapper {
 	
 	public Member login(Member vo);
 	
-	public List<Book> getListBook();
+	// 베스트셀러 조회
+	public List<Book> getBestListBook();
 	
+	// 스테디셀러 조회 + 페이징처리
+	public List<Book> getListBook(MainCriteria cri);
+	
+	// 책 단건 조회
 	public Book getOneBook(String isbn);
+	
+	// 게시물 전체 카운트
+	public int totalCount();
 
 }

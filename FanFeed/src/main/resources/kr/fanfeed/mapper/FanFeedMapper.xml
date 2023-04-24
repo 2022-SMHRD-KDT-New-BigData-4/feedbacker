@@ -18,11 +18,26 @@
 </select>
 
 <!-- 메인페이지 책리스트 조회 -->
-<select id="getListBook" resultType="kr.fanfeed.entity.Book">
+<select id="getBestListBook" resultType="kr.fanfeed.entity.Book">
 	SELECT *
 	  FROM BOOK
 	 WHERE SEQ &gt;= 1
-	   AND SEQ &lt;= 26
+	   AND SEQ &lt;= 10
+</select>
+
+<!-- 스테디셀러 책리스트 조회 + 페이징 -->
+<select id="getListBook" parameterType="kr.fanfeed.entity.MainCriteria" resultType="kr.fanfeed.entity.Book">
+	SELECT *
+	FROM (
+	    SELECT ROWNUM RN, T.*
+	    FROM (
+	        SELECT *
+	        FROM BOOK
+	        ORDER BY seq ASC
+	    ) T
+    WHERE ROWNUM &lt;= (#{pageStart} + #{perPageNum} - 1)
+)
+WHERE RN &gt;= #{pageStart}
 </select>
 
 <!-- 책 단건 조회 -->
@@ -31,6 +46,12 @@
 	  FROM BOOK
 	 WHERE ISBN = #{isbn}
 </select>
+
+<!-- 페이징처리에 쓸 전체 개수 조회 -->
+<select id="totalCount" resultType="java.lang.Integer">
+	SELECT COUNT(*)
+	  FROM BOOK
+</select> 
 
 
 
