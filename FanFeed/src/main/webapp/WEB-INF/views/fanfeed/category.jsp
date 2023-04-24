@@ -227,22 +227,22 @@
 				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 					<div class="single-post">
 						<div class="related-posts-block mt-5">
-							<h3 class="news-title mb-4 text-center">
+							<h2 class="news-title mb-4 text-center">
 								${empty category?'소설':category }
-							</h3>
+							</h2>
 							<div class="row">
 							<c:forEach var="book" items="${bookList }" begin="0" end="11">
 								<div class="col-lg-4 col-md-4 col-sm-6">
 								<span class="isbn" style="display: none">${book.isbn }</span>
 									<div class="post-block-wrapper mb-4 mb-lg-0">
 										<a onclick="move()" class="ctBook">
-											<img class="img-fluid" src=${book.img }
+											<img class="img-fluid" id="img-fluid" src=${book.img }
 												alt="post-thumbnail" />
 										</a>
 										<div class="post-content mt-3">
-											<h5>
+											<h3>
 												<a onclick="move()" class="ctBook">${book.title }</a>
-											</h5>
+											</h3>
 											<span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
 											<br>
 											<br>
