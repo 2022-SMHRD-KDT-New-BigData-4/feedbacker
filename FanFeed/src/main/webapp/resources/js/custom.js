@@ -158,7 +158,7 @@
 		});		
 		
 		function bookinfomove(){
-			$('.slider-item').click(function(){
+			$('.book-main').click(function(){
 				var isbn = $(this).find('.isbn').text();
 				console.log(isbn);
 				formMove("bookinfo.do" ,"isbn" , isbn)

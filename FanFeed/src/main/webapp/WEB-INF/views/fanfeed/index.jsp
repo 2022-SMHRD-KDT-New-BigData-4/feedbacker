@@ -150,7 +150,7 @@
 				
 				<!-- 베스트 셀러 슬라이드 반복문 -->
 				<c:forEach var="book" items="${bookList }" begin="0" end="9">
-					<div class="slider-item">
+					<div class="slider-item book-main">
 						<span class="isbn" style="display: none">${book.isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
 						<div class="slider-item-content" id="slider-item-content">
 							<div class="post-thumb mb-4">
@@ -189,18 +189,16 @@
 					<div class="row slider-item" id="row">
 					<!-- 스테디셀러 반복문 -->
 					<c:forEach var="i" begin="10" end="25">
-						<div class="col-lg-3 col-md-6" id="sbookList">
-						<span class="isbn" style="display: none">${bookList[i].isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
+						<div class="col-lg-3 col-md-6 book-main" id="sbookList">
+							<span class="isbn" style="display: none">${bookList[i].isbn }</span>
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" onclick="bookinfomove()">
 									<img src=${bookList[i].img } alt="" class="img-fluid w-100">
 								</a>
 								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${bookList[i].category }</span>
-								<h3 class="post-title mt-1">
-									<a onclick="bookinfomove()">${bookList[i].title }</a>
-								</h3>
+								<h3 class="post-title mt-1"><a href="blog-single.html">${bookList[i].title }</a></h3>
 
-								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author } 저</span>
+								<span class="text-muted letter-spacing text-uppercase font-sm">${bookList[i].author }</span>
 
 							</article>
 						</div>
