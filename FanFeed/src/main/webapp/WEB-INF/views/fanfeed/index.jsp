@@ -172,7 +172,7 @@
 					<div class="row slider-item" id="row">
 					<!-- 스테디셀러 반복문 -->
 					<c:forEach var="book" items="${bookList }" >
-						<div class="col-lg-3 col-md-6 book-main" id="sbookList">
+						<div class="col-lg-3 col-md-6 book-main sbookList">
 							<span class="isbn" style="display: none">${book.isbn }</span>
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" onclick="bookinfomove()">
@@ -181,7 +181,7 @@
 								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${book.category }</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">${book.title }</a></h3>
 
-								<span class="text-muted letter-spacing text-uppercase font-sm">${book.author }</span>
+								<span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
 
 							</article>
 						</div>

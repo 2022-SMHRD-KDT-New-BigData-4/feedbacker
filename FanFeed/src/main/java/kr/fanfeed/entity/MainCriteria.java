@@ -10,7 +10,7 @@ public class MainCriteria {
 	
 	public MainCriteria() {
 		this.page = 1;
-		this.perPageNum = 16; // 조정
+		this.perPageNum = 12; // 조정
 	}
 	
 	// 현재 페이지의 게시글의 시작번호 구하기
