@@ -81,13 +81,13 @@
 								Category
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-								<a class="dropdown-item" href="post-video.html">소설</a>
-								<a class="dropdown-item" href="post-audio.html">자기계발</a>
-								<a class="dropdown-item" href="post-link.html">경영/경제</a>
-								<a class="dropdown-item" href="post-gallery.html">인문/사회/역사</a>
-								<a class="dropdown-item" href="post-image.html">에세이/시</a>
-								<a class="dropdown-item" href="post-image.html">과학/IT</a>
-								<a class="dropdown-item" href="post-image.html">가정/생활</a>
+								<a class="dropdown-item" href="#">소설</a>
+								<a class="dropdown-item" href="#">자기계발</a>
+								<a class="dropdown-item" href="#">경영/경제</a>
+								<a class="dropdown-item" href="#">인문/사회/역사</a>
+								<a class="dropdown-item" href="#">에세이/시</a>
+								<a class="dropdown-item" href="#">과학/IT</a>
+								<a class="dropdown-item" href="#">가정/생활</a>
 							</div>
 						</li>
 						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -140,25 +140,25 @@
 								<h4 class="text-center widget-title">category</h4>
 								<ul class="list-unstyled">
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">소설</a>
+										<a class="ct-li" href="#">소설</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">자기계발</a>
+										<a class="ct-li" href="#">자기계발</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">경영/경제</a>
+										<a class="ct-li" href="#">경영/경제</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">인문/사회/역사</a>
+										<a class="ct-li" href="#">인문/사회/역사</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">에세이/시</a>
+										<a class="ct-li" href="#">에세이/시</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">과학/IT</a>
+										<a class="ct-li" href="#">과학/IT</a>
 									</li>
 									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a href="#">가정/생활</a>
+										<a class="ct-li" href="#">가정/생활</a>
 									</li>
 								</ul>
 
@@ -214,21 +214,22 @@
 					<div class="single-post">
 						<div class="related-posts-block mt-5">
 							<h3 class="news-title mb-4 text-center">
-								소설
+								${empty category?'소설':category }
 							</h3>
 							<div class="row">
-							<c:forEach var="i" begin="1" end="16">
+							<c:forEach var="book" items="${bookList }" begin="0" end="11">
 								<div class="col-lg-4 col-md-4 col-sm-6">
+								<span class="isbn" style="display: none">${book.isbn }</span>
 									<div class="post-block-wrapper mb-4 mb-lg-0">
 										<a onclick="move()" class="ctBook">
-											<img class="img-fluid" src="https://via.placeholder.com/500x530.png?text=temp1"
+											<img class="img-fluid" src=${book.img }
 												alt="post-thumbnail" />
 										</a>
 										<div class="post-content mt-3">
 											<h5>
-												<a onclick="move()" class="ctBook">Intel’s new smart glasses actually look
-													good ${i }</a>
+												<a onclick="move()" class="ctBook">${book.title }</a>
 											</h5>
+											<span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
 											<br>
 											<br>
 										</div>

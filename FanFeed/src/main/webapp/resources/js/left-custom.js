@@ -209,3 +209,32 @@
         }
     });
 });
+
+		// 카테고리 클릭 로직
+		$(".ct-li").on("click",function(e){
+			console.log("클릭 들어옴");
+			e.preventDefault(); // a 태그의 기능을 막음
+			var category = $(this).text();
+			console.log(category);
+			formMove("category.do" ,"category" , category)
+		});
+		
+		function formMove(url, key, value){
+		// 요청을 보낼 form 동적 생성
+		var form = $('<form></form>');
+		form.attr('method', 'post');
+		form.attr('action', url);
+		
+		// POST로 보낼 데이터 추가
+		var data1 = $('<input type="hidden" name="'+key+'" />');
+		data1.attr('value', value);
+		form.append(data1);
+		
+//		var data2 = $('<input type="hidden" name="key2" />');
+//		data2.attr('value', 'value2');
+//		form.append(data2);
+		
+		// form을 body에 추가하고 submit
+		form.appendTo($('body'));
+		form.submit();
+		}

@@ -53,7 +53,13 @@ WHERE RN &gt;= #{pageStart}
 	  FROM BOOK
 </select> 
 
-
+<!-- 카테고리 별 책 조회 -->
+<select id="getCategoryBook" resultType="kr.fanfeed.entity.Book">
+	SELECT *
+	  FROM BOOK
+	 WHERE CATEGORY = #{category}
+	 ORDER BY SEQ
+</select>
 
 
 

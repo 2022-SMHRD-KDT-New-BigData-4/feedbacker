@@ -24,5 +24,8 @@ public interface FanFeedMapper {
 	
 	// 게시물 전체 카운트
 	public int totalCount();
+	
+	// 카테고리로 책 리스트 조회
+	public List<Book> getCategoryBook(String category);
 
 }

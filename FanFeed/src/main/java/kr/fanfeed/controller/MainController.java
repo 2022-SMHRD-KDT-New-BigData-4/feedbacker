@@ -56,7 +56,16 @@ public class MainController {
 	}
 	
 	@RequestMapping("/category.do")
-	public String goCategory(Model model) {
+	public String goCategory(String category, Model model) {
+		
+		System.out.println(category);
+		if(category==null) {
+			category = "소설";
+		}
+		List<Book> bookList = mapper.getCategoryBook(category);
+		
+		model.addAttribute("bookList", bookList);
+		model.addAttribute("category", category);
 		
 		return "fanfeed/category";
 	}
