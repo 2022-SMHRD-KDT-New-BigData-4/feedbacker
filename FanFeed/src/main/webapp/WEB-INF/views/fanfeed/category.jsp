@@ -98,10 +98,24 @@
 				</div>
 
 				<div class="text-right search d-none d-lg-block">
-					<div class="search_toggle">
-						<div id="empty">
+					<div class="container-fluid">
+						<!-- <button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+							aria-controls="navbarNavDropdown" aria-expanded="false"
+							aria-label="Toggle navigation"></button> -->
+						<div class="collapse navbar-collapse" id="search_toggle">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" id="title-link" href="#" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">책 제목</a>
+									<ul class="dropdown-menu dropdown-menu">
+										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
+									</ul></li>
+							</ul>
 							<input id="search" placeholder=" Search...">
-							<button type="submit" id="submit"><i class="ti-search"></i></button>
+							<button type="submit" id="submit">
+								<i class="ti-search"></i>
+							</button>
 						</div>
 					</div>
 				</div>

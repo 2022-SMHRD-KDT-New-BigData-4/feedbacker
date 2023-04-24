@@ -209,3 +209,14 @@
         }
     });
 });
+
+$('#isbn-link').click(function() {
+  if ($('#title-link').text() === '책 제목') {
+    $('#title-link').text('ISBN');
+    $('#isbn-link').text('책 제목');
+  } else {
+    $('#title-link').text('책 제목');
+    $('#isbn-link').text('ISBN');
+  }
+});
+	
