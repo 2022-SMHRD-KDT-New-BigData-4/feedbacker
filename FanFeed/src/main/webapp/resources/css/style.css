@@ -159,6 +159,8 @@ h6,
 
 /* 1.2. Common styles
 ================================================== */
+
+
 body {
   background: #fffcf6;
   color: black;
@@ -167,6 +169,7 @@ body {
 html,
 body {
   height: 100%;
+  margin-top: -9px;
 }
 
 a {
@@ -408,7 +411,6 @@ blockquote {
 
 .header-socials a {
   font-size: 12px;
-  padding: 0px 5px;
 }
 
 .bg-dark {
@@ -738,7 +740,7 @@ overlay search
 
 .header-top {
   position: relative !important;
-  margin-top: -545px;
+  margin-top: -527px;
 }
 
 .navigation-dark .navbar-toggler span {

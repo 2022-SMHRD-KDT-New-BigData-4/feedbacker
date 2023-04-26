@@ -44,7 +44,7 @@
 
 <body>
 
-	<div class="header-logo py-5 d-none d-lg-block">
+	<div class="header-logo py-5 d-none d-lg-block" >
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
 		<div class="container">
 			<div class="row justify-content-center">
@@ -56,9 +56,9 @@
 	</div>
 
 	<header class="header-top bg-grey justify-content-center">
-		<nav class="navbar navbar-expand-lg navigation">
-			<div class="container">
-				<a class="navbar-brand d-lg-none" href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
+		<nav class="navbar navbar-expand-lg navigation" style="padding: 8px 16px;">
+			<div class="container" style="padding: 0px 15px;">
+				<a class="navbar-brand d-lg-none" href="index.html"><img src="images/logo.png" alt="" class="img-fluid w-100"></a>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
 					aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,10 +97,6 @@
 
 				<div class="text-right search d-none d-lg-block">
 					<div class="container">
-						<!-- <button class="navbar-toggler" type="button"
-							data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-							aria-controls="navbarNavDropdown" aria-expanded="false"
-							aria-label="Toggle navigation"></button> -->
 						<div class="collapse navbar-collapse" id="search_toggle">
 							<ul class="navbar-nav">
 								<li class="nav-item dropdown">
@@ -214,53 +210,6 @@
             </form> 
 		</div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
-	<!-- 페이징처리 끝 -->	
-	<!-- <section class="footer-2 section-padding gray-bg pb-5">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="subscribe-footer text-center">
-						<div class="form-group mb-0">
-							<h2 class="mb-3">Subscribe Newsletter</h2>
-							<p class="mb-4">Subscribe my Newsletter for new blog posts , tips and info.
-							<p>
-							<div class="form-group form-row align-items-center mb-0">
-								<div class="col-sm-9">
-									<input type="email" class="form-control" placeholder="Email Address">
-								</div>
-								<div class="col-sm-3">
-									<a href="#" class="btn btn-dark ">Subscribe</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-btm mt-5 pt-4 border-top">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline footer-socials-2 text-center">
-							<li class="list-inline-item"><a href="#">Privacy policy</a></li>
-							<li class="list-inline-item"><a href="#">Support</a></li>
-							<li class="list-inline-item"><a href="#">About</a></li>
-							<li class="list-inline-item"><a href="#">Contact</a></li>
-							<li class="list-inline-item"><a href="#">Terms</a></li>
-							<li class="list-inline-item"><a href="#">Category</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="copyright text-center ">
-							@ copyright all reserved to <a href="https://themefisher.com/">themefisher.com</a>-2019 Distribution <a
-								href="https://themewagon.com">ThemeWagon.</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 
 	<!-- THEME JAVASCRIPT FILES
 ================================================== -->
