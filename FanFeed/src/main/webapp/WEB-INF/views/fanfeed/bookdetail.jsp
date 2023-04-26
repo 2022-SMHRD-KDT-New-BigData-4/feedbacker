@@ -212,7 +212,7 @@
                                             <circle r="40.868892079470065" style="cursor: pointer; fill: #75554A; fill-opacity: 0.85;"></circle>
                                                 <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 14.7708px;">
                                                     감사하다</text>
-                                            </g>
+                                        </g>
                                             <g class="node" transform="translate(130.50667317967418,273.2979857809192)">
                                                 <circle r="33.90562098582621" style="cursor: pointer; fill: #AF7C53; fill-opacity: 0.85;"></circle>
                                                     <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 15.9419px;">

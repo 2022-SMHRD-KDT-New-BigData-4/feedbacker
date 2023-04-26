@@ -33,7 +33,7 @@
 #submit {
     border: none;
     background-color: white;
-	margin-left: 53px;
+	margin-left: 48px;
 }
 
 #submit:focus{ 	
@@ -43,6 +43,8 @@
 
 #detailbtn {
 	border-radius: 5px;
+	float: right;
+	margin-top: -50px;
 }
 
 #post-meta {
@@ -201,4 +203,6 @@
 
 #bpadding {
 	margin-bottom: -309px;
+	z-index: 999;
+	position: relative;
 }

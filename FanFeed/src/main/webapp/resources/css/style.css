@@ -256,13 +256,13 @@ blockquote {
 }
 
 .btn-primary {
-  background: #ce8460;
+  background: #8D7B68;
 }
 
 .btn-primary:hover {
-  background: #8D7B68;
+  background: #ce8460;
   color: #fff;
-  border-color: #8D7B68;
+  border-color: #ce8460;
 }
 
 .btn-dark {

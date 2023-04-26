@@ -82,7 +82,20 @@ WHERE RN &gt;= #{pageStart}
 	SELECT COUNT(*)
 	  FROM REVIEW
 	 WHERE ISBN = #{isbn}
-</select> 
+</select>
+
+
+	<!-- 책 제목을 검색해서 조회 -->
+	<select id="searchBookTitle" resultType="kr.fanfeed.entity.Book">
+		SELECT * FROM BOOK WHERE
+		TITLE LIKE '%${search}%'
+	</select>
+	<!-- ISBN을 검색해서 조회 -->
+	<select id="searchBookIsbn" resultType="kr.fanfeed.entity.Book">
+		SELECT * FROM BOOK WHERE
+		ISBN = #{search}
+	</select>
+
 
 </mapper>
 

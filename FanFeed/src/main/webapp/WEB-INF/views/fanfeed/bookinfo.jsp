@@ -142,7 +142,7 @@
 			<span class="isbn" style="display: none">${book.isbn }</span> 
 			<a href="blog-single.html"><img src=${book.img } alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
-                <button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
+
 			</div>
 		</div>
         <br>
@@ -173,7 +173,7 @@
             <h2>${book.title }</h2>
             <h5>${book.author } 저</h5>
             <h5>출판사 | ${book.publisher }</h5>
-            <br>
+            <button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
             <hr>
         </div>
         <div id="textbox">
@@ -188,17 +188,12 @@
         
         <br>
 		<br>
-		<br>
-		<br>
-			
         <div class="chart-area">
             <div id="container" style="width:100%; height:100%;"></div>
         </div>
     </div>
 	<hr>
 	<div class="comment-area my-5">
-		<br>
-		<br>
 		<br>
 		<h2 class="mb-4 text-center">리뷰</h2>
 		
@@ -214,6 +209,7 @@
 				</div>
 			</div>
 		</div>
+		<hr>
 		</c:forEach>
 	</div>
 
@@ -340,8 +336,8 @@
 			</div>
 		</div>
 	</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
 </section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
 
 
 
