@@ -249,4 +249,57 @@ $('#isbn-link').click(function() {
     $('#isbn-link').text('ISBN');
   }
 });
+
+	// 페이징 처리
+	$(document).on('click', '.pagination a', function(e) {
+		e.preventDefault(); // a 태그의 기능을 막음
+		var page = $(this).attr("href");
+		var isbn = $(".isbn").text();
+		$.ajax({
+				url : "reviewAjax.do",
+				type : "post",
+				data : {page:page,isbn:isbn},
+				dataType : "json",
+				success : updatePage,
+				error : function () { alert("에러"); }
+			});
+			
+		})
 	
+	// 리뷰 페이지 ajax 성공 함수
+	function updatePage(data) {
+	  // 댓글 목록 업데이트
+	  $('.comment-area-box').remove();
+	  $.each(data.reviewList, function(index, review) {
+		var stackTag = "";
+	    var $out_div = $('<div class="comment-area-box media"></div>');
+		var $in_div = $('<div class="media-body ml-4"></div>');
+		stackTag += '<h4 class="mb-0">'+review.writer+'</h4>';
+		stackTag += '<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>'+review.datetime+'</span>';
+		stackTag += '<div class="comment-content mt-3"><p>'+review.review+'</p></div>';
+	    $in_div.append(stackTag);
+		$out_div.append($in_div);
+	    $(".comment-area").append($out_div);
+	  });
+	
+	  // 페이지 버튼 업데이트
+	  var $pagination = $('.list-inline');
+	  $pagination.empty();
+	  if (data.pm.prev) {
+	    $pagination.append('<li class="list-inline-item page-item" style="margin-right: 13px;"><a href="' + (data.pm.startPage - 1) + '" class="prev-posts"><i class="ti-arrow-left"></i></a></li>');
+	  }
+	  
+	  for (var i = data.pm.startPage; i <= data.pm.endPage; i++) {
+	    var $pageItem = $('<li class="list-inline-item page-item" style="margin-right: 13px;"></li>');
+	    if (data.pm.cri.page == i) {
+	      $pageItem.append('<a class="active" href="' + i + '">' + i + '</a>');
+	    } else {
+	      $pageItem.append('<a href="' + i + '">' + i + '</a>');
+	    }
+	    $pagination.append($pageItem);
+	  }
+	  
+	  if (data.pm.next) {
+	    $pagination.append('<li class="list-inline-item page-item"><a href="' + (data.pm.endPage + 1) + '" class="prev-posts"><i class="ti-arrow-right"></i></a></li>');
+	  }
+}

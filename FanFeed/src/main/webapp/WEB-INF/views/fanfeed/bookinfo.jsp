@@ -201,31 +201,38 @@
 		<br>
 		<h2 class="mb-4 text-center">리뷰</h2>
 		
-		<c:forEach var="i" begin="1" end="4">
+		<c:forEach var="review" items="${reviewList }">
 		<div class="comment-area-box media">
 
 			<div class="media-body ml-4">
-				<h4 class="mb-0">Micle harison </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
+				<h4 class="mb-0">${review.writer } </h4>
+				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>${review.datetime } </span>
 
 				<div class="comment-content mt-3">
-					<p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
+					<p>${review.review }</p>
 				</div>
 			</div>
 		</div>
 		</c:forEach>
 	</div>
 
- 	<div class="m-auto" id="m-auto">
-		<div class="pagination mt-5 pt-4">
-			<ul class="list-inline ">
-				<li class="list-inline-item"><a href="#" class="active">1</a></li>
-				<li class="list-inline-item"><a href="#">2</a></li>
-				<li class="list-inline-item"><a href="#">3</a></li>
-				<li class="list-inline-item"><a href="#" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
-			</ul>
+ 	<!-- 페이징처리 -->	
+		<div class="m-auto">
+			<div class="pagination mt-5 pt-4">
+				<ul class="list-inline ">
+					<c:if test="${pm.prev }">
+						<li class="list-inline-item page-item"><a href="${pm.startPage - 1 }" class="prev-posts"><i class="ti-arrow-left"></i></a></li>
+					</c:if>
+					<c:forEach var="pageNum" begin="${pm.startPage}" end="${pm.endPage}">
+						<li class="list-inline-item page-item"><a href="${pageNum}" class=" ${pm.cri.page==pageNum ? 'active' : ''}">${pageNum}</a></li>
+					</c:forEach>
+					<c:if test="${pm.next }">
+						<li class="list-inline-item page-item"><a href="${pm.endPage + 1 }" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
+					</c:if>
+				</ul>
+			</div>
 		</div>
-	</div>
+		<!-- 페이징 끝 -->	
 
     </div>
 </div>
