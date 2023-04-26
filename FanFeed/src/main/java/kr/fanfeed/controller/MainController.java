@@ -67,9 +67,27 @@ public class MainController {
 	}
 	@RequestMapping("/search.do")
 	public String Search(Model model , String type , String search) {
+		
+		// 받아온 데이터 확인
 		System.out.println("type : "+type);
 		System.out.println("search : "+search);
-
+		
+		List<Book> Book;
+		if(type.equals("책 제목"))  {		
+			// 책 체목으로 검색하는 쿼리문 작성
+			 Book = mapper.searchBookTitle(search);
+			 System.out.println("책제목");
+		} else {
+			// ISBN 값으로 검색하는 쿼리문 작성
+			 Book = mapper.searchBookIsbn(search);	
+			 System.out.println("ISBN");
+		}
+		
+		
+		for(Book book    : Book) {
+			System.out.println("제목:"+book.getTitle());
+		}
+		
 		
 		
 		return "redirect:/main.do";

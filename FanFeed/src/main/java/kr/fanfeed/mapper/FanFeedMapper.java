@@ -36,5 +36,10 @@ public interface FanFeedMapper {
 		
 	// 게시물 전체 카운트
 	public int totalReviewCount(String isbn);
-
+	
+	//  책 제목을 검색해서 조회
+	public List<Book> searchBookTitle( String search);
+	
+	//  ISBN을 검색해서 조회
+	public List<Book> searchBookIsbn( String search);
 }
