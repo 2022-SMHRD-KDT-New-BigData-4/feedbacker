@@ -1,12 +1,16 @@
 package kr.fanfeed.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.google.gson.Gson;
 
 import kr.fanfeed.entity.Book;
 import kr.fanfeed.entity.Review;
@@ -43,14 +47,26 @@ public class InfoController {
 	}
 	
 	@RequestMapping("/reviewAjax.do")
-	public @ResponseBody String reviewAjax(String isbn, ReviewCriteria cri, Model model) {
+	public @ResponseBody String reviewAjax(String isbn, ReviewCriteria cri) {
 		
-		System.out.println(isbn);
+		System.out.println("리뷰 ajax : "+isbn);
 		
-		Book book = mapper.getOneBook(isbn);
+		List<Review> reviewList = mapper.getListReview(isbn, cri);
 		
-		model.addAttribute("book", book);
-		return "";
+		// 페이징 처리에 필요한 객체를 생성 객체 생성
+		ReviewPageMaker pageMaker = new ReviewPageMaker();
+		pageMaker.setCri(cri);
+		// 전체 글 카운트
+		pageMaker.setTotalCount(mapper.totalReviewCount(isbn));
+		
+		Map<String, Object> jsonMap = new HashMap<String, Object>();
+		
+		jsonMap.put("pm", pageMaker);
+		jsonMap.put("reviewList", reviewList);
+		
+		Gson gson = new Gson();
+		
+		return gson.toJson(jsonMap);
 	}
 	
 	

@@ -133,12 +133,13 @@
 
 	<div class="sidebar-widget mb-5 ">
 		<c:if test="${book.seq <10 }">
-		<h4 class="text-center widget-title">Best seller</h4>
+		<h4 class="text-center widget-title">Best Seller</h4>
 		</c:if>
 		<c:if test="${book.seq >9 }">
-		<h4 class="text-center widget-title">Best seller</h4>
+		<h4 class="text-center widget-title">Steady Seller</h4>
 		</c:if>
 		<div class="sidebar-post-item-big">
+			<span class="isbn" style="display: none">${book.isbn }</span> 
 			<a href="blog-single.html"><img src=${book.img } alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
                 <button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
