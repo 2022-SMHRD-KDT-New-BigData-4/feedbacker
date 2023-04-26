@@ -2,7 +2,9 @@
 #logo {
     width: 320px !important;
     text-align: center;
+    margin-top: -610px;
 }
+
 
 #login {
     margin-left: 240px;
@@ -63,8 +65,9 @@
 .best {
     text-align: center;
     padding : 100px 0;
-    margin-bottom: -60px;
+    margin-bottom: -90px;
     color: #372415 !important;
+    margin-top: 245px;
 }
 
 #row {
@@ -193,4 +196,8 @@
 
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1140px !important;
+}
+
+#bpadding {
+	margin-bottom: -309px;
 }

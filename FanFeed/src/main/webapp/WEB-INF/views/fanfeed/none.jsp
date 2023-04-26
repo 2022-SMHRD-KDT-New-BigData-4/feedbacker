@@ -44,6 +44,7 @@
 <body>
 
 	<div class="header-logo py-5 d-none d-lg-block">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
@@ -138,7 +139,7 @@
 	</header>
 
 		<div class="container-fluid" id="container-fluid">
-			<div class="row no-gutters" id="no-gutters">
+			<div class="row no-gutters" id="no-gutters" style="margin-top: 200px;">
 				<div class="col-lg-10 col-sm-10 col-md-10">
 
 						<div class="slider-item-content">
@@ -153,6 +154,7 @@
 				</div>
 			</div>
 		</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
 
 	<!-- THEME JAVASCRIPT FILES
 ================================================== -->

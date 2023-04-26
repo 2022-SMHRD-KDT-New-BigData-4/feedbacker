@@ -48,14 +48,15 @@
 
 
 <div class="header-logo py-5 d-none d-lg-block">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6 text-center">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
 					<a class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
-      </div>
-    </div>
-  </div>
-</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header class="header-top bg-grey justify-content-center">
 		<nav class="navbar navbar-expand-lg navigation">
 			<div class="container">
@@ -145,7 +146,7 @@
 
 <section class="single-block-wrapper section-padding">
 	<div class="container">
-		<div class="row">
+		<div class="row" style="margin-top: 200px;">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar sidebar-right">
 					<div class="sidebar-wrap mt-5 mt-lg-0">
@@ -633,47 +634,8 @@
 </section>
 
 
-<!--footer start-->
-<footer class="footer-section bg-grey">
-    <div class="instagram-photo-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!-- <h4 class="text-center">Follow in Instagram</h4> -->
-            </div>
-        </div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
 
-        <div class="row no-gutters" id="instafeed">
-				
-          </div>
-        </div>
-    </div>
-</div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="mb-4">
-                    <h2 class="footer-logo">Revolve.</h2>
-                </div>
-                <!-- <ul class="list-inline footer-socials">
-                    <li class="list-inline-item"><a href="#"><i class="ti-facebook mr-2"></i>Facebook</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-twitter mr-2"></i>Twitter</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-linkedin mr-2"></i>Linkedin</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-pinterest mr-2"></i>Pinterest</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-github mr-2"></i>Github</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-instagram mr-2"></i>Instrgram</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="ti-rss mr-2"></i>rss</a></li>
-                </ul> -->
-            </div>
-       
-            <div class="col-md-12 text-center">
-               <p class="copyright">© Copyright 2019 - Revolve. All Rights Reserved. Distribution <a
-                class="text-white" href="https://themewagon.com">ThemeWagon.</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
 <!--footer end-->
 
 <!-- THEME JAVASCRIPT FILES

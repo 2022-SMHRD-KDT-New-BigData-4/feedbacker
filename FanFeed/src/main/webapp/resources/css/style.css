@@ -201,6 +201,7 @@ a.read-more:hover {
 .section-padding {
   padding: 70px 0;
   position: relative;
+  padding-bottom: 0px;
 }
 
 .section-sm {
@@ -737,6 +738,7 @@ overlay search
 
 .header-top {
   position: relative !important;
+  margin-top: -545px;
 }
 
 .navigation-dark .navbar-toggler span {
