@@ -65,5 +65,16 @@ public class MainController {
 
 		return "fanfeed/category";
 	}
+	@RequestMapping("/search.do")
+	public String Search(Model model , String type , String search) {
+		System.out.println("type : "+type);
+		System.out.println("search : "+search);
+
+		
+		
+		return "redirect:/main.do";
+	}
+	
+	
 
 }
