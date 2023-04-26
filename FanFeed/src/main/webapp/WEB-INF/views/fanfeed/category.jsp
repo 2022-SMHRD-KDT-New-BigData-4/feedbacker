@@ -232,23 +232,28 @@
 							</h2>
 							<div class="row">
 							<c:forEach var="book" items="${bookList }" begin="0" end="11">
-								<div class="col-lg-4 col-md-4 col-sm-6">
-								<span class="isbn" style="display: none">${book.isbn }</span>
-									<div class="post-block-wrapper mb-4 mb-lg-0">
-										<a onclick="move()" class="ctBook">
-											<img class="img-fluid" id="img-fluid" src=${book.img }
-												alt="post-thumbnail" />
-										</a>
-										<div class="post-content mt-3">
-											<h3>
-												<a onclick="move()" class="ctBook">${book.title }</a>
-											</h3>
-											<span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
-											<br>
-											<br>
-										</div>
-									</div>
-								</div>
+								
+								
+								
+										
+											
+										  <div class="col-lg-4 col-md-4 col-sm-6" onclick="formMove('bookinfo.do', 'isbn', '${book.isbn}')">
+										    <span class="isbn" style="display: none">${book.isbn }</span>
+										    <div class="post-block-wrapper mb-4 mb-lg-0">
+										      <img class="img-fluid" src=${book.img } alt="post-thumbnail" />
+										      <div class="post-content mt-3">
+										        <h5>
+										          <span>${book.title}</span>
+										        </h5>
+										        <span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
+										        <br>
+										        <br>
+										      </div>
+										    </div>
+										  </div>
+
+								
+								
 							</c:forEach>
 							</div>
 						</div>
