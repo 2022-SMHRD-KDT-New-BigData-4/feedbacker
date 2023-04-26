@@ -185,17 +185,7 @@
 		form.appendTo($('body'));
 		form.submit();
 		}
-		
-$('#isbn-link').click(function() {
-  if ($('#title-link').text() === '책 제목') {
-    $('#title-link').text('ISBN');
-    $('#isbn-link').text('책 제목');
-  } else {
-    $('#title-link').text('책 제목');
-    $('#isbn-link').text('ISBN');
-  }
-});
-	
+			
 	// 페이징 처리
 	var pageFrm = $("#pageFrm");
 		$(".page-item a").on("click", function(e) {
@@ -205,11 +195,38 @@ $('#isbn-link').click(function() {
 			pageFrm.submit();
 		})
 		
-	     // 카테고리 클릭 로직
-      $(".dropdown-item").on("click",function(e){
-         console.log("클릭 들어옴");
-         e.preventDefault(); // a 태그의 기능을 막음
-         var category = $(this).text();
-         console.log(category);
-         formMove("category.do" ,"category" , category)
-      });
+// 카테고리 클릭 로직
+$(".dropdown-item").on("click", function(e) {
+	console.log("클릭 들어옴");
+	e.preventDefault(); // a 태그의 기능을 막음
+	var category = $(this).text();
+
+	console.log("드롭다운:",category);
+	
+	if (category === "책 제목" || "ISBN") {
+		$('#isbn-link').click(function() {
+			if ($('#title-link').text() === '책 제목') {
+				$('#title-link').text('ISBN');
+				$('#isbn-link').text('책 제목');
+				/*$('#hidden-category').val('ISBN');*/
+			} else {
+				$('#title-link').text('책 제목');
+				$('#isbn-link').text('ISBN');
+				/*$('#hidden-category').val('책 제목');*/
+			}
+			
+			
+		});
+
+	} else {
+		formMove("category.do", "category", category)
+	}
+});
+
+// 책 제목 링크 클릭 시
+$("#title-link").on("click", function(e) {
+  e.preventDefault();
+  var category = $(this).text();
+	console.log("타이틀링크 :",category)
+  $("#hidden-category").val(category); // 숨겨진 input 요소의 value 값 설정
+});
