@@ -4,9 +4,9 @@ import lombok.Data;
 
 // 페이징 처리를 하기 위해서 계산하는 클래스
 @Data
-public class PageMaker {
+public class Template_PageMaker {
 	
-	private Criteria cri;
+	private Template_Criteria cri;
 	private int totalCount; // 총게시글의 수
 	private int startPage; // 시작페이지번호
 	private int endPage; // 끝페이지번호(조정이 되어야 함)

@@ -7,7 +7,7 @@ public class Review {
 	
     private Integer seq;
 
-    private String reveiw;
+    private String review;
 
     private String isbn;
 
