@@ -257,10 +257,10 @@
 		                </span>
 		                <div class="post-content mt-3">
 		                    <h4 >
-		                        <span href="blog-single.html">책 이름<br>${i.title}</span>
+		                        <span href="blog-single.html">${i.title}</span>
 		                        
 		                    </h4>
-		                        <span href="blog-single.html">작가 이름<br>${i.author}</span>
+		                        <span href="blog-single.html">${i.author} 저</span>
 		                		<br>
 		                		<br>
 		                		<br>
@@ -326,7 +326,7 @@
                 </span>
                 <div class="post-content mt-3">
                     <h4 >
-                        <span href="blog-single.html">책 <br> 이름 ${book.other_book1}</span>
+                        <span href="blog-single.html">${book.other_book1}</span>
                     </h4>                 
                 </div>
             </div>
@@ -341,7 +341,7 @@
                 </span>
                 <div class="post-content mt-3">
                     <h4 >
-                        <span href="blog-single.html">책 이름 <br> ${book.other_book2}</span>
+                        <span href="blog-single.html">${book.other_book2}</span>
                     </h4>
                 </div>
             </div>
@@ -356,7 +356,7 @@
                 </span>
                 <div class="post-content mt-3">
                     <h4 >
-                        <span href="blog-single.html">책 이름 <br> ${book.other_book3}</span>
+                        <span href="blog-single.html">${book.other_book3}</span>
                     </h4>
                 </div>
             </div>
@@ -371,7 +371,7 @@
                 </span>
                 <div class="post-content mt-3">
                     <h4 >
-                        <span href="blog-single.html">책 이름 <br> ${book.other_book4}</span>
+                        <span href="blog-single.html">${book.other_book4}</span>
                     </h4>                    
                 </div>
             </div>

@@ -102,6 +102,13 @@ WHERE RN &gt;= #{pageStart}
 	  SELECT * FROM BOOK WHERE ISBN !=#{isbn} and CATEGORY = #{category} ORDER BY DBMS_RANDOM.RANDOM
 	) WHERE ROWNUM &lt;= 5
 	</select>	
+	
+	<!-- 3d 이미지 조회 -->
+	<select id="get3DImg" resultType="kr.fanfeed.entity.Img3D">
+		SELECT *
+		  FROM IMG3D
+		 WHERE ISBN = #{isbn}
+	</select>
 
 </mapper>
 

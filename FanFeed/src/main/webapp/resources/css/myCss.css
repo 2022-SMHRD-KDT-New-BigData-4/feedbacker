@@ -87,12 +87,30 @@
     justify-items: center;
 }
 
+.post-body {
+	width: 1140px;
+}
+
 #similer {
 	text-align: center;
 }
 
+#similer img {
+	width: 100%;
+	height: 350px;
+	object-fit: inherit;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+
 #represent {
 	text-align: center;
+}
+
+#represent img{
+	width: 100%;
+	height: 350px;
+	object-fit: inherit;
+	border: 1px solid rgba(0,0,0,0.15);
 }
 
 #categoryList {
