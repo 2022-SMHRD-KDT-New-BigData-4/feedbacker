@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.gson.Gson;
 
 import kr.fanfeed.entity.Book;
+import kr.fanfeed.entity.Img3D;
 import kr.fanfeed.entity.Review;
 import kr.fanfeed.entity.ReviewCriteria;
 import kr.fanfeed.entity.ReviewPageMaker;
@@ -52,6 +53,7 @@ public class InfoController {
 		return "fanfeed/bookinfo";
 	}
 	
+	// 리뷰 ajax 처리
 	@RequestMapping("/reviewAjax.do")
 	public @ResponseBody String reviewAjax(String isbn, ReviewCriteria cri) {
 		
@@ -75,7 +77,16 @@ public class InfoController {
 		return gson.toJson(jsonMap);
 	}
 	
-	
+	// 3d 이미지창 처리
+	@RequestMapping("/imgView.do")
+	public String imgView(String isbn, Model model){
+		
+		Img3D img3d = mapper.get3DImg(isbn);
+		
+		model.addAttribute("img3d", img3d);
+		
+		return "fanfeed/imgview";
+	}
 	
 	
 	

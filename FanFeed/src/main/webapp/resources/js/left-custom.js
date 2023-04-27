@@ -305,3 +305,9 @@ $('#isbn-link').click(function() {
 	    $pagination.append('<li class="list-inline-item page-item"><a href="' + (data.pm.endPage + 1) + '" class="prev-posts"><i class="ti-arrow-right"></i></a></li>');
 	  }
 }
+	
+	// 새창에 3d이미지 창 로드
+	function imgView(){
+		var isbn = $('.isbn').text();
+		var newWindow = window.open('imgView.do?isbn='+isbn, '_blank');
+	}

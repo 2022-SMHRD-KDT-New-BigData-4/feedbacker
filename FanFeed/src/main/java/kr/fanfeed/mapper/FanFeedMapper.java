@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 import kr.fanfeed.entity.Book;
+import kr.fanfeed.entity.Img3D;
 import kr.fanfeed.entity.MainCriteria;
 import kr.fanfeed.entity.Member;
 import kr.fanfeed.entity.Review;
@@ -45,5 +46,13 @@ public interface FanFeedMapper {
 	
 	// 북 인포에서 카테고리별 리스트 조회
 	public List<Book> relationBook( @Param("category") String category, @Param("isbn") String isbn);
-
+	
+	// 3d이미지 조회
+	public Img3D get3DImg(String isbn);
+	
+	
+	
+	
+	
+	
 }

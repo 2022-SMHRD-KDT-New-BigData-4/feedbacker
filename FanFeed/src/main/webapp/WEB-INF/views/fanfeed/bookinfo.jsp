@@ -142,7 +142,7 @@
 			<span class="isbn" style="display: none">${book.isbn }</span> 
 			<a href="blog-single.html"><img src=${book.img } alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
-
+				<button onclick="imgView()" ${book.yn_3d eq "y" ? "" : "disabled"} class="btn btn-primary" >3d VIEW</button>
 			</div>
 		</div>
         <br>
