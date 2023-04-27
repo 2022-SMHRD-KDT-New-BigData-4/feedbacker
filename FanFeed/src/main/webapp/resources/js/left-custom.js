@@ -311,3 +311,29 @@ $('#isbn-link').click(function() {
 		var isbn = $('.isbn').text();
 		var newWindow = window.open('imgView.do?isbn='+isbn, '_blank');
 	}
+	
+// 카테고리 클릭 로직
+$(".dropdown-item").on("click", function(e) {
+	e.preventDefault(); // a 태그의 기능을 막음
+	var category = $(this).text();
+
+	console.log("드롭다운:", category);
+
+	if (category === "책 제목" || category === "ISBN") {
+		changeCategory();
+	} else {
+		formMove("category.do", "category", category)
+	}
+
+	function changeCategory() {
+		if ($('#title-link').text() === '책 제목') {
+			$('#title-link').text('ISBN');
+			$('#isbn-link').text('책 제목');
+			$('#hidden-category').val('ISBN');
+		} else {
+			$('#title-link').text('책 제목');
+			$('#isbn-link').text('ISBN');
+			$('#hidden-category').val('책 제목');
+		}
+	}
+});
