@@ -243,30 +243,31 @@
 <div class="related-posts-block mt-5" id="similer">
 	<br>
 	<br>
-    <h3 class="news-title mb-4 text-center">
-       연관 도서
-    </h3>
-    <br>
-    <div class="row">
-    <c:forEach var="i" begin="1" end="8">
-        <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="post-block-wrapper mb-4 mb-lg-0">
-                <a href="blog-single.html">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x530.png?text=temp1" alt="post-thumbnail"/>
-                </a>
-                <div class="post-content mt-3">
-                    <h4 >
-                        <a href="blog-single.html">책 이름${i }</a>
-                        
-                    </h4>
-                        <a href="blog-single.html">작가 이름${i }</a>
-                		<br>
-                		<br>
-                		<br>
-                </div>
-            </div>
-        </div>
-    </c:forEach>
+			<!-- 연관도서 리뷰 -->
+		    <h3 class="news-title mb-4 text-center">
+		       연관 도서
+		    </h3>
+		    <br>
+		    <div class="row">
+		    <c:forEach var="i"  items="${relation}" begin="1" end="10">
+		        <div class="col-lg-3 col-md-3 col-sm-6"  onclick="formMove('bookinfo.do','isbn','${i.isbn}')">
+		            <div class="post-block-wrapper mb-4 mb-lg-0">
+		                <span href="blog-single.html">
+		                    <img class="img-fluid" src="${i.img}" alt="post-thumbnail"/>
+		                </span>
+		                <div class="post-content mt-3">
+		                    <h4 >
+		                        <span href="blog-single.html">책 이름<br>${i.title}</span>
+		                        
+		                    </h4>
+		                        <span href="blog-single.html">작가 이름<br>${i.author}</span>
+		                		<br>
+		                		<br>
+		                		<br>
+		                </div>
+		            </div>
+		        </div>
+		    </c:forEach>
    <!--      <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
                 <a href="blog-single.html">
@@ -309,33 +310,73 @@
 <br>
 <br>
 
+<!-- 대표도서  -->
 <div class="related-posts-block mt-5" id="represent">
     <h3 class="news-title mb-4 text-center">
        대표 저서
     </h3>
     <br>
     <div class="row">
-    <c:forEach var="i" begin="1" end="4">
+    <!-- 첫번째 도서 -->
+<c:if test="${not empty book.other_img1}">
         <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
-                <a href="blog-single.html">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x530.png?text=temp1" alt="post-thumbnail"/>
-                </a>
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img1}" alt="post-thumbnail"/>
+                </span>
                 <div class="post-content mt-3">
                     <h4 >
-                        <a href="blog-single.html">책 이름 ${i }</a>
-                    </h4>
-                        <a href="blog-single.html">작가 이름${i }</a>
+                        <span href="blog-single.html">책 <br> 이름 ${book.other_book1}</span>
+                    </h4>                 
                 </div>
             </div>
         </div>
-    </c:forEach>
-    </div>
-</div>
-
-			</div>
-		</div>
-	</div>
+ </c:if>       
+ <!-- 두번째 도서 -->
+ <c:if test="${not empty book.other_img2}">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img2}" alt="post-thumbnail"/>
+                </span>
+                <div class="post-content mt-3">
+                    <h4 >
+                        <span href="blog-single.html">책 이름 <br> ${book.other_book2}</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+         </c:if> 
+         <!-- 세번째 도서 -->
+         <c:if test="${not empty book.other_img3}">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img3}" alt="post-thumbnail"/>
+                </span>
+                <div class="post-content mt-3">
+                    <h4 >
+                        <span href="blog-single.html">책 이름 <br> ${book.other_book3}</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+           </c:if>    
+                    <c:if test="${not empty book.other_img4}">
+         <!-- 네번째 도서 -->
+                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img4}" alt="post-thumbnail"/>
+                </span>
+                <div class="post-content mt-3">
+                    <h4 >
+                        <span href="blog-single.html">책 이름 <br> ${book.other_book4}</span>
+                    </h4>                    
+                </div>
+            </div>
+        </div>
+   </c:if> 
 </section>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
 

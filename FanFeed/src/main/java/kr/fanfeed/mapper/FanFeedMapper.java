@@ -42,4 +42,8 @@ public interface FanFeedMapper {
 	
 	//  ISBN을 검색해서 조회
 	public List<Book> searchBookIsbn( String search);
+	
+	// 북 인포에서 카테고리별 리스트 조회
+	public List<Book> relationBook( @Param("category") String category, @Param("isbn") String isbn);
+
 }

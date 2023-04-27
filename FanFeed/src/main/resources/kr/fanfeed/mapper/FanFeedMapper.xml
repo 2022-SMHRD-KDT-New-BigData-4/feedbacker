@@ -96,6 +96,12 @@ WHERE RN &gt;= #{pageStart}
 		ISBN = #{search}
 	</select>
 
+	<!-- 관련도서 조회  -->
+	<select id="relationBook" resultType="kr.fanfeed.entity.Book">
+	 SELECT * FROM (
+	  SELECT * FROM BOOK WHERE ISBN !=#{isbn} and CATEGORY = #{category} ORDER BY DBMS_RANDOM.RANDOM
+	) WHERE ROWNUM &lt;= 5
+	</select>	
 
 </mapper>
 

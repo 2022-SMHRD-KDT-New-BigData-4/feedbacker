@@ -29,21 +29,21 @@ public class Book {
 
 	private String img;
 
-    private String otherImg1;
+    private String other_img1;
 
-    private String otherBook1;
+    private String other_book1;
 
-    private String otherImg2;
+    private String other_img2;
 
-    private String otherBook2;
+    private String other_book2;
 
-    private String otherImg3;
+    private String other_img3;
 
-    private String otherBook3;
+    private String other_book3;
 
-    private String otherImg4;
+    private String other_img4;
 
-    private String otherBook4;
+    private String other_book4;
 	
 	
 	
