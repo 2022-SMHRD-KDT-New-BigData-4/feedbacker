@@ -269,6 +269,7 @@ $('#isbn-link').click(function() {
 	// 리뷰 페이지 ajax 성공 함수
 	function updatePage(data) {
 	  // 댓글 목록 업데이트
+	  $('.comment-area-box + hr').remove();
 	  $('.comment-area-box').remove();
 	  $.each(data.reviewList, function(index, review) {
 		var stackTag = "";
@@ -280,6 +281,7 @@ $('#isbn-link').click(function() {
 	    $in_div.append(stackTag);
 		$out_div.append($in_div);
 	    $(".comment-area").append($out_div);
+		$(".comment-area").append('<hr>');
 	  });
 	
 	  // 페이지 버튼 업데이트
