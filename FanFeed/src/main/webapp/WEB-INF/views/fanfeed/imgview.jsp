@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-
     body {
         display: flex;
         justify-content: center;
@@ -34,18 +33,20 @@
       }
       
       .book-front {
-        transform : translateZ(23px)
+        transform : translateZ(24px)
       }
 
       .book-side {
         position: absolute;
         transform: rotateY(-90deg) translateX(-50%);
         transform-origin: left;
+        height: 600px;
+        width: 50px;
       }
       
       .book-back {
         position: absolute;
-        transform: rotateY(180deg) translateZ(23px)
+        transform: rotateY(180deg) translateZ(24px)
       }
       
       .book-container:hover .book {
@@ -65,11 +66,13 @@
       <img class="book-side" src=${img3d.side } alt="Book Side">
       <img class="book-back" src=${img3d.back } alt="Book Back">
     </div>
+    <form action=""></form>
   </div>
   <script>
-    document.querySelector('.book-container').addEventListener('click', function () {
-        this.classList.toggle('clicked');
-      });
+  document.querySelector('.book-container').addEventListener('click', function () {
+      this.classList.toggle('clicked');
+    });
+
   </script>
 </body>
 </html>
