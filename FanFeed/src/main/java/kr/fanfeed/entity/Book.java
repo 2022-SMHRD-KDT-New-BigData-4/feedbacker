@@ -44,6 +44,8 @@ public class Book {
     private String other_img4;
 
     private String other_book4;
+    
+    private String yn_3d;
 	
 	
 	
