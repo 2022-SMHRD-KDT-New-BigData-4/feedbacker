@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class FlaskController {
 
 		@RequestMapping("/flask.do")
-		public void flask() {
+		public String flask (String isbn) {
 
 		      String inputLine;
 		       StringBuffer response = new StringBuffer();
 		      try {
-		         String apiUrl="http://127.0.0.1:5000/test"; // + URLEncoder.encode(@@, "UTF-8");
+		         String apiUrl="http://127.0.0.1:5000/predict/" + URLEncoder.encode(isbn, "UTF-8");
 		         URL url=new URL(apiUrl);
 		         HttpURLConnection conn=(HttpURLConnection) url.openConnection();
 		         conn.setRequestMethod("GET");
@@ -38,7 +38,7 @@ public class FlaskController {
 		      }catch (Exception e) {
 		           e.printStackTrace();  
 		      }
-		      // return response.toString();   
+		      return response.toString();   
 		}
 		
 }
