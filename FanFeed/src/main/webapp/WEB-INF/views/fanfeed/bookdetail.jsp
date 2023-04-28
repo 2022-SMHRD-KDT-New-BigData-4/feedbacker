@@ -130,16 +130,17 @@
 
 
 
-
+	
 	<div class="sidebar-widget mb-5 ">
 		<h4 class="text-center widget-title">Best seller</h4>
 
 		<div class="sidebar-post-item-big">
-			<a href="blog-single.html"><img src="https://img.ridicdn.net/cover/3306000090/xxlarge?dpi=xxhdpi#1" alt="" class="img-fluid"></a>
+			<span href="blog-single.html"><img src=${book.img}  alt="" class="img-fluid"></span>
 			<div class="mt-3 media-body" id="media-body">
-            	<h5 class="text-muted letter-spacing text-uppercase font-sm">2020.03.25. 전자책 출간</h5>
-				<div><h4 ><a onclick="move()">개정 번역판 | 해리 포터와 마법사의 돌</a></h4></div>
-                <h5>작가 이름</h5>
+            	<h5 class="text-muted letter-spacing text-uppercase font-sm">${book.datetime }</h5>
+            	<span class="isbn" style="display: none">${book.isbn }</span> 
+				<div><h4 >${book.title}</h4></div>
+                <h5>${book.author}</h5>
 			</div>
 		</div>
         <br>

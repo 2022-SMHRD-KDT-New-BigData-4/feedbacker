@@ -159,7 +159,9 @@
 		
 		$(function move(){
 			$('#detailbtn').click(function(){
-				location.href="bookdetail.do";
+				var isbn = $('.isbn').text()
+				
+				 formMove("bookdetail.do",'isbn', isbn);
 			});
 		
 		});
