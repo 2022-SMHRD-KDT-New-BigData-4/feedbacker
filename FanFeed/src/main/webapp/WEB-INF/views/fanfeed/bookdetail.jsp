@@ -457,6 +457,7 @@
 <script src="${cpath }/resources/js/instafeed.min.js"></script>
 <!-- main js -->
 <script src="${cpath }/resources/js/left-custom.js"></script>
+<script src="${cpath }/resources/js/bookdetail.js"></script>
 <!-- anychart js -->
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
