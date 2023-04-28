@@ -139,7 +139,7 @@
 						<span class="isbn" style="display: none">${book.isbn }</span> <!-- 조회를 위한 isbn 안보이게 추가 -->
 						<div class="slider-item-content" id="slider-item-content">
 							<div class="post-thumb mb-4">
-								<a onclick="bookinfomove()">
+								<a href="#" onclick="bookinfomove()">
 									<img src=${book.img } alt="" class="img-fluid">
 								</a>
 							</div>
@@ -147,7 +147,7 @@
 							<div class="slider-post-content">
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">${book.category }</span>
 								<h4 class="post-title mt-1">
-									<a onclick="bookinfomove()">${book.title }</a>
+									<a href="#" onclick="bookinfomove()">${book.title }</a>
 								</h4>
 								<span class=" text-muted  text-capitalize">${book.author } 저</span>
 							</div>
@@ -177,7 +177,7 @@
 						<div class="col-lg-3 col-md-6 book-main sbookList">
 							<span class="isbn" style="display: none">${book.isbn }</span>
 							<article class="post-grid mb-5">
-								<a class="post-thumb mb-4 d-block" onclick="bookinfomove()">
+								<a href="#" class="post-thumb mb-4 d-block" onclick="bookinfomove()">
 									<img src=${book.img } alt="" class="img-fluid w-100">
 								</a>
 								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${book.category }</span>
