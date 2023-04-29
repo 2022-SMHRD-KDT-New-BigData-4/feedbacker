@@ -26,6 +26,9 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     
+
+    
+    
     <!-- THEME CSS
 	================================================== -->
 	<!-- Bootstrap -->
@@ -42,13 +45,15 @@
 	<link rel="stylesheet" href="${cpath }/resources/css/style.css">
 	<link rel="stylesheet" href="${cpath }/resources/css/myCss.css">
 	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.css" />
+	
 </head>
 
 <body>
 <div class="loading">
-  <span></span>
-  <span></span>
-  <span></span>
+	<span></span>
+	<span></span>
+	<span></span>
 </div>
 
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
@@ -192,67 +197,10 @@
                                 <h3 class="text-center widget-title">감성 연관어</h3>
                                 <input type="hidden" id="selectedSentiment" value="all">
                                 <div id="factorDetail" class="chart-wrap chart-reputation-bubble">
-                                    <svg width="100%" height="100%" viewBox="0 0 350 330" preserveAspectRatio="xMinYMin meet" class="bubble">
-                                        <g class="node" transform="translate(126.22340445964113,166.79076499519638)">
-                                            <circle r="71.2206729731952" style="cursor: pointer; fill: #34231D; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 59.1394px;">
-                                                좋다</text>
-                                        </g>
-                                        <g class="node" transform="translate(247.69049525056934,166.79076499519638)">
-                                            <circle r="48.7793983353067" style="cursor: pointer; fill: #75554A; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 39.2956px;">
-                                                멋진</text>
-                                        </g>
-                                        <g class="node" transform="translate(206.38165803073275,251.13718943322522)">
-                                            <circle r="43.6723734220134" style="cursor: pointer; fill: #AF7C53; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 22.3827px;">
-                                                멋지다</text>
-                                        </g>
-                                        <g class="node" transform="translate(206.33017716347626,82.78004907453935)">
-                                            <circle r="43.39372475887171" style="cursor: pointer; fill: #34231D; fill-opacity: 0.85;"></circle>
-                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 21.2031px;">
-                                                잘하다</text>
-                                        </g>
-                                        <g class="node" transform="translate(125.85255310031408,53.234786022071916)">
-                                            <circle r="40.868892079470065" style="cursor: pointer; fill: #75554A; fill-opacity: 0.85;"></circle>
-                                                <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 14.7708px;">
-                                                    감사하다</text>
-                                        </g>
-                                            <g class="node" transform="translate(130.50667317967418,273.2979857809192)">
-                                                <circle r="33.90562098582621" style="cursor: pointer; fill: #AF7C53; fill-opacity: 0.85;"></circle>
-                                                    <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 15.9419px;">
-                                                        잘들다</text>
-                                                </g>
-                                                <g class="node" transform="translate(283.41493598228254,91.86766242433403)">
-                                                    <circle r="32.75784089492373" style="cursor: pointer; fill: #CD9A6E; fill-opacity: 0.85;"></circle>
-                                                        <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 15.9419px;">
-                                                            잘들다</text>
-                                                    </g>
-                                                    <g class="node" transform="translate(281.74880352377085,240.52264098998072)">
-                                                        <circle r="30.971547560271137" style="cursor: pointer; fill: #34231D; fill-opacity: 0.85;"></circle>
-                                                            <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 22.4027px;">
-                                                                좋은</text>
-                                                        </g>
-                                                        <g class="node" transform="translate(70.79608070504756,251.20237459101804)">
-                                                            <circle r="28.295019199165935" style="cursor: pointer; fill: #CD9A6E; fill-opacity: 0.85;"></circle>
-                                                                <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 9.49243px;">
-                                                                    아름다운</text>
-                                                            </g>
-                                                            <g class="node" transform="translate(64.13886665666614,87.31541193412322)">
-                                                                <circle r="28.16279875979731" style="cursor: pointer; fill: #F45050; fill-opacity: 0.85;"></circle>
-                                                                    <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 9.62999px;">
-                                                                        좋은노래</text>
-                                                            </g>
-                                            <g class="node" transform="translate(64.13886665666614,87.31541193412322)">
-                                                <circle r="28.16279875979731" style="cursor: pointer; fill: #AF7C53;fill-opacity: 0.85;"></circle>
-                                                    <text dy=".3em" style="cursor: pointer; text-anchor: middle; fill: rgb(255, 255, 255); user-select: none; font-size: 9.62999px;">
-                                                        이거이거</text>
-                                            </g>
-                                	<g style="display: none;" transform="translate(204.41493598228254,91.86766242433403)"><rect class="tooltip-rect" rx="5" ry="5" height="17" style="fill: rgb(255, 255, 255); stroke-width: 2; stroke: rgb(88, 69, 234);" width="79"></rect>
-                                        <text class="tooltip-text" style="stroke: rgb(51, 51, 51); font-size: 12px; text-anchor: middle;" x="39.5" y="12.592592592592592">
-                                            사랑 : 575건</text>
-                                    </g>
-                                </svg></div>
+                                <div id="wordcloud">
+                                	
+                                </div>
+                                </div>
                             </div>
 						</div>
 					</div>
@@ -261,13 +209,9 @@
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="https://via.placeholder.com/500x530.png?text=temp1" alt="" class="img-fluid">
 								</a>
 							</div>
 							<div class="slider-post-content">
-								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">경영/경제</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">장하준의 경제학 레시피 : 마늘에서 초콜릿까지 18가지 재료로 요리한 경제 이야기</a></h3>
-								<span class=" text-muted  text-capitalize">장하준 저 | 김희정 역</span>
 							</div>
 						</div>
 					</div>
@@ -466,8 +410,8 @@
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
 
 </body>
 </html>

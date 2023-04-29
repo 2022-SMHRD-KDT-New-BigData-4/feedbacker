@@ -270,3 +270,44 @@
   }
 }
 /* 로딩 관련 css 끝 */
+
+
+/* 워드 클라우드 css*/
+#wordcloud {
+	width: 583px;
+	height: 500px;
+    font-family: 'Myungjo' !important;
+    font-size: 16px;
+    text-align: center;
+}
+
+.jqcloud span.w10 {
+  color: #EB1E36 !important;
+}
+.jqcloud span.w9 {
+  color: #EF3B4E !important;
+}
+.jqcloud span.w8 {
+  color: #F35965 !important;
+}
+.jqcloud span.w7 {
+  color: #F7777D !important;
+}
+.jqcloud span.w6 {
+  color: #FA9494 !important;
+}
+.jqcloud span.w5 {
+  color: #E5B3B2 !important;
+}
+.jqcloud span.w4 {
+  color: #EDD0C7 !important;
+}
+.jqcloud span.w3 {
+  color: #F1DFD2 !important;
+}
+.jqcloud span.w2 {
+  color: #F5EDDC !important;
+}
+.jqcloud span.w1 {
+  color: #E2E0D6 !important;
+}

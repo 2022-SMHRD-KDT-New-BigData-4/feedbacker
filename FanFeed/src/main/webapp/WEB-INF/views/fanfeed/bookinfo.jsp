@@ -121,9 +121,11 @@
 
 	</header>
 
+<div style="height: 200px;"></div>
+
 <section class="single-block-wrapper section-padding">
 	<div class="container">
-		<div class="row" style="margin-top: 200px;">
+		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar sidebar-right">
 					<div class="sidebar-wrap mt-5 mt-lg-0">
@@ -193,6 +195,21 @@
         </div>
     </div>
 	<hr>
+
+
+    </div>
+</div>
+
+
+
+
+
+    <div class="post-body">
+        <div class="entry-content">
+<div class="related-posts-block mt-5" id="similer">
+	<br>
+	<br>
+		
 	<div class="comment-area my-5">
 		<br>
 		<h2 class="mb-4 text-center">리뷰</h2>
@@ -200,11 +217,13 @@
 		<c:forEach var="review" items="${reviewList }">
 		<div class="comment-area-box media">
 
-			<div class="media-body ml-4">
-				<h4 class="mb-0">${review.writer } </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>${review.datetime } </span>
-
-				<div class="comment-content mt-3">
+			<div style="column-count: 2 !important;">
+				<div style="width: 150px !important; border-right: 1px solid rgba(0,0,0,0.1);">
+					<h4 class="mb-0">${review.writer } </h4>
+					<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>${review.datetime } </span>
+				</div>	
+					
+				<div class="comment-content mt-3" id="reviewText" style="text-align: start;">
 					<p>${review.review }</p>
 				</div>
 			</div>
@@ -230,19 +249,7 @@
 			</div>
 		</div>
 		<!-- 페이징 끝 -->	
-
-    </div>
-</div>
-
-
-
-
-
-    <div class="post-body">
-        <div class="entry-content">
-<div class="related-posts-block mt-5" id="similer">
-	<br>
-	<br>
+	
 			<!-- 연관도서 리뷰 -->
 		    <h3 class="news-title mb-4 text-center">
 		       연관 도서
