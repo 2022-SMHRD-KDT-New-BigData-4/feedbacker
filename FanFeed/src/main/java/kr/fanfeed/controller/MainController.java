@@ -1,11 +1,18 @@
 package kr.fanfeed.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.google.gson.Gson;
 
 import kr.fanfeed.entity.Book;
 import kr.fanfeed.entity.MainCriteria;
@@ -65,45 +72,59 @@ public class MainController {
 
 		return "fanfeed/category";
 	}
-	@RequestMapping("/search.do")
-	public String Search(Model model , String type , String search) {
+	
+	// 검색 인풋창 입력시 ajax
+	@GetMapping("/search.do")
+	public @ResponseBody String search(String type, String search) {
 		
 		// 받아온 데이터 확인
 		System.out.println("type : "+type);
 		System.out.println("search : "+search);
 		
-		List<Book> Book;
+		List<Book> searchBook;
 		if(type.equals("책 제목"))  {		
 			// 책 체목으로 검색하는 쿼리문 작성
-			 Book = mapper.searchBookTitle(search);
-			 System.out.println("책제목");
+			 searchBook = mapper.searchBookTitle(search);
+			 searchBook = searchBook.subList(0, 3);
+			 
 		} else {
 			// ISBN 값으로 검색하는 쿼리문 작성
-			 Book = mapper.searchBookIsbn(search);	
-			 System.out.println("ISBN");
+			 searchBook = mapper.searchBookIsbn(search);	
 		}
 		
 		
-		for(Book book    : Book) {
+		for(Book book    : searchBook) {
 			System.out.println("제목:"+book.getTitle());
 		}
 		
+		Map<String, Object> jsonMap = new HashMap<String, Object>();
+		jsonMap.put("searchBook", searchBook);
 		
+		Gson gson = new Gson();
+		gson.toJson(jsonMap);
 		
-		return "redirect:/main.do";
+		return gson.toJson(jsonMap);
 	}
 	
-	// 서버시작시 / url 바로 메인이동
-		@RequestMapping("/about.do")
-		public String aboutPage() {
-
-			return "fanfeed/about";
-		}
+	// 검색창 제출시 이동
+	@PostMapping("/search.do")
+	public String searchMove() {
+		
+		return "";
+	}
 	
-		@RequestMapping("/contact.do")
-		public String contactPage() {
-			
-			return "fanfeed/contact";
-		}
+	// about페이지
+	@RequestMapping("/about.do")
+	public String aboutPage() {
+
+		return "fanfeed/about";
+	}
+	
+	// contact페이지
+	@RequestMapping("/contact.do")
+	public String contactPage() {
+		
+		return "fanfeed/contact";
+	}
 
 }

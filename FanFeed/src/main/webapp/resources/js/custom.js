@@ -227,6 +227,27 @@ $(".dropdown-item").on("click", function(e) {
 	}
 });
 
+$('#search').on('keyup', function() {
+    var searchInput = $(this).val();
+    var searchType = $('#hidden-category').val(); // hidden-category의 ID를 선택해야 합니다. 앞에 #을 추가해야 합니다.
+
+    console.log(searchInput);
+    console.log(searchType);
+
+    $.ajax({
+        url: "search.do",
+        type: "GET",
+        data: { type: searchType, search: searchInput }, // 객체 속성명을 명시해야 합니다.
+        dataType: "json",
+        success: function(data) {
+            console.log(data);
+        },
+        error: function() {
+            alert("에러");
+        }
+    });
+});
+
 /*// 책 제목 링크 클릭 시
 $("#title-link").on("click", function(e) {
 	e.preventDefault();
