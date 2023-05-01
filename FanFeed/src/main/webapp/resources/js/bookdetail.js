@@ -55,6 +55,33 @@ $(document).ready(function () {
                     to: 0.03
                 }
             });
+            /*감성어 top 10*/
+			// success 콜백 함수 내부에서 수행됩니다.
+			var word_list = [];
+			$.each(data.predict.lda, function (index, word) {
+			    $.each(word, function (key, value) {
+			        // 단어와 가중치를 배열에 추가합니다.
+			        word_list.push({text: key, weight: value});
+			    })
+			});
+			
+			// 내림차순으로 정렬합니다.
+			word_list.sort(function(a, b) {
+			    return b.weight - a.weight;
+			});
+			
+			// 상위 10개의 요소에 대해서만 리스트 태그를 만듭니다.
+			var top10List = '';
+			$.each(word_list.slice(0, 10), function (index, word) {
+			    // 리스트에 항목을 추가합니다.
+			    top10List += '<li class="align-items-center d-flex justify-content-between" id="toplist">';
+			    top10List += '<span>' + (index + 1) + '</span>';
+			    top10List += '<a href="#">' + word.text + '</a>';
+			    top10List += '</li>';
+			});
+
+// top10 리스트를 추가합니다.
+$('#top10 ul.list-unstyled').html(top10List);
         },
         error : function () { alert("에러"); },
         beforeSend: function() {
@@ -65,3 +92,11 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+
+
+
+
+
