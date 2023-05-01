@@ -215,7 +215,11 @@
 	<div class="comment-area my-5">
 		<br>
 		<h2 class="mb-4 text-center">리뷰</h2>
-		
+		<hr>
+		<c:if test="${empty reviewList }">
+			<br>
+			<h3>리뷰가 없습니다.</h3>
+		</c:if>
 		<!-- 리뷰 반복문 -->
 		<c:forEach var="review" items="${reviewList }">
 		<div class="comment-area-box media row">

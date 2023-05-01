@@ -274,15 +274,25 @@ $('#isbn-link').click(function() {
 	  $('.comment-area-box + hr').remove();
 	  $('.comment-area-box').remove();
 	  $.each(data.reviewList, function(index, review) {
-		var stackTag = "";
-	    var $out_div = $('<div class="comment-area-box media"></div>');
-		var $in_div = $('<div class="media-body ml-4"></div>');
-		stackTag += '<h4 class="mb-0">'+review.writer+'</h4>';
-		stackTag += '<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>'+review.datetime+'</span>';
-		stackTag += '<div class="comment-content mt-3"><p>'+review.review+'</p></div>';
-	    $in_div.append(stackTag);
-		$out_div.append($in_div);
-	    $(".comment-area").append($out_div);
+		var leftStackTag = "";
+	    var $row_div = $('<div class="comment-area-box media row"></div>');
+		var $left_div = $('<div class="col-lg-3" style="border-right: 1px solid rgba(0,0,0,0.1);"></div>');
+		leftStackTag += '<p class="mb-2">'; // 별점 담을 p태그
+		for(var i = 1;i<=review.score;i++){ // 금색별 반복문
+			leftStackTag += '<i class="fa-solid fa-star" style="color: goldenrod"></i> ';
+		}
+		for(var i = 0;i<5-review.score;i++){ // 회색별 반복문
+			leftStackTag += '<i class="fa-solid fa-star" style="color: gray"></i> ';
+		}
+		leftStackTag += '<h4 class="mb-0"><i class="fa-solid fa-user mr-1"></i>'+review.writer+'</h4>'; // 유저아이콘 + 작성자ID
+		leftStackTag += '<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>'+review.datetime+'</span>'; // 작성일
+	    $left_div.append(leftStackTag);
+		$row_div.append($left_div);
+		
+		var $right_div = '<div class="comment-content mt-3 col-lg-9" id="reviewText" style="text-align: start;"><p>'+review.review+'</p></div>';
+	    $row_div.append($right_div);
+
+		$(".comment-area").append($row_div);
 		$(".comment-area").append('<hr>');
 	  });
 	
