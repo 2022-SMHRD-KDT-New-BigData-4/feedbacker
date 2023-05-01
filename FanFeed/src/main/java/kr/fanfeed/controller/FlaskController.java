@@ -34,7 +34,7 @@ public class FlaskController {
 		              response.append(inputLine);
 		          }
 		          br.close();
-		          System.out.println(response.toString()); // 데이터 받아오기 테스트
+		          // System.out.println(response.toString()); 데이터 받아오기 테스트
 		      }catch (Exception e) {
 		           e.printStackTrace();  
 		      }

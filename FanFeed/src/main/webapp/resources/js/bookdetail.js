@@ -28,6 +28,8 @@
        });
    });*/
    
+/* 워드 클라우드 생성 */   
+   
 $(document).ready(function () {
     var isbn = $('.isbn').text();
     $.ajax({
