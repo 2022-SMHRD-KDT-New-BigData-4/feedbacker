@@ -50,9 +50,9 @@
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 text-center">
-					<a class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" id="logo"></a>
+			<div class="row justify-content-center logo-wrap">
+				<div class="col-lg-6 text-center logo-center">
+					<a id="logo" class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" style="width: 320px;"></a>
 				</div>
 			</div>
 		</div>
@@ -70,12 +70,12 @@
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul id="menu" class="menu navbar-nav ">
 						<li class="nav-item dropdown  pl-0">
-							<a onclick="mainmove()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
 								Home
 							</a>
 						</li>
-						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+						<li class="nav-item"><a onclick="aboutmove()" class="nav-link" id="about">About</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
@@ -91,7 +91,7 @@
 		                        <a class="dropdown-item" href="#">가정/생활</a>
 		                     </div>
 						</li>
-						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
 						<li class="nav-item d-lg-none">
 							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
 						</li>
@@ -129,7 +129,7 @@
 				
 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="single-post">
+					<div class="single-post" style="margin-top: -200px">
 						<div class="related-posts-block mt-5">
 							<h2 class="news-title mb-4 text-center">
 								Feed Backer
@@ -140,7 +140,7 @@
 									<h3>Lee Jihoo</h3>
 									<br>
 									<p>총괄 및 데이터 분석</p>
-									<p>데이터 그래프</p>
+									<p>바보입네다..</p>
 									<br>
 									<p><img src="${cpath }/resources/images/email.png"> : gygh9604@naver.com</p>
 									<p><img src="${cpath }/resources/images/phone.png"> : 010-6214-5316</p>
@@ -171,7 +171,7 @@
 									<h3>Yang Eojin</h3>
 									<br>
 									<p>UI, UX 제작 및 프론트엔드</p>
-									<p>워드 클라우드</p>
+									<p>워드 클라우드 및 차트 구현</p>
 									<br>
 									<p><img src="${cpath }/resources/images/email.png"> : ryumuil2947@naver.com</p>
 									<p><img src="${cpath }/resources/images/phone.png"> : 010-6569-5717</p>
