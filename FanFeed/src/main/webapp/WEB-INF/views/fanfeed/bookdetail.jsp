@@ -413,5 +413,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
 
+<!-- fontawesome icon -->
+<script src="https://kit.fontawesome.com/4a8c96245b.js" crossorigin="anonymous"></script>
 </body>
 </html>

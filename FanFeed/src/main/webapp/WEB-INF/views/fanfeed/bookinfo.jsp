@@ -144,7 +144,9 @@
 			<span class="isbn" style="display: none">${book.isbn }</span> 
 			<a href="blog-single.html"><img src=${book.img } alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
-				<button onclick="imgView()" ${book.yn_3d eq "y" ? "" : "disabled"} class="btn btn-primary" >3d VIEW</button>
+				<c:if test="${book.yn_3d eq 'y'}">
+					<button onclick="imgView()" class="btn btn-primary" >3d VIEW</button>
+				</c:if>
 			</div>
 		</div>
         <br>
@@ -214,22 +216,30 @@
 		<br>
 		<h2 class="mb-4 text-center">리뷰</h2>
 		
+		<!-- 리뷰 반복문 -->
 		<c:forEach var="review" items="${reviewList }">
-		<div class="comment-area-box media">
+		<div class="comment-area-box media row">
 
-			<div style="column-count: 2 !important;">
-				<div style="width: 150px !important; border-right: 1px solid rgba(0,0,0,0.1);">
-					<h4 class="mb-0">${review.writer } </h4>
+				<div class="col-lg-3" style="border-right: 1px solid rgba(0,0,0,0.1);">
+					<p class="mb-2"> <!-- 평점 별 -->
+					  <c:forEach begin="1" end="${review.score}"> <!-- 금색별 -->
+					    <i class="fa-solid fa-star" style="color: goldenrod"></i> 
+					  </c:forEach>
+					  <c:forEach begin="1" end="${5-review.score}"> <!-- 회색별 -->
+					    <i class="fa-solid fa-star" style="color: gray"></i>
+					  </c:forEach>
+					</p> <!-- 평점 별 끝 -->
+					<h4 class="mb-0"><i class="fa-solid fa-user mr-1"></i> ${review.writer } </h4>
 					<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>${review.datetime } </span>
 				</div>	
 					
-				<div class="comment-content mt-3" id="reviewText" style="text-align: start;">
+				<div class="comment-content mt-3 col-lg-9" id="reviewText" style="text-align: start;">
 					<p>${review.review }</p>
 				</div>
-			</div>
 		</div>
 		<hr>
 		</c:forEach>
+		<!-- 리뷰 반복문 끝 -->
 	</div>
 
  	<!-- 페이징처리 -->	
@@ -413,7 +423,8 @@
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
-
+<!-- fontawesome icon -->
+<script src="https://kit.fontawesome.com/4a8c96245b.js" crossorigin="anonymous"></script>
 
 
 </body>
