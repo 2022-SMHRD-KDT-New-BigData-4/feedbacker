@@ -55,6 +55,7 @@ $(document).ready(function () {
                     to: 0.03
                 }
             });
+            
             /*감성어 top 10*/
 			// success 콜백 함수 내부에서 수행됩니다.
 			var word_list = [];
@@ -92,6 +93,9 @@ $('#top10 ul.list-unstyled').html(top10List);
         }
     });
 });
+
+
+
 
 
 

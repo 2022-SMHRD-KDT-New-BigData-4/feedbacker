@@ -238,8 +238,9 @@
 				<h4 class="mb-0">Micle harison ${i } </h4>
 				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
 
-				<div class="comment-content mt-3">
-					<p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
+				<div class="comment-content mt-3" id="result">
+					<p> 
+					</p>
 				</div>
 			<br>
 			</div>
@@ -332,18 +333,18 @@
     </h3>
     <br>
     <div class="row">
-    <c:forEach var="i" begin="1" end="8">
+    <c:forEach var="i" items="${relation}" begin="1" end="8">
         <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
                 <a href="blog-single.html">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x530.png?text=temp1" alt="post-thumbnail"/>
+                    <img class="img-fluid" src="${i.img}" alt="post-thumbnail"/>
                 </a>
                 <div class="post-content mt-3">
                     <h4 >
-                        <a href="blog-single.html">책 이름${i }</a>
+                        <a href="blog-single.html">${i.title}</a>
                         
                     </h4>
-                        <a href="blog-single.html">작가 이름${i }</a>
+                        <a href="blog-single.html">${i.author} 저</a>
                 		<br>
                 		<br>
                 		<br>
@@ -363,21 +364,66 @@
     </h3>
     <br>
     <div class="row">
-    <c:forEach var="i" begin="1" end="4">
+    <!-- 첫번째 도서 -->
+<c:if test="${not empty book.other_img1}">
         <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
-                <a href="blog-single.html">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x530.png?text=temp1" alt="post-thumbnail"/>
-                </a>
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img1}" alt="post-thumbnail"/>
+                </span>
                 <div class="post-content mt-3">
                     <h4 >
-                        <a href="blog-single.html">책 이름 ${i }</a>
-                    </h4>
-                        <a href="blog-single.html">작가 이름${i }</a>
+                        <span href="blog-single.html">${book.other_book1}</span>
+                    </h4>                 
                 </div>
             </div>
         </div>
-    </c:forEach>
+ </c:if>       
+ <!-- 두번째 도서 -->
+ <c:if test="${not empty book.other_img2}">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img2}" alt="post-thumbnail"/>
+                </span>
+                <div class="post-content mt-3">
+                    <h4 >
+                        <span href="blog-single.html">${book.other_book2}</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+         </c:if> 
+         <!-- 세번째 도서 -->
+         <c:if test="${not empty book.other_img3}">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img3}" alt="post-thumbnail"/>
+                </span>
+                <div class="post-content mt-3">
+                    <h4 >
+                        <span href="blog-single.html">${book.other_book3}</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+           </c:if>    
+                    <c:if test="${not empty book.other_img4}">
+         <!-- 네번째 도서 -->
+                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="post-block-wrapper mb-4 mb-lg-0">
+                <span href="blog-single.html">
+                    <img class="img-fluid" src="${book.other_img4}" alt="post-thumbnail"/>
+                </span>
+                <div class="post-content mt-3">
+                    <h4 >
+                        <span href="blog-single.html">${book.other_book4}</span>
+                    </h4>                    
+                </div>
+            </div>
+        </div>
+   </c:if> 
     </div>
 </div>
 
