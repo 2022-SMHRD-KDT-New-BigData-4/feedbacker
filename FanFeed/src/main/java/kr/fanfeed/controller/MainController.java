@@ -93,6 +93,17 @@ public class MainController {
 		return "redirect:/main.do";
 	}
 	
+	// 서버시작시 / url 바로 메인이동
+		@RequestMapping("/about.do")
+		public String aboutPage() {
+
+			return "fanfeed/about";
+		}
 	
+		@RequestMapping("/contact.do")
+		public String contactPage() {
+			
+			return "fanfeed/contact";
+		}
 
 }

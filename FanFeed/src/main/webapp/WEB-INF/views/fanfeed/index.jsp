@@ -72,7 +72,7 @@
 								Home
 							</a>
 						</li>
-						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+						<li class="nav-item"><a  class="nav-link" id="about">About</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
@@ -88,7 +88,7 @@
 		                        <a class="dropdown-item" href="#">가정/생활</a>
 		                     </div>
 						</li>
-						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
 						<li class="nav-item d-lg-none">
 							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
 						</li>

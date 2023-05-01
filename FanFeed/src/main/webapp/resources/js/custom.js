@@ -149,6 +149,12 @@ $(function mainmove() {
 	});
 
 });
+$(function contactmove() {
+	$('#contact').click(function() {
+		location.href = "contact.do";
+	});
+
+});
 
 $(function categorymove() {
 	$('#navbarDropdown3').click(function() {

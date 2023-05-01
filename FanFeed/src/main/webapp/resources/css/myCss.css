@@ -3,8 +3,8 @@
     width: 320px !important;
     text-align: center !important;
     margin-top: -580px !important;
+    z-index: 9999 !important;
 }
-
 
 #login {
     margin-left: 240px;
@@ -180,6 +180,13 @@
 	border: 1px solid rgba(0,0,0,0.15);
 }
 
+.post-block-wrapper  .img-fluid {
+	width: 100%;
+	height: 350px;
+	object-fit: inherit;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+
 #search_toggle {
 	width: 400px;
 	height: 30px;
@@ -223,6 +230,10 @@
 	margin-bottom: -309px;
 	z-index: 999;
 	position: relative;
+}
+#aboutText img{
+	width: 20px; 
+	margin-top: -3px;
 }
 /* 로딩 관련 css */
 .loading {
