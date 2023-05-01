@@ -350,3 +350,10 @@ $(".dropdown-item").on("click", function(e) {
 	}
 });
 
+// 인포페이지 메인 북 이미지 클릭시 크게보는 모달창
+ $('#book-img').on('click', function(e) {
+    	e.preventDefault();
+     	var src = $(this).find('img').attr('src')
+     	$('.modal-body>img').attr('src',src)
+      $('#imageModal').modal('show');
+    });

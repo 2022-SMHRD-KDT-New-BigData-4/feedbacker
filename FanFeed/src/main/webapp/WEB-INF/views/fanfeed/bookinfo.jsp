@@ -45,7 +45,23 @@
 </head>
 
 <body>
-
+<!-- 모달 창 -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">이미지 크게 보기</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 모달 창 끝 -->
 
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
@@ -142,7 +158,7 @@
 		</c:if>
 		<div class="sidebar-post-item-big">
 			<span class="isbn" style="display: none">${book.isbn }</span> 
-			<a href="blog-single.html"><img src=${book.img } alt="" class="img-fluid"></a>
+			<a id="book-img" href="#"><img src=${book.img } alt="" class="img-fluid"></a>
 			<div class="mt-3 media-body" id="media-body">
 				<c:if test="${book.yn_3d eq 'y'}">
 					<button onclick="imgView()" class="btn btn-primary" >3d VIEW</button>
