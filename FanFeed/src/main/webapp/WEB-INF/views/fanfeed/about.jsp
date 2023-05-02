@@ -18,41 +18,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Revolve - Personal Magazine blog Template</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<title>Revolve - Personal Magazine blog Template</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    
-    <!-- THEME CSS
+<!--Favicon-->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- THEME CSS
 	================================================== -->
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="${cpath }/resources/css/bootstrap.min.css">
-	<!-- Themify -->
-	<link rel="stylesheet" href="${cpath }/resources/css/themify-icons.css">
-	<link rel="stylesheet" href="${cpath }/resources/css/slick-theme.css">
-	<link rel="stylesheet" href="${cpath }/resources/css/slick.css">
-	<!-- Slick Carousel -->
-	<link rel="stylesheet" href="${cpath }/resources/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="${cpath }/resources/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="${cpath }/resources/css/magnific-popup.css">
-	<!-- manin stylesheet -->
-	<link rel="stylesheet" href="${cpath }/resources/css/style.css">
-	<link rel="stylesheet" href="${cpath }/resources/css/myCss.css">
-	
+<!-- Bootstrap -->
+<link rel="stylesheet" href="${cpath }/resources/css/bootstrap.min.css">
+<!-- Themify -->
+<link rel="stylesheet" href="${cpath }/resources/css/themify-icons.css">
+<link rel="stylesheet" href="${cpath }/resources/css/slick-theme.css">
+<link rel="stylesheet" href="${cpath }/resources/css/slick.css">
+<!-- Slick Carousel -->
+<link rel="stylesheet"
+	href="${cpath }/resources/css/owl.carousel.min.css">
+<link rel="stylesheet"
+	href="${cpath }/resources/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="${cpath }/resources/css/magnific-popup.css">
+<!-- manin stylesheet -->
+<link rel="stylesheet" href="${cpath }/resources/css/style.css">
+<link rel="stylesheet" href="${cpath }/resources/css/myCss.css">
+<link rel="stylesheet" href="${cpath }/resources/css/about.css">
+
 </head>
 
 <body>
 
 
-	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
+	<div class="header-logo py-5 d-none d-lg-block"
+		style="height: 544.88px;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#8D7B68" fill-opacity="1"
+				d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 		<div class="logo-posi">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center logo-center">
-					<a id="logo" class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" style="width: 320px;"></a>
+					<a id="logo" class="navbar-brand" onclick="mainmove()"><img
+						src="${cpath }/resources/images/logo.png" alt=""
+						class="img-fluid w-100" style="width: 320px;"></a>
 				</div>
 			</div>
 		</div>
@@ -61,39 +70,41 @@
 	<header class="header-top bg-grey justify-content-center">
 		<nav class="navbar navbar-expand-lg navigation">
 			<div class="container">
-				<a class="navbar-brand d-lg-none" href="index.html"><img src="images/logo.png" alt="" class="img-fluid w-100"></a>
+				<a class="navbar-brand d-lg-none" href="index.html"><img
+					src="images/logo.png" alt="" class="img-fluid w-100"></a>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-					aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarContent" aria-controls="navbarContent"
+					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="ti-menu"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul id="menu" class="menu navbar-nav ">
-						<li class="nav-item dropdown  pl-0">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">
-								Home
-							</a>
-						</li>
-						<li class="nav-item"><a onclick="aboutmove()" class="nav-link" id="about">About</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">
-								Category
-							</a>
+						<li class="nav-item dropdown  pl-0"><a
+							class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+							role="button" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false"> Home </a></li>
+						<li class="nav-item"><a onclick="aboutmove()"
+							class="nav-link" id="about">About</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" onclick="categorymove()"
+							id="navbarDropdown3" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false"> Category </a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-		                        <a class="dropdown-item" href="#">소설</a>
-		                        <a class="dropdown-item" href="#">자기계발</a>
-		                        <a class="dropdown-item" href="#">경영/경제</a>
-		                        <a class="dropdown-item" href="#">인문/사회/역사</a>
-		                        <a class="dropdown-item" href="#">에세이/시</a>
-		                        <a class="dropdown-item" href="#">과학/IT</a>
-		                        <a class="dropdown-item" href="#">가정/생활</a>
-		                     </div>
-						</li>
-						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
+								<a class="dropdown-item" href="#">소설</a> <a
+									class="dropdown-item" href="#">자기계발</a> <a
+									class="dropdown-item" href="#">경영/경제</a> <a
+									class="dropdown-item" href="#">인문/사회/역사</a> <a
+									class="dropdown-item" href="#">에세이/시</a> <a
+									class="dropdown-item" href="#">과학/IT</a> <a
+									class="dropdown-item" href="#">가정/생활</a>
+							</div></li>
+						<li class="nav-item"><a onclick="contactmove()"
+							class="nav-link" id="contact">Contact</a></li>
 						<li class="nav-item d-lg-none">
-							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
+							<div class="search_toggle p-3 d-inline-block bg-white">
+								<i class="ti-search"></i>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -102,21 +113,23 @@
 					<div class="container">
 						<div class="collapse navbar-collapse" id="search_toggle">
 							<ul class="navbar-nav">
-								<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" id="title-link" href="#" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">책 제목</a>
+								<li class="nav-item dropdown"><a
+									class="nav-link dropdown-toggle" id="title-link" href="#"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">책
+										제목</a>
 									<ul class="dropdown-menu dropdown-menu">
 										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
 									</ul></li>
 							</ul>
-			                <form action="${cpath}/search.do"  method="post">
-	                        <!--   HTML 코드-->
-	                        <input type="hidden" id="hidden-category"  name="type" value="책 제목">
-	                         <input id="search" placeholder=" Search..." name="search">
-	                        <button type="submit" id="submit">
-	                     <i class="ti-search"></i>
-	                  </button>
-	                  </form> 
+							<form action="${cpath}/search.do" method="post">
+								<!--   HTML 코드-->
+								<input type="hidden" id="hidden-category" name="type"
+									value="책 제목"> <input id="search"
+									placeholder=" Search..." name="search">
+								<button type="submit" id="submit">
+									<i class="ti-search"></i>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -128,38 +141,53 @@
 	<section class="single-block-wrapper section-padding">
 		<div class="container">
 			<div class="row" style="margin-top: 200px; justify-content: center;">
-				
+
 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="single-post">
 						<div class="related-posts-block mt-5">
-							<h2 class="news-title mb-4 text-center">
-								Book Box
-							</h2>
-							<div class="row" style="text-align: center; margin-top: 60px;" id="aboutText">
-								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">
-									<h2>이지후</h2>
-									<h4>팀장</h4>
-									<br>
-									<p>총괄 및 데이터 분석</p>
-								</div>
-								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">
-									<h2>배재석</h2>
-									<h4>팀원</h4>
-									<br>
-										<p>크롤링 및 백엔드 및 데이터분석</p>
-								</div>
-								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">
-									<h2>박은혁</h2>
-									<h4>팀원</h4>
-									<br>
-										<p>db설계 및 백엔드 및 서버연결</p>
-								</div>
-								<div style="width: 25%; height: 300px;">
-									<h2>양어진</h2>
-									<h4>팀원</h4>
-									<br>
-										<p>UI, UX 제작 및 프론트엔드</p>
+							<div class="row" style="text-align: center; margin-top: 60px;"
+								id="aboutText">
+								<div class="component">
+									<ul class="align">
+										<!-- Book 1 -->
+										<li>
+											<figure class='book'>
+												<!-- Front -->
+												<ul class='hardcover_front'>
+													<li><img src="${cpath }/resources/images/FanFeed.png"
+														alt="" width="800px" height="100%"> <span
+														class="ribbon bestseller">Nº1</span></li>
+													<li></li>
+												</ul>
+												<!-- Pages -->
+												<ul class='page' id="aboutBook">
+													<li></li>
+													<li><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" ></li>
+													<li></li>
+													<li></li>
+													<li></li>
+												</ul>
+												<!-- Back -->
+												<ul class='hardcover_back'>
+													<li></li>
+													<li></li>
+												</ul>
+												<ul class='book_spine'>
+													<li></li>
+													<li></li>
+												</ul>
+												<figcaption>
+													<h1>Responsive Web Design</h1>
+													<span>By Ethan Marcotte</span>
+													<p>From mobile browsers to netbooks and tablets, users
+														are visiting your sites from an increasing array of
+														devices and browsers. Are your designs ready?...</p>
+												</figcaption>
+											</figure>
+										</li>
+
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -176,30 +204,35 @@
 	</section>
 
 
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#8D7B68" fill-opacity="1"
+			d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+	</section>
 
-	
+
 	<!--footer end-->
 
-<!-- THEME JAVASCRIPT FILES
+	<!-- THEME JAVASCRIPT FILES
 ================================================== -->
 
-<!-- initialize jQuery Library -->
-<script src="${cpath }/resources/js/jquery.js"></script>
-<!-- Bootstrap jQuery -->
-<script src="${cpath }/resources/js/bootstrap.min.js"></script>
-<script src="${cpath }/resources/js/popper.min.js"></script>
-<!-- Owl caeousel -->
-<script src="${cpath }/resources/js/owl.carousel.min.js"></script>
-<script src="${cpath }/resources/js/slick.min.js"></script>
-<script src="${cpath }/resources/js/magnific-popup.js"></script>
-<!-- Instagram Feed Js -->
-<script src="${cpath }/resources/js/instafeed.min.js"></script>
-<!-- main js -->
-<script src="${cpath }/resources/js/left-custom.js"></script>
-<!-- anychart js -->
-<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-<script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+	<!-- initialize jQuery Library -->
+	<script src="${cpath }/resources/js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script src="${cpath }/resources/js/bootstrap.min.js"></script>
+	<script src="${cpath }/resources/js/popper.min.js"></script>
+	<!-- Owl caeousel -->
+	<script src="${cpath }/resources/js/owl.carousel.min.js"></script>
+	<script src="${cpath }/resources/js/slick.min.js"></script>
+	<script src="${cpath }/resources/js/magnific-popup.js"></script>
+	<!-- Instagram Feed Js -->
+	<script src="${cpath }/resources/js/instafeed.min.js"></script>
+	<!-- main js -->
+	<script src="${cpath }/resources/js/left-custom.js"></script>
+	<!-- anychart js -->
+	<script
+		src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+	<script
+		src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
 
 
