@@ -164,7 +164,7 @@
              <c:forEach var="i" begin="1" end="10">
               <li class="align-items-center d-flex justify-content-between" id="toplist">
                 <span>${i }</span>
-                <a href="#" >Innovation</a>
+                <a></a>
               </li>
               </c:forEach>
             </ul>
@@ -206,19 +206,6 @@
                             </div>
 						</div>
 					</div>
-
-					<div class="slider-item">
-						<div class="slider-item-content">
-							<div class="post-thumb mb-4">
-								<a href="blog-single.html">
-								</a>
-							</div>
-							<div class="slider-post-content">
-							</div>
-						</div>
-					</div>
-
-
 				</div>
 			</div>
 		</div>
@@ -463,5 +450,8 @@
 
 <!-- fontawesome icon -->
 <script src="https://kit.fontawesome.com/4a8c96245b.js" crossorigin="anonymous"></script>
+
+<!-- chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
 </body>
 </html>
