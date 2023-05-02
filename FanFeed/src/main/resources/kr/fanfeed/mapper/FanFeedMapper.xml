@@ -70,7 +70,7 @@ WHERE RN &gt;= #{pageStart}
 	        SELECT *
 			FROM REVIEW
 			WHERE ISBN = #{isbn}
-			ORDER BY TO_DATE(DATETIME, 'YYYY-MM-DD') DESC
+			ORDER BY TO_DATE(DATETIME, 'YYYY-MM-DD') DESC, SEQ
 	    ) T
     WHERE ROWNUM &lt;= (#{cri.pageStart} + #{cri.perPageNum} - 1)
 	)

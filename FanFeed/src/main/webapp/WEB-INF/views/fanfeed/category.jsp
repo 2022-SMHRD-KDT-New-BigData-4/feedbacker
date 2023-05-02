@@ -124,7 +124,13 @@
 		</nav>
 
 	</header>
-	
+	<!-- 검색 결과 div -->
+	<div class="card" id="search-result" style="position: absolute; top:70px; right: 400px; width: 370px; height: 450px; z-index: 9999; border-radius: 20px; overflow: hidden; display: none">
+			<div id="search-list" class="row">
+			
+			</div>
+	</div>
+	<!-- 검색 결과 div 끝 -->
 	
 	<!--search overlay start-->
 	<div class="search-wrap">
@@ -260,7 +266,8 @@
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
 <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
-
+<!-- 검색 js -->
+<script src="${cpath }/resources/js/search.js"></script>
 
 
 </body>
