@@ -44,6 +44,7 @@
 	<!-- manin stylesheet -->
 	<link rel="stylesheet" href="${cpath }/resources/css/style.css">
 	<link rel="stylesheet" href="${cpath }/resources/css/myCss.css">
+	<link rel="stylesheet" href="${cpath }/resources/css/barchart.css">
 	
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.css" />
 	
@@ -206,6 +207,15 @@
                             </div>
 						</div>
 					</div>
+
+					<div class="slider-item">
+						<!-- <div class="slider-item-content">
+							
+						</div> -->
+						<canvas id="myChart"></canvas>
+					</div>
+
+
 				</div>
 			</div>
 		</div>
@@ -453,5 +463,10 @@
 
 <!-- chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+<!-- barchart -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 </body>
 </html>

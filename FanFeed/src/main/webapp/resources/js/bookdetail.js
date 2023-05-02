@@ -121,6 +121,7 @@
     });
 });
 */
+
 $(document).ready(function () {
     var isbn = $('.isbn').text();
     $.ajax({
@@ -152,7 +153,6 @@ $(document).ready(function () {
             // 클릭 이벤트 처리 함수를 추가합니다.
             $(document).on('click', '#wordcloud span', function () {
                 var word = $(this).text(); // 클릭한 단어 가져오기
-                console.log(word);
                 $.ajax({
                     url: 'flask.do',
                     type: 'post',
@@ -167,7 +167,7 @@ $(document).ready(function () {
                             reviewsHtml += '<p>' + review.rating + '점 / ' + review.date + '</p>';
                             reviewsHtml += '</div>';
                         });
-                        $('#comment-area-box-l').html(reviewsHtml); // 리뷰 데이터 추가
+                        $('#reviews').html(reviewsHtml); // 리뷰 데이터 추가
                     },
                     error: function () {
                         alert('에러');
@@ -216,8 +216,3 @@ $(document).ready(function () {
 		}
        });
    });
-
-
-
-
-

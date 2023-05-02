@@ -1,0 +1,8 @@
+#barchart_material:last-child rect{
+	fill: #fffcf6;
+}
+
+#chart_div {
+  width: 100%;
+  height: 600px;
+}
