@@ -23,7 +23,7 @@ public interface FanFeedMapper {
 	// 스테디셀러 조회 + 페이징처리
 	public List<Book> getListBook(MainCriteria cri);
 	
-	// 책 단건 조회
+	// 책 단권 조회
 	public Book getOneBook(String isbn);
 	
 	// 게시물 전체 카운트

@@ -166,6 +166,20 @@
 		
 		});
 		
+		$(function contactmove() {
+		$('#contact').click(function() {
+				location.href = "contact.do";
+			});
+		
+		});
+
+		$(function categorymove() {
+			$('#navbarDropdown3').click(function() {
+				location.href = "category.do";
+			});
+		
+		});
+		
 		$(function categorymove(){
 			$('#navbarDropdown3').click(function(){
 				location.href="category.do";
