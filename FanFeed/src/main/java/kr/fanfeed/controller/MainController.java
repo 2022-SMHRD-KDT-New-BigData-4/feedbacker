@@ -77,26 +77,22 @@ public class MainController {
 	@GetMapping("/search.do")
 	public @ResponseBody String search(String type, String search) {
 		
-		// 받아온 데이터 확인
-		System.out.println("type : "+type);
-		System.out.println("search : "+search);
-		
 		List<Book> searchBook;
 		if(type.equals("책 제목"))  {		
 			// 책 체목으로 검색하는 쿼리문 작성
 			 searchBook = mapper.searchBookTitle(search);
-			 searchBook = searchBook.subList(0, 3);
+			 try {
+				 searchBook = searchBook.subList(0, 3); // 인덱스 0~2만 사용
+			} catch (Exception e) {
+				
+			}
 			 
 		} else {
-			// ISBN 값으로 검색하는 쿼리문 작성
+			// ISBN 값으로 검색하는 쿼리문 작성(사용되지x)
 			 searchBook = mapper.searchBookIsbn(search);	
 		}
 		
-		
-		for(Book book    : searchBook) {
-			System.out.println("제목:"+book.getTitle());
-		}
-		
+		// 조회결과를 맵에 담고 json변환
 		Map<String, Object> jsonMap = new HashMap<String, Object>();
 		jsonMap.put("searchBook", searchBook);
 		
@@ -108,9 +104,28 @@ public class MainController {
 	
 	// 검색창 제출시 이동
 	@PostMapping("/search.do")
-	public String searchMove() {
+	public String searchMove(String type, String search) {
 		
-		return "";
+		String url = ""; // 이동 page 담을 변수
+		List<Book> searchBook = null; // DB 검색후 담을 리스트
+		
+		if(type.equals("책 제목")){ // 검색타입 책제목
+			searchBook = mapper.searchBookTitle(search); // DB 조회
+			 try {
+				 String isbn =  searchBook.get(0).getIsbn(); // 조회해온 0번째인덱스의 isbn 
+				 url = "redirect:/bookinfo.do?isbn="+isbn; // 이동 url 설정
+			} catch (Exception e) { // 조회결과가 x 
+				return "fanfeed/none"; // none페이지 리턴
+			}
+		}else { // 검색타입 ISBN
+			searchBook = mapper.searchBookIsbn(search); // DB 조회
+			if(searchBook.isEmpty()) { // 조회결과가 x 
+				return "fanfeed/none"; // none페이지 리턴
+			}
+			String isbn = searchBook.get(0).getIsbn(); // 조회해온 0번째인덱스의 isbn 
+			url = "redirect:/bookinfo.do?isbn="+isbn; // 이동 url 설정
+		}
+		return url;
 	}
 	
 	// about페이지

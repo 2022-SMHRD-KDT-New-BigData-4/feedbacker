@@ -136,7 +136,13 @@
 		</nav>
 
 	</header>
-
+	<!-- 검색 결과 div -->
+	<div class="card" id="search-result" style="position: absolute; top:70px; right: 400px; width: 370px; height: 450px; z-index: 9999; border-radius: 20px; overflow: hidden; display: none">
+			<div id="search-list" class="row">
+			
+			</div>
+	</div>
+	<!-- 검색 결과 div 끝 -->
 <div style="height: 200px;"></div>
 
 <section class="single-block-wrapper section-padding">
@@ -446,6 +452,8 @@
 <!-- fontawesome icon -->
 <script src="https://kit.fontawesome.com/4a8c96245b.js" crossorigin="anonymous"></script>
 
+<!-- 검색 js -->
+<script src="${cpath }/resources/js/search.js"></script>
 
 </body>
 </html>

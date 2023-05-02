@@ -122,7 +122,13 @@
 		</nav>
 
 	</header>
-
+	<!-- 검색 결과 div -->
+	<div class="card" id="search-result" style="position: absolute; top:70px; right: 400px; width: 370px; height: 450px; z-index: 9999; border-radius: 20px; overflow: hidden; display: none">
+			<div id="search-list" class="row">
+			
+			</div>
+	</div>
+	<!-- 검색 결과 div 끝 -->
 	<div class="best">
 		<h2 style="margin-left: -200px; margin-bottom: -5px;">&#8976;</h2>
 		<h1>베스트셀러</h1>
@@ -234,7 +240,8 @@
 	<script src="${cpath }/resources/js/instafeed.min.js"></script>
 	<!-- main js -->
 	<script src="${cpath }/resources/js/custom.js"></script>
-
+	<!-- 검색 js -->
+	<script src="${cpath }/resources/js/search.js"></script>
 </body>
 
 </html>

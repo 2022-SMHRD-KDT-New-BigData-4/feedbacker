@@ -207,7 +207,7 @@ $(".page-item a").on("click", function(e) {
 	pageFrm.submit();
 })
 
-// 카테고리 클릭 로직
+/*// 카테고리 클릭 로직
 $(".dropdown-item").on("click", function(e) {
 	e.preventDefault(); // a 태그의 기능을 막음
 	var category = $(this).text();
@@ -252,7 +252,7 @@ $('#search').on('keyup', function() {
             alert("에러");
         }
     });
-});
+});*/
 
 /*// 책 제목 링크 클릭 시
 $("#title-link").on("click", function(e) {
