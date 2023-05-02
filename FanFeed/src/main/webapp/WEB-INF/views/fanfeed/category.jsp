@@ -49,8 +49,8 @@
 
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
-		<div class="container">
-			<div class="row justify-content-center logo-wrap">
+		<div class="logo-posi">
+			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center logo-center">
 					<a id="logo" class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" style="width: 320px;"></a>
 				</div>
@@ -109,10 +109,14 @@
 										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
 									</ul></li>
 							</ul>
-							<input id="search" placeholder=" Search...">
-							<button type="submit" id="submit">
-								<i class="ti-search"></i>
-							</button>
+			                <form action="${cpath}/search.do"  method="post">
+	                        <!--   HTML 코드-->
+	                        <input type="hidden" id="hidden-category"  name="type" value="책 제목">
+	                         <input id="search" placeholder=" Search..." name="search">
+	                        <button type="submit" id="submit">
+	                     <i class="ti-search"></i>
+	                  </button>
+	                  </form> 
 						</div>
 					</div>
 				</div>
@@ -120,6 +124,8 @@
 		</nav>
 
 	</header>
+	
+	
 	<!--search overlay start-->
 	<div class="search-wrap">
 		<div class="overlay">
@@ -144,7 +150,7 @@
 	<section class="single-block-wrapper section-padding" style="margin-top: -100px;">
 		<div class="container">
 			<div class="row" style="margin-top: 200px;">
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-top: -50px;">
 					<div class="sidebar sidebar-right">
 						<div class="sidebar-wrap mt-5 mt-lg-0" id="categoryList">
 							<div class="sidebar-widget category mb-5" id="categorySticky">
@@ -185,7 +191,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-top: -100px;">
 					<div class="single-post">
 						<div class="related-posts-block mt-5">
 							<h2 class="news-title mb-4 text-center">

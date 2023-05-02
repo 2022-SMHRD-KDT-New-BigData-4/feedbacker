@@ -49,8 +49,8 @@
 
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
-		<div class="container">
-			<div class="row justify-content-center logo-wrap">
+		<div class="logo-posi">
+			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center logo-center">
 					<a id="logo" class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" style="width: 320px;"></a>
 				</div>
@@ -75,7 +75,7 @@
 								Home
 							</a>
 						</li>
-						<li class="nav-item"><a href="about.html" class="nav-link" id="about">About</a></li>
+						<li class="nav-item"><a onclick="aboutmove()" class="nav-link" id="about">About</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" onclick="categorymove()" id="navbarDropdown3" role="button" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
@@ -91,7 +91,7 @@
 		                        <a class="dropdown-item" href="#">가정/생활</a>
 		                     </div>
 						</li>
-						<li class="nav-item"><a href="contact.html" class="nav-link" id="contact">Contact</a></li>
+						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
 						<li class="nav-item d-lg-none">
 							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
 						</li>
@@ -109,10 +109,14 @@
 										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
 									</ul></li>
 							</ul>
-							<input id="search" placeholder=" Search...">
-							<button type="submit" id="submit">
-								<i class="ti-search"></i>
-							</button>
+			                <form action="${cpath}/search.do"  method="post">
+	                        <!--   HTML 코드-->
+	                        <input type="hidden" id="hidden-category"  name="type" value="책 제목">
+	                         <input id="search" placeholder=" Search..." name="search">
+	                        <button type="submit" id="submit">
+	                     <i class="ti-search"></i>
+	                  </button>
+	                  </form> 
 						</div>
 					</div>
 				</div>
@@ -130,7 +134,7 @@
 					<div class="single-post">
 						<div class="related-posts-block mt-5">
 							<h2 class="news-title mb-4 text-center">
-								Feed Backer
+								Book Box
 							</h2>
 							<div class="row" style="text-align: center; margin-top: 60px;" id="aboutText">
 								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">

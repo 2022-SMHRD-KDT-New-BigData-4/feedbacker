@@ -61,6 +61,7 @@
             // 클릭 이벤트 처리 함수를 추가합니다.
             $(document).on('click', '#wordcloud span', function () {
                 var word = $(this).text(); // 클릭한 단어 가져오기
+                console.log(word);
                 $.ajax({
                     url: 'flask.do',
                     type: 'post',
@@ -75,7 +76,7 @@
                             reviewsHtml += '<p>' + review.rating + '점 / ' + review.date + '</p>';
                             reviewsHtml += '</div>';
                         });
-                        $('#reviews').html(reviewsHtml); // 리뷰 데이터 추가
+                        $('#comment-area-box-l').html(reviewsHtml); // 리뷰 데이터 추가
                     },
                     error: function () {
                         alert('에러');
@@ -153,13 +154,15 @@ $(document).ready(function () {
             // 클릭 이벤트 처리 함수를 추가합니다.
             $(document).on('click', '#wordcloud span', function () {
                 var word = $(this).text(); // 클릭한 단어 가져오기
+                console.log(word);
                 $.ajax({
                     url: 'flask.do',
                     type: 'post',
-                    data: {word: word},
+                    data: {isbn:isbn},
                     dataType: 'json',
                     success: function (data) {
-                        var reviews = data.reviews;
+                    	var regex = /word/g;
+                        var reviews = data.reviews.match(regex);
                         var reviewsHtml = '';
                         $.each(reviews, function (index, review) {
                             reviewsHtml += '<div class="review">';

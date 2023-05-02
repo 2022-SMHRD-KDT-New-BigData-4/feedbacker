@@ -20,12 +20,26 @@
     align-items: center;
 }
 
+.logo-posi {
+	width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 66px;
+	
+}
+
 #login {
     margin-left: 240px;
 }
 
 #navbar-collapse {
     text-align: center;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom :0;
+	margin-right:0;
 }
 
 #search {
@@ -340,4 +354,13 @@
 .bg-wrap {
 	margin-top: 100px;
 	
+}
+
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    width: 1140px !important;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
 }

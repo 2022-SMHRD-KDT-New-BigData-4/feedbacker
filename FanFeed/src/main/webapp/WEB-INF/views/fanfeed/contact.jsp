@@ -49,8 +49,8 @@
 
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
-		<div class="container">
-			<div class="row justify-content-center logo-wrap">
+		<div class="logo-posi">
+			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center logo-center">
 					<a id="logo" class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" style="width: 320px;"></a>
 				</div>
@@ -109,10 +109,14 @@
 										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
 									</ul></li>
 							</ul>
-							<input id="search" placeholder=" Search...">
-							<button type="submit" id="submit">
-								<i class="ti-search"></i>
-							</button>
+			                <form action="${cpath}/search.do"  method="post">
+	                        <!--   HTML 코드-->
+	                        <input type="hidden" id="hidden-category"  name="type" value="책 제목">
+	                         <input id="search" placeholder=" Search..." name="search">
+	                        <button type="submit" id="submit">
+	                     <i class="ti-search"></i>
+	                  </button>
+	                  </form> 
 						</div>
 					</div>
 				</div>
@@ -140,7 +144,7 @@
 									<h3>Lee Jihoo</h3>
 									<br>
 									<p>총괄 및 데이터 분석</p>
-									<p>바보입네다..</p>
+									<p>Ajax를 이용한 LSTM 리뷰 데이터 출력</p>
 									<br>
 									<p><img src="${cpath }/resources/images/email.png"> : gygh9604@naver.com</p>
 									<p><img src="${cpath }/resources/images/phone.png"> : 010-6214-5316</p>
@@ -170,8 +174,8 @@
 									<h2>양어진 <a style="font-size: 20px;">팀원</a></h2>
 									<h3>Yang Eojin</h3>
 									<br>
-									<p>UI, UX 제작 및 프론트엔드</p>
-									<p>워드 클라우드 및 차트 구현</p>
+									<p>UI, UX 제작 및 프론트엔드 총괄</p>
+									<p>워드 클라우드 검색창 구현</p>
 									<br>
 									<p><img src="${cpath }/resources/images/email.png"> : ryumuil2947@naver.com</p>
 									<p><img src="${cpath }/resources/images/phone.png"> : 010-6569-5717</p>

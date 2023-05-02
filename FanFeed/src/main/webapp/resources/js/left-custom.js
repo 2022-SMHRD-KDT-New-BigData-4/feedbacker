@@ -172,6 +172,13 @@
 			});
 		
 		});
+		
+		$(function aboutmove() {
+			$('#about').click(function() {
+				location.href = "about.do";
+			});
+		
+		});
 
 		$(function categorymove() {
 			$('#navbarDropdown3').click(function() {
