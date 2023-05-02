@@ -207,15 +207,6 @@
                             </div>
 						</div>
 					</div>
-
-					<div class="slider-item">
-						<!-- <div class="slider-item-content">
-							
-						</div> -->
-						<canvas id="myChart"></canvas>
-					</div>
-
-
 				</div>
 			</div>
 		</div>
