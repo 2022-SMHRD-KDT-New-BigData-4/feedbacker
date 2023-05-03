@@ -137,7 +137,13 @@
 		</nav>
 
 	</header>
-
+	<!-- 검색 결과 div -->
+	<div class="card list-group" id="search-result" style="position: absolute; top:70px; right: 355px; width: 450px; height: 415px; z-index: 9999; border-radius: 20px; overflow: hidden; display: none">
+			<div id="search-list" class="row">
+			
+			</div>
+	</div>
+	<!-- 검색 결과 div 끝 -->
 		<div class="container-fluid" id="container-fluid">
 			<div class="row no-gutters" id="no-gutters" style="margin-top: 200px;">
 				<div class="col-lg-10 col-sm-10 col-md-10">

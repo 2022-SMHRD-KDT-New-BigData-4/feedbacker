@@ -115,14 +115,14 @@ function searchResult(data) {
 
 	$.each(data.searchBook, function(index, book) {
 		stackTag = "";
+		stackTag += '<a href="#" onclick="formMove(\'bookinfo.do\', \'isbn\', \''+book.isbn+'\')" class="list-group-item list-group-item-action">';
 		stackTag += '<div class="row">';
-		stackTag += '<hr><div class="col-md-3 mb-2">';
+		stackTag += '<div class="col-md-3">';
 		stackTag += '<span class="isbn" style="display: none">'+book.isbn+'</span>';
-		stackTag += '<a href="#" onclick="bookinfomove()"><img class="ml-3" alt="" src="' + book.img + '" style="height: 120px; width: 100px; border: 1px solid rgba(0,0,0,0.15);"></a></div>';
-		stackTag += '<div class="col-md-1"></div>';
-		stackTag += '<div class="col-md-8 mb-2"><h6>' + book.category + '</h6>';
+		stackTag += '<img class="ml-2" src="' + book.img + '" style="height: 120px; width: 100px; border: 1px solid rgba(0,0,0,0.15);"></div>';
+		stackTag += '<div class="col-md-9"><h6>' + book.category + '</h6>';
 		stackTag += '<h4>' + book.title + '</h4>'
-		stackTag += '<h6>' + book.author + ' (' + book.publisher + ')</h6></div></div>'
+		stackTag += '<h6>' + book.author + ' (' + book.publisher + ')</h6></div></div></a>'
 		$row.append(stackTag);
 	});
 

@@ -137,7 +137,7 @@
 
 	</header>
 	<!-- 검색 결과 div -->
-	<div class="card" id="search-result" style="position: absolute; top:70px; right: 400px; width: 370px; height: 450px; z-index: 9999; border-radius: 20px; overflow: hidden; display: none">
+	<div class="card list-group" id="search-result" style="position: absolute; top:70px; right: 355px; width: 450px; height: 415px; z-index: 9999; border-radius: 20px; overflow: hidden; display: none">
 			<div id="search-list" class="row">
 			
 			</div>
