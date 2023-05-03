@@ -119,10 +119,14 @@
 										<li><a class="dropdown-item" id="isbn-link" href="#">ISBN</a></li>
 									</ul></li>
 							</ul>
-							<input id="search" placeholder=" Search...">
-							<button type="submit" id="submit">
-								<i class="ti-search"></i>
-							</button>
+			                <form action="${cpath}/search.do"  method="post">
+	                        <!--   HTML 코드-->
+	                        <input type="hidden" id="hidden-category"  name="type" value="책 제목">
+	                         <input id="search" placeholder=" Search..." name="search">
+	                        <button type="submit" id="submit">
+	                     <i class="ti-search"></i>
+	                  </button>
+	                  </form> 
 						</div>
 					</div>
 				</div>

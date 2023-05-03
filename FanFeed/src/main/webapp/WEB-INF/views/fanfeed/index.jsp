@@ -188,7 +188,7 @@
 									<img src=${book.img } alt="" class="img-fluid w-100">
 								</a>
 								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">${book.category }</span>
-								<h3 class="post-title mt-1"><a href="blog-single.html">${book.title }</a></h3>
+								<h3 class="post-title mt-1"><a href="#" onclick="bookinfomove()">${book.title }</a></h3>
 
 								<span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
 
