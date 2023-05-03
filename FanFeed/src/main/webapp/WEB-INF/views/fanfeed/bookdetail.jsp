@@ -227,44 +227,15 @@
     <div class="comment-area my-5" id="reviewarea-l">
 		<h2 class="mb-4 text-center"><a>긍정 리뷰</a></h2>
 		<br>
-		<br>
-		
-		<c:forEach var="i" begin="1" end="3">
-		<div class="comment-area-box media" id="comment-area-box-l">
-
-			<div class="media-body ml-4">
-				<h4 class="mb-0">Micle harison ${i } </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
-
-				<div class="comment-content mt-3" id="result">
-					<p> 
-					</p>
-				</div>
-			<br>
-			</div>
-		</div>
-		</c:forEach>
+		<ul class="list-group" id="positive">
+		</ul>
 	</div>
 
     <div class="comment-area my-5" id="reviewarea-r">
 		<h2 class="mb-4 text-center"><a>부정 리뷰</a></h2>
 		<br>
-		<br>
-		
-		<c:forEach var="i" begin="1" end="3">
-		<div class="comment-area-box media" id="comment-area-box-r">
-
-			<div class="media-body ml-4">
-				<h4 class="mb-0">Micle harison ${i } </h4>
-				<span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
-
-				<div class="comment-content mt-3">
-					<p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius id modus laoreet urbanitas. Mel ei delenit dolores.</p>
-				</div>
-			<br>
-			</div>
-		</div>
-		</c:forEach>
+		<ul class="list-group" id="negative">
+		</ul>
 	</div>
 	</div>
 
