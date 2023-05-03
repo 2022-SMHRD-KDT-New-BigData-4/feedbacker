@@ -115,7 +115,7 @@ function searchResult(data) {
 
 	$.each(data.searchBook, function(index, book) {
 		stackTag = "";
-		stackTag += '<a href="#" onclick="formMove(\'bookinfo.do\', \'isbn\', \''+book.isbn+'\')" class="list-group-item list-group-item-action">';
+		stackTag += '<a href="#" onclick="formMove(\'bookinfo.do\', \'isbn\', \''+book.isbn+'\')" class="list-group-item list-group-item-action py-2">';
 		stackTag += '<div class="row">';
 		stackTag += '<div class="col-md-3">';
 		stackTag += '<span class="isbn" style="display: none">'+book.isbn+'</span>';
