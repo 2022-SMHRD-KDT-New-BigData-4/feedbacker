@@ -451,7 +451,7 @@
     }
 }
 
-li {
+#top10 li {
     animation-name: fadeIn;
     animation-duration: 7s;
     animation-fill-mode: forwards;
