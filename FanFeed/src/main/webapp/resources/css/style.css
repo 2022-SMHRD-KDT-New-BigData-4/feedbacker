@@ -259,6 +259,11 @@ blockquote {
   background: #8D7B68;
 }
 
+.btn-primary:disabled {
+  background: #3c3c3c;
+  border: none;
+}
+
 .btn-primary:hover {
   background: #ce8460;
   color: #fff;

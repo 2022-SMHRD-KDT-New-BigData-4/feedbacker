@@ -210,7 +210,11 @@
 		<button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
 		</c:if>
 		<c:if test="${book.seq >10 }">
-		<button onclick="move()" class="btn btn-primary" id="detailbtn" disabled>분석하기</button>
+		<button onclick="move()" class="btn btn-secondary" id="detailbtn" disabled>분석하기</button>
+		<div id="tooltipwarning">
+             <h3 class="text-center widget-title"><img src="${cpath }/resources/images/warning-sign.png" id="warning" style="width: 25px; height: 25px;"> </h3>
+             <span class="warningtext tooltip-top">스테디셀러의 분석을 위해서는 결제가 필요합니다.</span>
+             </div>
 		</c:if>
             
             

@@ -71,8 +71,13 @@
 
 #detailbtn {
 	border-radius: 5px;
-	float: right;
-	margin-top: -50px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 30px;
+}
+
+#detailbtn:hover {
+	border: none;
 }
 
 #post-meta {
@@ -385,7 +390,15 @@
     width: 25px !important;
 }
 
-#tooltip {
+#warning {
+    margin-left: 666px;
+    margin-top: -137px;
+    /* margin-bottom: -4px; */
+    /* margin-top: -41px; */
+    order: none;
+    width: 25px !important;}
+
+#tooltip, #tooltipwarning {
 	position: relative;
     display: block;
 }
@@ -404,7 +417,24 @@
     margin-top: -34px;
 }
 
-#tooltip:hover .tooltiptext {
+#tooltipwarning .warningtext {
+	visibility: hidden;
+    width: 200px;
+    background-color: #ff0000c4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: 481px;
+    margin-top: -165px;
+}
+
+
+
+#tooltip:hover .tooltiptext,
+#tooltipwarning:hover .warningtext {
   visibility: visible;
 }
 

@@ -146,10 +146,14 @@
 						<div class="container" id="aboutBox">
 						  <div class="typewriter">Book Box</div>
 						</div>
-						<div style="width: 100%; height: 300px; text-align: center;"> 
+						<canvas id="canvas" width="500" height="300"></canvas>
+						<div class="abouttext"> 
 						<br>
+							<img src="${cpath }/resources/images/ebook.jpg" style="width: 500px; margin-left: -500px;" >
+							<div style="float: right; width: 500px; margin-left: 50px;">
 							<h3>저희는 온라인 도서 구매자들을 위한 도서 리뷰 감성 분석을 제공하고 있습니다.</h3>
 							<h4>분석된 키워드와 관련 리뷰들로 e-book 구매에 도움이 되길 바랍니다.</h4>
+							</div>
 						</div>
 						</div>
 					</div>
@@ -193,6 +197,22 @@
 <!-- 검색 js -->
 <script src="${cpath }/resources/js/search.js"></script>
 
-
+<script type="text/javascript">
+window.onload = function(){
+    var canvas = document.getElementById("canvas");
+    if(canvas.getContext){
+        var draw = canvas.getContext("2d");
+        
+        //조절점이 2개
+        draw.beginPath();
+        draw.moveTo(50,200);
+        //bezierCurveTo(조절점1x, 조절점1y, 조절점2x, 조절점2y, 선의 끝점x, 선의 끝점y)
+        draw.bezierCurveTo(300,100, 400,80, 500,200);
+        draw.lineWidth = 1;
+        draw.strokeStyle = "black";
+        draw.stroke();
+    }
+}
+</script>
 </body>
 </html>
