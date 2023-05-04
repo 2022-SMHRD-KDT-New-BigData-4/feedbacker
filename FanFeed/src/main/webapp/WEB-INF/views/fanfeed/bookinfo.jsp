@@ -161,10 +161,10 @@
 
 	<div class="sidebar-widget mb-5 ">
 		<c:if test="${book.seq <10 }">
-		<h4 class="text-center widget-title">Best Seller</h4>
+		<h4 class="text-center widget-title" id="bookType">Best Seller</h4>
 		</c:if>
 		<c:if test="${book.seq >9 }">
-		<h4 class="text-center widget-title">Steady Seller</h4>
+		<h4 class="text-center widget-title" id="bookType">Steady Seller</h4>
 		</c:if>
 		<div class="sidebar-post-item-big">
 			<span class="isbn" style="display: none">${book.isbn }</span> 

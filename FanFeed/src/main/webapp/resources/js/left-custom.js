@@ -378,3 +378,8 @@ $(".dropdown-item").on("click", function(e) {
      	$('.modal-body>img').attr('src',src)
       $('#imageModal').modal('show');
     });
+
+var bookType = $('#bookType').text()
+if (bookType=="Steady Seller"){
+   $("#detailbtn").prop("disabled", true);
+}
