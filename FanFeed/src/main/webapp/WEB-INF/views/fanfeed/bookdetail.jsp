@@ -103,6 +103,7 @@
 		                     </div>
 						</li>
 						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
+						<li class="nav-item"><a onclick="myboxmove()" class="nav-link" id="mybox">My Box</a></li>
 						<li class="nav-item d-lg-none">
 							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
 						</li>
@@ -165,6 +166,7 @@
 				<div><h4 >${book.title}</h4></div>
                 <h5>${book.author} 저</h5>
 			</div>
+			<button id="myboxkeep" onclick="myboxkeep()" class="btn btn-primary">My Box</button>
 		</div>
         <br>
         <br>

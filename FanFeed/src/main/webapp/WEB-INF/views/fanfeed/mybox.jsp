@@ -46,6 +46,7 @@
 
 <body>
 
+<button id="scroll-top-btn"><i class="ti-arrow-circle-up" style=""></i></button>
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
 		<div class="logo-posi">
@@ -131,62 +132,102 @@
 			</div>
 	</div>
 	<!-- 검색 결과 div 끝 -->
-	<div></div>
+	
+	<!--search overlay start-->
+	<div class="search-wrap">
+		<div class="overlay">
+			<form action="#" class="search-form">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-9">
+							<input type="text" class="form-control" placeholder="Search..." />
+						</div>
+						<div class="col-md-2 col-3 text-right">
+							<div class="search_toggle toggle-wrap d-inline-block">
+								<i class="ti-close"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--search overlay end-->
 <div style="height: 200px;"></div>
-
-	<section class="single-block-wrapper section-padding">
+	<section class="single-block-wrapper section-padding" style="margin-top: -100px;">
 		<div class="container">
-			<div class="row" style="margin-top: 200px; justify-content: center;">
-				
+			<div class="row" style="margin-top: 200px;">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-top: -50px;">
+					<div class="sidebar sidebar-right">
+						<div class="sidebar-wrap mt-5 mt-lg-0" id="categoryList">
+							<div class="sidebar-widget category mb-5" id="categorySticky">
+								<h4 class="text-center widget-title">My Category</h4>
+								<ul class="list-unstyled">
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">소설</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">자기계발</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">경영/경제</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">인문/사회/역사</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">에세이/시</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">과학/IT</a>
+									</li>
+									<li class="align-items-center d-flex justify-content-between" id="category">
+										<a class="ct-li" href="#">가정/생활</a>
+									</li>
+								</ul>
 
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="single-post" style="margin-top: -200px">
+
+
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-top: -100px;">
+					<div class="single-post">
 						<div class="related-posts-block mt-5">
+							<h1 class="news-title mb-4 text-center">My Box!</h1>
 							<h2 class="news-title mb-4 text-center">
-								Feed Backer
+								${empty category?'소설':category }
 							</h2>
-							<div class="row" style="text-align: center; margin-top: 60px;" id="aboutText">
-								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">
-									<h2>이지후 <a style="font-size: 20px;">팀장</a></h2>
-									<h3>Lee Jihoo</h3>
-									<br>
-									<p>총괄 및 데이터 분석</p>
-									<p>Ajax를 이용한 LSTM 리뷰 데이터 출력</p>
-									<br>
-									<p><img src="${cpath }/resources/images/email.png"> : gygh9604@naver.com</p>
-									<p><img src="${cpath }/resources/images/phone.png"> : 010-6214-5316</p>
-								</div>
-								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">
-									<h2>배재석 <a style="font-size: 20px;">팀원</a></h2>
-									<h3>Bae Jaeseok</h3>
-									<br>
-									<p>데이터 분석</p>
-									<p>크롤링 및 백엔드</p>
-									<br>
-									<p><img src="${cpath }/resources/images/email.png"> : qo12351@naver.com</p>
-									<p><img src="${cpath }/resources/images/phone.png"> : 010-2573-6269</p>
-								</div>
-								<div style="width: 25%; height: 300px; border-right: 1px solid rgba(0,0,0,0.1);">
-									<h2>박은혁 <a style="font-size: 20px;">팀원</a></h2>
-									<h3>Park Eunhyeok</h3>
-									<br>
-									<p>데이터 전처리</p>
-									<p>db설계 및 백엔드 및 서버연결</p>
-									<br>
-									<p><img src="${cpath }/resources/images/email.png"> : dpk971206@gmail.com</p>
-									<p><img src="${cpath }/resources/images/phone.png"> : 010-7739-8070</p>
+							<div class="row">
+							<c:forEach var="book" items="${bookList }" begin="0" end="11">
+								
+								
+								
+										
+											
+										  <div class="col-lg-4 col-md-4 col-sm-6" onclick="formMove('bookinfo.do', 'isbn', '${book.isbn}')">
+										    <span class="isbn" style="display: none">${book.isbn }</span>
+										    <div class="post-block-wrapper mb-4 mb-lg-0">
+										      <img class="img-fluid" src=${book.img } alt="post-thumbnail" />
+										      <div class="post-content mt-3">
+										        <h5>
+										          <span>${book.title}</span>
+										        </h5>
+										        <span class="text-muted letter-spacing text-uppercase font-sm">${book.author } 저</span>
+										        <br>
+										        <br>
+										      </div>
+										    </div>
+										  </div>
 
-								</div>
-								<div style="width: 25%; height: 300px;">
-									<h2>양어진 <a style="font-size: 20px;">팀원</a></h2>
-									<h3>Yang Eojin</h3>
-									<br>
-									<p>UI, UX 제작 및 프론트엔드 총괄</p>
-									<p>워드 클라우드 검색창 구현</p>
-									<br>
-									<p><img src="${cpath }/resources/images/email.png"> : ryumuil2947@naver.com</p>
-									<p><img src="${cpath }/resources/images/phone.png"> : 010-6569-5717</p>
-								</div>
+							</c:forEach>
 							</div>
 						</div>
 					</div>
@@ -202,7 +243,7 @@
 	</section>
 
 
-	<svg style="margin-top: -100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,154.7C840,139,960,149,1080,144C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>	</section>
 
 	
 	<!--footer end-->

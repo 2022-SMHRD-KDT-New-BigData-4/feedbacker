@@ -47,7 +47,6 @@
 
 <body>
 
-
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
 		<div class="logo-posi">
@@ -93,6 +92,7 @@
 		                     </div>
 						</li>
 						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
+						<li class="nav-item"><a onclick="myboxmove()" class="nav-link" id="mybox">My Box</a></li>
 						<li class="nav-item d-lg-none">
 							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
 						</li>
@@ -146,7 +146,6 @@
 						<div class="container" id="aboutBox">
 						  <div class="typewriter">Book Box</div>
 						</div>
-						<canvas id="canvas" width="500" height="300"></canvas>
 						<div class="abouttext"> 
 						<br>
 							<img src="${cpath }/resources/images/ebook.jpg" style="width: 500px; margin-left: -500px;" >

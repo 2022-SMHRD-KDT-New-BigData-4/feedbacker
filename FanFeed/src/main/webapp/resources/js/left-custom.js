@@ -194,6 +194,19 @@
 		
 		});	
 		
+		$(function myboxmove() {
+			$('#mybox').click(function() {
+				location.href = "mybox.do";
+			});
+		
+		});
+		
+		$(function myboxkeep() {
+			$('#myboxkeep').click(function() {
+				location.href = "mybox.do";
+			});
+		
+		});
 		 $(document).ready(function(){
 
     $('#textbox').each(function(){

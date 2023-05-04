@@ -142,4 +142,10 @@ public class MainController {
       return "fanfeed/contact";
    }
 
+   // mybox페이지
+   @RequestMapping("/mybox.do")
+   public String myboxPage() {
+	   
+	   return "fanfeed/mybox";
+   }
 }
