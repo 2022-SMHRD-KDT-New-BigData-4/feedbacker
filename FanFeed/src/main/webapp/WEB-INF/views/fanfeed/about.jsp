@@ -149,6 +149,7 @@
 						<div style="width: 100%; height: 300px; text-align: center;"> 
 						<br>
 							<h3>저희는 온라인 도서 구매자들을 위한 도서 리뷰 감성 분석을 제공하고 있습니다.</h3>
+							<h4>분석된 키워드와 관련 리뷰들로 e-book 구매에 도움이 되길 바랍니다.</h4>
 						</div>
 						</div>
 					</div>

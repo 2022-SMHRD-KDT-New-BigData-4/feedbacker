@@ -431,7 +431,7 @@
     position: absolute;
     z-index: 1;
     margin-left: -102px;
-    margin-top: -111px;
+    margin-top: -135px;
 }
 
 #tooltip1:hover .tooltiptext1 {
@@ -451,7 +451,7 @@
     }
 }
 
-li {
+#top10 li {
     animation-name: fadeIn;
     animation-duration: 7s;
     animation-fill-mode: forwards;

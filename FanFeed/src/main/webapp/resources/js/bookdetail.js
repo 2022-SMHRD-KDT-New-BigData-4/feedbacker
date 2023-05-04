@@ -90,7 +90,7 @@ $(document).on('click', '#wordcloud span', function() {
 });
 
 // 클릭 이벤트 처리 함수를 추가합니다.
-$(document).on('click', '.content', function() {
+$(document).on('click', '.contents', function() {
 	var word = $(this).text(); // 클릭한 단어 가져오기
 	console.log(word);
 	console.log(predictResult.predict.lstm);

@@ -172,7 +172,7 @@
         <div class="sidebar-widget category mb-5" id="top10">
         	<div id="tooltip1">
                 <h4 class="text-center widget-title">감성어 TOP 10<img src="${cpath }/resources/images/idea.png" id="idea1" style="width: 25px; height: 25px;"></h4>
-                <span class="tooltiptext1 tooltip-top">단어를 클릭해보세요!</span>
+                <span class="tooltiptext1 tooltip-top">단어를 클릭해서 해당 단어가 포함된 리뷰를 확인하세요!</span>
             </div>
             
              <ul class="list-unstyled">
@@ -213,8 +213,7 @@
                             <div class="reputation-bubble-box" style="text-align: center;">
                             	<div id="tooltip">
                                 <h3 class="text-center widget-title">감성 연관어 <img src="${cpath }/resources/images/idea.png" id="idea" style="width: 25px; height: 25px;"> </h3>
-                                <span class="tooltiptext tooltip-top">단어를 클릭해서 </span>
-                                <span class="tooltiptext tooltip-top">해당 단어가 포함된 리뷰를 확인하세요!</span>
+                                <span class="tooltiptext tooltip-top">단어를 클릭해서 해당 단어가 포함된 리뷰를 확인하세요!</span>
                                 </div>
                                 <input type="hidden" id="selectedSentiment" value="all">
                                 <div id="factorDetail" class="chart-wrap chart-reputation-bubble">
