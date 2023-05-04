@@ -137,7 +137,7 @@ function searchResult(data) {
 }
 
 // 맨 위로 올라오는 커서
-$(document).on('click',$("#scroll-top-btn"),function(){
+$(document).on('click','#scroll-top-btn',function(){
 	console.log("들어옴")
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 })

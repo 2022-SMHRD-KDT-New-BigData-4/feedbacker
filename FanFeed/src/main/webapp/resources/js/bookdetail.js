@@ -150,8 +150,9 @@ function posnegReview(data, word) {
 }
 /*a 태그가 클릭 되었을 때 이벤트를 멈추기*/
 
-$(document).on('click','.contents',function(){
-   event.preventDefault();
-   
+$(document).on('click','.contents',function(e){
+   e.preventDefault();
+   var word = $(this).data('word');
+	return false; // 링크의 기본 동작을 막음
 })
 
