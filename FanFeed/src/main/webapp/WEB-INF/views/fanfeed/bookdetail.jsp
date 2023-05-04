@@ -162,7 +162,7 @@
             	<h5 class="text-muted letter-spacing text-uppercase font-sm">${book.datetime }</h5>
             	<span class="isbn" style="display: none">${book.isbn }</span> 
 				<div><h4 >${book.title}</h4></div>
-                <h5>${book.author}</h5>
+                <h5>${book.author} 저</h5>
 			</div>
 		</div>
         <br>
@@ -207,7 +207,10 @@
 					<div class="slider-item">
 						<div class="slider-item-content">
                             <div class="reputation-bubble-box" style="text-align: center;">
-                                <h3 class="text-center widget-title">감성 연관어</h3>
+                            	<div id="tooltip">
+                                <h3 class="text-center widget-title">감성 연관어 <img src="${cpath }/resources/images/idea.png" id="idea" style="width: 25px; height: 25px;"> </h3>
+                                <span class="tooltiptext tooltip-top">단어를 클릭해보세요!</span>
+                                </div>
                                 <input type="hidden" id="selectedSentiment" value="all">
                                 <div id="factorDetail" class="chart-wrap chart-reputation-bubble">
                                 <div id="wordcloud">
