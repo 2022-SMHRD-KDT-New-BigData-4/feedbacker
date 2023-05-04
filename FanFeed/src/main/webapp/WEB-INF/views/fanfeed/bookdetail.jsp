@@ -227,14 +227,14 @@
     <div class="comment-area my-5" id="reviewarea-l">
 		<h2 class="mb-4 text-center"><a>긍정 리뷰</a></h2>
 		<br>
-		<ul class="list-group" id="positive">
+		<ul class="list-group list-group-flush" id="positive">
 		</ul>
 	</div>
 
     <div class="comment-area my-5" id="reviewarea-r">
 		<h2 class="mb-4 text-center"><a>부정 리뷰</a></h2>
 		<br>
-		<ul class="list-group" id="negative">
+		<ul class="list-group list-group-flush" id="negative">
 		</ul>
 	</div>
 	</div>
@@ -279,7 +279,7 @@
 		<a target="_blank" class="author-social" href="#"><i class="ti-tumblr"></i></a>
 	</div>
 </div> -->
-<nav class="post-pagination clearfix border-top border-bottom py-4 col-lg-12">
+<!-- <nav class="post-pagination clearfix border-top border-bottom py-4 col-lg-12">
     <div class="prev-post">
         <a href="blog-single.html">
         	<span class="text-uppercase font-sm letter-spacing">Previous</span>
@@ -292,7 +292,7 @@
             <h4 class="mt-3"> Intel’s new smart glasses actually look good</h4>
         </a>
     </div>
-</nav>
+</nav> -->
 
 <div class="related-posts-block mt-5" id="similer">
 	<br>

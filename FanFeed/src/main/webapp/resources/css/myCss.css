@@ -368,5 +368,8 @@
 .list-group-item-action:hover {
 	color: #495057;
 	text-decoration: none;
-	background-color: beige;
+	background-color: #ffc450;
+}
+.list-group-item{
+	background-color:#fffcf6;
 }
