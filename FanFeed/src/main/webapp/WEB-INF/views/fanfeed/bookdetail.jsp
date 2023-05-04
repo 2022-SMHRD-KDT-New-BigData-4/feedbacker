@@ -59,8 +59,8 @@
 
 	<div class="header-logo py-5 d-none d-lg-block" style="height: 544.88px;">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8D7B68" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,234.7C672,256,768,256,864,229.3C960,203,1056,149,1152,133.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>	
-		<div class="container">
-			<div class="row justify-content-center logo-wrap">
+		<div class="logo-posi">
+			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center logo-center">
 					<a id="logo" class="navbar-brand" onclick="mainmove()"><img src="${cpath }/resources/images/logo.png" alt="" class="img-fluid w-100" style="width: 320px;"></a>
 				</div>
@@ -145,7 +145,7 @@
 
 <section class="single-block-wrapper section-padding">
 	<div class="container">
-		<div class="row" style="margin-top: 200px;">
+		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar sidebar-right">
 					<div class="sidebar-wrap mt-5 mt-lg-0">
@@ -170,7 +170,11 @@
         <br>
 
         <div class="sidebar-widget category mb-5" id="top10">
-            <h4 class="text-center widget-title">감성어 TOP 10</h4>
+        	<div id="tooltip1">
+                <h4 class="text-center widget-title">감성어 TOP 10<img src="${cpath }/resources/images/idea.png" id="idea1" style="width: 25px; height: 25px;"></h4>
+                <span class="tooltiptext1 tooltip-top">단어를 클릭해보세요!</span>
+            </div>
+            
              <ul class="list-unstyled">
              <c:forEach var="i" begin="1" end="10">
               <li class="align-items-center d-flex justify-content-between" id="toplist">
@@ -209,7 +213,8 @@
                             <div class="reputation-bubble-box" style="text-align: center;">
                             	<div id="tooltip">
                                 <h3 class="text-center widget-title">감성 연관어 <img src="${cpath }/resources/images/idea.png" id="idea" style="width: 25px; height: 25px;"> </h3>
-                                <span class="tooltiptext tooltip-top">단어를 클릭해보세요!</span>
+                                <span class="tooltiptext tooltip-top">단어를 클릭해서 </span>
+                                <span class="tooltiptext tooltip-top">해당 단어가 포함된 리뷰를 확인하세요!</span>
                                 </div>
                                 <input type="hidden" id="selectedSentiment" value="all">
                                 <div id="factorDetail" class="chart-wrap chart-reputation-bubble">
@@ -228,19 +233,20 @@
 	<br>
 	<div>
     <div class="comment-area my-5" id="reviewarea-l">
-		<h2 class="mb-4 text-center"><a>긍정 리뷰</a></h2>
-		<br>
-		<ul class="list-group list-group-flush" id="positive">
-		</ul>
-	</div>
-
+      <h2 class="mb-4 text-center"><a>긍정 리뷰</a></h2>
+   <div class="scroll comment-area my-5" id="reviewarea-l">   
+      <ul class="list-group list-group-flush" id="positive">
+      </ul>
+   </div>
+   </div>
     <div class="comment-area my-5" id="reviewarea-r">
-		<h2 class="mb-4 text-center"><a>부정 리뷰</a></h2>
-		<br>
-		<ul class="list-group list-group-flush" id="negative">
-		</ul>
-	</div>
-	</div>
+      <h2 class="mb-4 text-center"><a>부정 리뷰</a></h2>
+      <div class="scroll comment-area my-5" id="reviewarea-r">
+      <ul class="list-group list-group-flush" id="negative">
+      </ul>
+   </div>
+   </div>
+   </div>
 
  	<div class="m-auto" id="m-auto">
 		<div class="pagination mt-5 pt-4">
@@ -338,11 +344,9 @@
     <div class="row">
     <!-- 첫번째 도서 -->
 <c:if test="${not empty book.other_img1}">
-        <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="col-lg-12 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
-                <span href="blog-single.html">
                     <img class="img-fluid" src="${book.other_img1}" alt="post-thumbnail"/>
-                </span>
                 <div class="post-content mt-3">
                     <h4 >
                         <span href="blog-single.html">${book.other_book1}</span>

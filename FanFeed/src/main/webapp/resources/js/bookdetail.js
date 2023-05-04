@@ -1,5 +1,8 @@
 /** 북 **/
 
+$("#m-auto").hide();
+
+
 
 var predictResult;
 
@@ -50,13 +53,13 @@ $(document).ready(function() {
 
 			// 상위 10개의 요소에 대해서만 리스트 태그를 만듭니다.
 			var top10List = '';
-			$.each(word_list.slice(0, 10), function(index, word) {
-				// 리스트에 항목을 추가합니다.
-				top10List += '<li class="align-items-center d-flex justify-content-between" id="toplist">';
-				top10List += '<span>' + (index + 1) + '</span>';
-				top10List += '<a href="#">' + word.text + '</a>';
-				top10List += '</li>';
-			});
+ $.each(word_list.slice(0, 10), function(index, word) {
+             // 리스트에 항목을 추가합니다.
+             top10List += '<li style="opacity:0; animation-delay:' + (index * 0.1) + 's;">';
+             top10List += '<span style="float:left;">' + (index + 1) + '</span>';
+             top10List += '<a class="contents text-center" href="#">' + word.text + '</a>';
+             top10List += '</li>';
+         });
 
 			// top10 리스트를 추가합니다.
 			$('#top10 ul.list-unstyled').html(top10List);
@@ -85,6 +88,16 @@ $(document).on('click', '#wordcloud span', function() {
 	posnegReview(predictResult.predict.lstm, word);
 
 });
+
+// 클릭 이벤트 처리 함수를 추가합니다.
+$(document).on('click', '.content', function() {
+	var word = $(this).text(); // 클릭한 단어 가져오기
+	console.log(word);
+	console.log(predictResult.predict.lstm);
+	posnegReview(predictResult.predict.lstm, word);
+
+});
+
 
 function posnegReview(data, word) {
 
@@ -123,12 +136,10 @@ function posnegReview(data, word) {
 
 
 	for (let index = 0; index < negInclude.length; index++) {
-		if (index == 10) break;
 		let content = negInclude[index];
 		negTag += '<li class="list-group-item">' + content + '</li>';
 	}
 	for (let index = 0; index < posInclude.length; index++) {
-		if (index == 10) break;
 		let content = posInclude[index];
 		posTag += '<li class="list-group-item">' + content + '</li>';
 	}
@@ -137,3 +148,10 @@ function posnegReview(data, word) {
 	$("#positive").append(posTag);
 
 }
+/*a 태그가 클릭 되었을 때 이벤트를 멈추기*/
+
+$(document).on('click','.contents',function(){
+   event.preventDefault();
+   
+})
+
