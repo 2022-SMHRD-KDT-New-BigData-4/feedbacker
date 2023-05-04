@@ -122,7 +122,7 @@
 			                <form action="${cpath}/search.do"  method="post">
 	                        <!--   HTML 코드-->
 	                        <input type="hidden" id="hidden-category"  name="type" value="책 제목">
-	                         <input id="search" placeholder=" Search..." name="search">
+	                         <input id="search" placeholder=" Search..." name="search" required>
 	                        <button type="submit" id="submit">
 	                     <i class="ti-search"></i>
 	                  </button>
