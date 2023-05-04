@@ -160,10 +160,10 @@
 
 
 	<div class="sidebar-widget mb-5 ">
-		<c:if test="${book.seq <10 }">
+		<c:if test="${book.seq <=10 }">
 		<h4 class="text-center widget-title" id="bookType">Best Seller</h4>
 		</c:if>
-		<c:if test="${book.seq >9 }">
+		<c:if test="${book.seq >10}">
 		<h4 class="text-center widget-title" id="bookType">Steady Seller</h4>
 		</c:if>
 		<div class="sidebar-post-item-big">
@@ -203,7 +203,20 @@
             <h2>${book.title }</h2>
             <h5>${book.author } 저</h5>
             <h5>출판사 | ${book.publisher }</h5>
-            <button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
+            
+            
+           <!-- 베스트셀러& 스테디셀러 -->
+          <c:if test="${book.seq <=10 }">
+		<button onclick="move()" class="btn btn-primary" id="detailbtn">분석하기</button>
+		</c:if>
+		<c:if test="${book.seq >10 }">
+		<button onclick="move()" class="btn btn-primary" id="detailbtn" disabled>분석하기</button>
+		</c:if>
+            
+            
+            
+            
+            
             <hr>
         </div>
         <div id="textbox">
