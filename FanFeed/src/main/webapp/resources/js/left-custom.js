@@ -383,3 +383,7 @@ var bookType = $('#bookType').text()
 if (bookType=="Steady Seller"){
    $("#detailbtn").prop("disabled", true);
 }
+
+ 
+
+

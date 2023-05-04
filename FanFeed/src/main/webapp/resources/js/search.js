@@ -50,7 +50,10 @@ $('#search').on('input', function() {
 			$('#search_toggle').append('<span id="isbn-ck" style="color: red; position: absolute; right: 200px;">13자리의 숫자가 아닙니다.</span>');
 			return;
 		}
-		if($('#isbn-ck').text()==null){
+
+	// "isbn-ck" 요소의 내용이 없으면(즉, 입력값이 비어있는 경우), 빈 요소를 추가합니다.
+	if (isEmpty($('#isbn-ck').text())) {
+		$('#isbn-ck').remove();
 		$('#search_toggle').append('<span id="isbn-ck" style="color: red; position: absolute; right: 200px;"></span>');
 	}
 	} else { // 검색타입이 책제목
@@ -133,3 +136,8 @@ function searchResult(data) {
 	$('#search-result').show();
 }
 
+// 맨 위로 올라오는 커서
+$(document).on('click',$("#scroll-top-btn"),function(){
+	console.log("들어옴")
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+})

@@ -45,6 +45,7 @@
 </head>
 
 <body>
+<button id="scroll-top-btn"><i class="ti-arrow-circle-up" style=""></i></button>
 <!-- 모달 창 -->
 <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">

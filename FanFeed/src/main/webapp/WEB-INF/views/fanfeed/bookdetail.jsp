@@ -51,6 +51,7 @@
 </head>
 
 <body>
+<button id="scroll-top-btn"><i class="ti-arrow-circle-up" style=""></i></button>
 <div class="loading">
 	<span></span>
 	<span></span>

@@ -486,3 +486,14 @@
     animation-duration: 7s;
     animation-fill-mode: forwards;
 }
+#scroll-top-btn{
+	position: fixed;
+	bottom : 5px;
+	right : 5px;
+	border: 0px;
+	background: transparent;
+	width: 60px;
+	height: 60px;
+	font-size: 300%;
+	cursor :pointer;
+}
