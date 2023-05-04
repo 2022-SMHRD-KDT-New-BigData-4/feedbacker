@@ -141,3 +141,12 @@ $(document).on('click',$("#scroll-top-btn"),function(){
 	console.log("들어옴")
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 })
+
+// 맨 위에서 커서 없애기
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 10) { // 스크롤 위치가 10 이상인 경우
+    $('#scroll-top-btn').fadeIn(); // #scroll-top-btn 요소를 보이게 함
+  } else {
+    $('#scroll-top-btn').fadeOut(); // #scroll-top-btn 요소를 숨김
+  }
+});
