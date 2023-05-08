@@ -160,8 +160,12 @@
 
 				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-top: -100px;">
 					<div class="single-post">
-						<div class="related-posts-block mt-5">
-							<h1 class="news-title mb-4 text-center">My Box!</h1>
+						<div class="related-posts-block mt-5" >
+							<h1 class="news-title mb-4 text-center">My Box!
+							<c:if test="${not empty showbookmark }">
+								<button class="btn btn-primary mb-2" onclick="location.href='${cpath}/empty.do'">My Box 비우기</button>
+							</c:if>
+							</h1>
 							<div class="row">
 							<c:if test="${empty showbookmark }">
 								<h2>MyBox가 비었습니다...</h2>
