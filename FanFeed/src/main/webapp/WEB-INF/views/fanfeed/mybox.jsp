@@ -157,54 +157,11 @@
 	<section class="single-block-wrapper section-padding" style="margin-top: -100px;">
 		<div class="container">
 			<div class="row" style="margin-top: 200px;">
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="margin-top: -50px;">
-					<div class="sidebar sidebar-right">
-						<div class="sidebar-wrap mt-5 mt-lg-0" id="categoryList">
-							<div class="sidebar-widget category mb-5" id="categorySticky">
-								<h4 class="text-center widget-title">My Category</h4>
-								<ul class="list-unstyled">
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">소설</a>
-									</li>
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">자기계발</a>
-									</li>
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">경영/경제</a>
-									</li>
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">인문/사회/역사</a>
-									</li>
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">에세이/시</a>
-									</li>
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">과학/IT</a>
-									</li>
-									<li class="align-items-center d-flex justify-content-between" id="category">
-										<a class="ct-li" href="#">가정/생활</a>
-									</li>
-								</ul>
-
-
-
-							</div>
-
-
-
-
-
-						</div>
-					</div>
-				</div>
 
 				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="margin-top: -100px;">
 					<div class="single-post">
 						<div class="related-posts-block mt-5">
 							<h1 class="news-title mb-4 text-center">My Box!</h1>
-							<h2 class="news-title mb-4 text-center">
-								${empty category?'소설':category }
-							</h2>
 							<div class="row">
 							<c:forEach var="book" items="${bookList }" begin="0" end="11">
 								
