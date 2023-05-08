@@ -35,7 +35,6 @@ public class MyBoxController {
 	    }
 
 		List<Book> bookMark = new ArrayList<>();
-		System.out.println("mybox페이지 : "+bookItems.toString()); 
 		if (bookItems.isEmpty()) {
 
 		} else {
