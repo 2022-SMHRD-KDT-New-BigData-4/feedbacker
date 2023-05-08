@@ -92,7 +92,7 @@
 		                     </div>
 						</li>
 						<li class="nav-item"><a onclick="contactmove()" class="nav-link" id="contact">Contact</a></li>
-						<li class="nav-item"><a onclick="myboxmove()" class="nav-link" id="mybox">My Box</a></li>
+						<li class="nav-item"><a onclick="formMove('bookmark.do','isbn','')" class="nav-link" id="mybox">My Box</a></li>
 						<li class="nav-item d-lg-none">
 							<div class="search_toggle p-3 d-inline-block bg-white"><i class="ti-search"></i></div>
 						</li>
@@ -163,7 +163,10 @@
 						<div class="related-posts-block mt-5">
 							<h1 class="news-title mb-4 text-center">My Box!</h1>
 							<div class="row">
-							<c:forEach var="book" items="${bookList }" begin="0" end="11">
+							<c:if test="${empty showbookmark }">
+								<h2>MyBox가 비었습니다...</h2>
+							</c:if>
+							<c:forEach var="book" items="${showbookmark }" begin="0" end="11">
 								
 								
 								

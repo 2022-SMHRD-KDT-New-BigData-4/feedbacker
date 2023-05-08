@@ -169,12 +169,6 @@ $(function categorymove() {
 
 });
 
-$(function myboxmove() {
-	$('#mybox').click(function() {
-		location.href = "mybox.do";
-	});
-
-});
 
 function bookinfomove() {
 	$('.book-main').click(function() {

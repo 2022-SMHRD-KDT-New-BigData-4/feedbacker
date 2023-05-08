@@ -125,9 +125,6 @@ function posnegReview(data, word) {
 		}
 	}
 
-	console.log(negInclude);
-	console.log(posInclude);
-
 	$("#negative").empty();
 	$("#positive").empty();
 

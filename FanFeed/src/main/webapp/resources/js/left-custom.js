@@ -385,23 +385,32 @@ if (bookType=="Steady Seller"){
    $("#detailbtn").prop("disabled", true);
 }
 
- 
-$(document).ready(function () {
-    $("#myboxkeep").click(function () {
-        Swal.fire({
-            title: 'My Box에 저장하시겠습니까?',
-            icon: 'question',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: '확인',
-            cancelButtonText: '취소'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire(
-                    '저장이 완료되었습니다.'
-                )
-            }
-        })
-    });
+// 일단 mybox저장
+$("#myboxkeep").click(function() {
+	Swal.fire({
+		title: 'My Box에 저장하시겠습니까?',
+		icon: 'question',
+		showCancelButton: true,
+		confirmButtonColor: '#3085d6',
+		cancelButtonColor: '#d33',
+		confirmButtonText: '확인',
+		cancelButtonText: '취소'
+	}).then((result) => {
+		if (result.isConfirmed) {
+			var isbn = $('.isbn').text();
+
+			$.ajax({
+				url: "bookmark.do",
+				type: "get",
+				data: { isbn: isbn },
+				success: function(data) {
+					console.log(data)
+				},
+				error : function (e) { console.log(e) }
+			});
+			Swal.fire(
+				'저장이 완료되었습니다.'
+			)
+		}
+	})
 });
