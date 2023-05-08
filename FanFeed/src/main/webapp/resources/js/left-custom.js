@@ -194,19 +194,7 @@
 		
 		});	
 		
-		$(function myboxmove() {
-			$('#mybox').click(function() {
-				location.href = "mybox.do";
-			});
 		
-		});
-		
-		$(function myboxkeep() {
-			$('#myboxkeep').click(function() {
-				location.href = "mybox.do";
-			});
-		
-		});
 		 $(document).ready(function(){
 
     $('#textbox').each(function(){
@@ -398,5 +386,22 @@ if (bookType=="Steady Seller"){
 }
 
  
-
-
+$(document).ready(function () {
+    $("#myboxkeep").click(function () {
+        Swal.fire({
+            title: 'My Box에 저장하시겠습니까?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: '확인',
+            cancelButtonText: '취소'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    '저장이 완료되었습니다.'
+                )
+            }
+        })
+    });
+});

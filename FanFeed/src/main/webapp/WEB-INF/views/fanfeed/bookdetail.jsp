@@ -166,7 +166,7 @@
 				<div><h4 >${book.title}</h4></div>
                 <h5>${book.author} 저</h5>
 			</div>
-			<button id="myboxkeep" onclick="myboxkeep()" class="btn btn-primary">My Box</button>
+			<button id="myboxkeep" class="btn btn-primary">My Box</button>
 		</div>
         <br>
         <br>
@@ -346,7 +346,7 @@
     <div class="row">
     <!-- 첫번째 도서 -->
 <c:if test="${not empty book.other_img1}">
-        <div class="col-lg-12 col-md-3 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="post-block-wrapper mb-4 mb-lg-0">
                     <img class="img-fluid" src="${book.other_img1}" alt="post-thumbnail"/>
                 <div class="post-content mt-3">
@@ -450,6 +450,9 @@
 
 <!-- 검색 js -->
 <script src="${cpath }/resources/js/search.js"></script>
+
+<!-- alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
